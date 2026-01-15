@@ -1,0 +1,34 @@
+baseURL: "http://localhost:1313/"
+languageCode: "ko-kr"
+title: "Marketer UJU SEO Log"
+theme: "PaperMod"
+taxonomies:
+  category: categories
+  tag: tags
+
+menu:
+  main:
+    - name: Portfolio
+      url: /portfolio/
+      weight: 10
+    - name: Work Log
+      url: /categories/work-log/
+      weight: 20
+    - name: Life Log
+      url: /categories/life-log/
+      weight: 30
+    - name: SEO Notes
+      url: /categories/seo-notes/
+      weight: 40
+    - name: Tags
+      url: /tags/
+      weight: 50
+    - name: About
+      url: /about/
+      weight: 60
+    - name: Contact
+      url: /contact/
+      weight: 70
+
+
+
