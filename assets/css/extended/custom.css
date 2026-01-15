@@ -1,0 +1,155 @@
+/* =========================================================
+   Pro / Light Gray + Navy Accent  (PaperMod override)
+   File: assets/css/extended/custom.css
+========================================================= */
+
+/* 1) Base tokens */
+:root{
+  /* Background & surfaces */
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #fbfcfe;
+
+  /* Text */
+  --text: #111827;     /* near-black */
+  --muted: #6b7280;    /* gray-500 */
+
+  /* Accent */
+  --accent: #0b2a4a;   /* navy */
+  --accent-2: #1f5aa6; /* blue */
+
+  /* Lines & radius */
+  --line: rgba(17, 24, 39, 0.10);
+  --radius: 16px;
+
+  /* Shadows */
+  --shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+}
+
+/* Dark theme tune (PaperMod uses .dark on html/body) */
+.dark{
+  --bg: #0b1220;
+  --surface: #0f172a;
+  --surface-2: #111c33;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --line: rgba(229, 231, 235, 0.10);
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* 2) Overall background & typography */
+body{
+  background: var(--bg);
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+
+/* Make content width feel premium */
+.main{
+  padding-top: 24px;
+}
+
+/* 3) Header / nav */
+.header{
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav a{
+  color: var(--text);
+  opacity: 0.9;
+}
+.nav a:hover{
+  opacity: 1;
+  color: var(--accent);
+}
+
+/* 4) Cards (list pages) */
+.post-entry{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 18px;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.post-entry:hover{
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 18%, var(--line));
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.10);
+}
+
+/* Title spacing & style */
+.entry-header h2{
+  letter-spacing: -0.3px;
+}
+.entry-content{
+  color: var(--muted);
+}
+
+/* 5) Single post container */
+.post-single{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 22px 22px;
+}
+
+/* 6) Links */
+a{
+  color: var(--accent-2);
+  text-underline-offset: 3px;
+}
+a:hover{
+  color: var(--accent);
+}
+
+/* 7) Buttons (profileMode buttons / etc.) */
+.buttons a,
+button,
+.btn{
+  border-radius: 999px;
+}
+.buttons a{
+  background: var(--accent);
+  color: #fff !important;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, #000);
+  box-shadow: 0 10px 20px rgba(11,42,74,0.16);
+}
+.buttons a:hover{
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--accent) 86%, #000);
+}
+
+/* 8) Code blocks */
+pre, code{
+  border-radius: 12px;
+}
+pre{
+  border: 1px solid var(--line);
+}
+
+/* 9) Tables */
+table{
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+/* 10) Tag chips */
+.tag-entry,
+a.tag{
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+/* 11) Footer */
+.footer{
+  border-top: 1px solid var(--line);
+  opacity: 0.95;
+}
