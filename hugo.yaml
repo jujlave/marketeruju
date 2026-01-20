@@ -1,4 +1,4 @@
-baseURL: "http://localhost:1313/"
+baseURL: "https://marketeruju.com/"
 languageCode: "ko-kr"
 title: "Marketer UJU SEO Log"
 theme: "PaperMod"
@@ -6,29 +6,90 @@ taxonomies:
   category: categories
   tag: tags
 
+cascade:
+  - target:
+      kind: taxonomy
+    params:
+      robotsNoIndex: true
+    sitemap:
+      disable: true
+  - target:
+      kind: term
+    params:
+      robotsNoIndex: true
+    sitemap:
+      disable: true
+
 menu:
   main:
-    - name: Portfolio
-      url: /portfolio/
+    - name: "Portfolio"
+      identifier: "portfolio"
+      pageRef: "portfolio"
       weight: 10
-    - name: Work Log
-      url: /categories/work-log/
+
+    - name: "Work Log"
+      identifier: "blog/work-log"
+      pageRef: "blog/work-log"
       weight: 20
-    - name: Life Log
-      url: /categories/life-log/
+
+    - name: "Life Log"
+      identifier: "blog/life-log"
+      pageRef: "blog/life-log"
       weight: 30
-    - name: SEO Notes
-      url: /categories/seo-notes/
+
+    - name: "SEO Notes"
+      identifier: "blog/seo-notes"
+      pageRef: "blog/seo-notes"
       weight: 40
-    - name: Tags
-      url: /tags/
+
+    - name: "Tags"
+      identifier: "tags"
+      pageRef: "tags"
       weight: 50
-    - name: About
-      url: /about/
+
+    - name: "About"
+      identifier: "about"
+      pageRef: "about"
       weight: 60
-    - name: Contact
-      url: /contact/
+
+    - name: "Contact"
+      identifier: "contact"
+      pageRef: "contact"
       weight: 70
 
+params:
+  env: production
+  defaultTheme: auto       # auto / light / dark
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
 
+  customCSS:
+    - css/extended/custom.css
 
+  # Home
+  profileMode:
+    enabled: true
+    title: "Marketer UJU"
+    subtitle: "SEO 구조 설계 · 리포트 템플릿 · 케이스 스터디"
+    imageUrl: ""
+    imageTitle: ""
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: "Portfolio"
+        url: "/portfolio/"
+      - name: "SEO Notes"
+        url: "/blog/seo-notes/"
+
+  # Optional: social icons (원하는 것만)
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+    - name: linkedin
+      url: "https://www.linkedin.com/"
