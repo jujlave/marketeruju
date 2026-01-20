@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: jujlave/marketeruju
+  branch: main
+  # Cloudflare Worker OAuth endpoint
+  auth_endpoint: https://cms-auth.marketeruju.com/auth
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://marketeruju.com"
+display_url: "https://marketeruju.com"
+
+collections:
+  - name: "work-log"
+    label: "Work Log"
+    folder: "content/blog/work-log"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "type", label: "Type", widget: "hidden", default: "blog" }
+      - { name: "categories", label: "Categories", widget: "hidden", default: ["work-log"] }
+      - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "body", label: "Body", widget: "markdown" }
+
+  - name: "life-log"
+    label: "Life Log"
+    folder: "content/blog/life-log"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "type", label: "Type", widget: "hidden", default: "blog" }
+      - { name: "categories", label: "Categories", widget: "hidden", default: ["life-log"] }
+      - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "body", label: "Body", widget: "markdown" }
+
+  - name: "seo-notes"
+    label: "SEO Notes"
+    folder: "content/blog/seo-notes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "type", label: "Type", widget: "hidden", default: "blog" }
+      - { name: "categories", label: "Categories", widget: "hidden", default: ["seo-notes"] }
+      - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "body", label: "Body", widget: "markdown" }

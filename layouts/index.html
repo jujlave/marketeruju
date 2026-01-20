@@ -1,0 +1,120 @@
+{{- /* layouts/index.html - Custom Home for PaperMod */ -}}
+{{- define "main" -}}
+
+{{- $recent := where site.RegularPages "Section" "blog" -}}
+{{- $recent = sort $recent "Date" "desc" -}}
+{{- $hero := first 1 $recent -}}
+{{- $grid := first 9 $recent -}}
+{{- $portfolio := where site.RegularPages "Section" "portfolio" -}}
+{{- $portfolio = first 6 (sort $portfolio "Date" "desc") -}}
+
+<section class="home-hero">
+  <div class="home-shell-wide">
+    <div class="home-hero-inner">
+      <div class="home-hero-copy">
+        <p class="home-hero-eyebrow">Marketer UJU</p>
+        <h1>SEO 구조 설계 · 리포트 템플릿 · 케이스 스터디</h1>
+        <p class="home-hero-sub">구조 개선 → 실행 → 성과 측정을 한 화면에서 연결합니다.</p>
+        <div class="home-hero-actions">
+          <a class="home-hero-btn" href="/portfolio/">Portfolio</a>
+          <a class="home-hero-btn ghost" href="/blog/">Blog</a>
+        </div>
+      </div>
+      <div class="home-hero-panel">
+        {{- range $hero -}}
+        <a class="hero-card" href="{{ .RelPermalink }}">
+          <span class="hero-label">{{ with .Params.categories }}{{ index . 0 }}{{ else }}Latest{{ end }}</span>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Summary | plainify | truncate 140 }}</p>
+          <span class="hero-cta">Read →</span>
+        </a>
+        {{- else -}}
+        <div class="hero-card empty">아직 게시글이 없습니다. 첫 글을 올려주세요.</div>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="home-shell home-shell-wide">
+  <section class="home-sections">
+    <div class="home-block">
+      <div class="home-block-head">
+        <h2>Latest Posts</h2>
+      </div>
+
+      <div class="home-post-grid">
+        {{- range $index, $page := $grid -}}
+        <a class="home-post-card{{ if eq $index 0 }} featured{{ end }}" href="{{ $page.RelPermalink }}">
+          <div class="home-post-thumb">
+            {{- $hasCover := $page.Param "cover.image" -}}
+            {{- if $hasCover -}}
+              {{- $isHidden := ($page.Param "cover.hiddenInList") | default ($page.Param "cover.hidden") | default false }}
+              {{- partial "cover.html" (dict "cxt" $page "IsSingle" false "isHidden" $isHidden) }}
+            {{- else -}}
+              <div class="home-post-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2.5-1A1 1 0 0 0 5.5 6.5v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1h-11Zm2.75 10.25 2.75-3.25 2 2.5 2.75-3.25 3.25 4.25H7.5l1.75-2.25Z" />
+                </svg>
+                <span>NO THUMB</span>
+              </div>
+            {{- end -}}
+          </div>
+          <div class="home-post-title">{{ $page.Title }}</div>
+          <div class="home-post-meta">{{ $page.Date.Format "2006-01-02" }}</div>
+        </a>
+        {{- end -}}
+
+        {{- if eq (len $grid) 0 -}}
+        <div class="home-empty">아직 게시글이 충분하지 않아요.</div>
+        {{- end -}}
+      </div>
+    </div>
+
+    <div class="home-block">
+      <div class="home-block-head">
+        <h2>Featured Portfolio</h2>
+        <a class="home-more" href="/portfolio/">View all →</a>
+      </div>
+
+      <div class="home-portfolio-grid">
+        {{- range $portfolio -}}
+        <a class="home-portfolio-card" href="{{ .RelPermalink }}">
+          <div class="home-portfolio-title">{{ .Title }}</div>
+          <div class="home-portfolio-desc">{{ .Summary | plainify | truncate 120 }}</div>
+        </a>
+        {{- end -}}
+
+        {{- if eq (len $portfolio) 0 -}}
+        <div class="home-empty">아직 포트폴리오가 없습니다. 첫 케이스를 추가해보세요.</div>
+        {{- end -}}
+      </div>
+    </div>
+
+    <div class="home-block">
+      <div class="home-block-head">
+        <h2>Tags & Search</h2>
+        <a class="home-more" href="/tags/">Tags →</a>
+      </div>
+      <div class="home-utility-grid">
+        <div class="home-widget compact">
+          <h3>Tags</h3>
+          <div class="home-tags">
+            {{- range first 12 site.Taxonomies.tags.ByCount -}}
+            <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            {{- end -}}
+          </div>
+        </div>
+        <div class="home-widget compact">
+          <h3>Search</h3>
+          <form class="home-search" action="/search/">
+            <input type="text" name="q" placeholder="검색어 입력" aria-label="검색어 입력">
+            <button type="submit">검색</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{- end -}}
