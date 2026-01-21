@@ -14,11 +14,43 @@ export default {
     }
 
     const callbackUrl = new URL(siteUrl).origin;
+    const provider = url.searchParams.get("provider") || "github";
     const code = url.searchParams.get("code");
 
     if (!code) {
       const redirect = `https://github.com/login/oauth/authorize?client_id=${encodeURIComponent(clientId)}&scope=repo&redirect_uri=${encodeURIComponent(url.origin + "/auth")}`;
-      return Response.redirect(redirect, 302);
+      const html = `
+<!doctype html>
+<html>
+  <head><meta charset="utf-8" /></head>
+  <body>
+    <script>
+      (function () {
+        var message = 'authorizing:${provider}';
+        var target = '${callbackUrl}';
+        var attempts = 0;
+        var maxAttempts = 2;
+        var interval = 200;
+
+        function notify() {
+          if (window.opener) {
+            window.opener.postMessage(message, target);
+          }
+          attempts += 1;
+          if (attempts >= maxAttempts) {
+            window.location.replace('${redirect}');
+          }
+        }
+
+        notify();
+        setInterval(notify, interval);
+      })();
+    </script>
+  </body>
+</html>`;
+      return new Response(html, {
+        headers: { "Content-Type": "text/html; charset=utf-8" },
+      });
     }
 
     const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
@@ -48,11 +80,11 @@ export default {
   <body>
     <script>
       (function () {
-        var message = 'authorization:github:success:${token}';
-        var target = '*';
+        var message = 'authorization:${provider}:success:${token}';
+        var target = '${callbackUrl}';
         var attempts = 0;
-        var maxAttempts = 10;
-        var interval = 500;
+        var maxAttempts = 4;
+        var interval = 600;
 
         function sendMessage() {
           if (window.opener) {
