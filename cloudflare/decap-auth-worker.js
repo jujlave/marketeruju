@@ -13,7 +13,7 @@ export default {
       return new Response("Missing env vars", { status: 500 });
     }
 
-    const callbackUrl = `${siteUrl}/admin/`;
+    const callbackUrl = new URL(siteUrl).origin;
     const code = url.searchParams.get("code");
 
     if (!code) {
