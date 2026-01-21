@@ -22,7 +22,10 @@ export default {
       const html = `
 <!doctype html>
 <html>
-  <head><meta charset="utf-8" /></head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=${redirect}" />
+  </head>
   <body>
     <script>
       (function () {
