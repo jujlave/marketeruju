@@ -47,11 +47,26 @@ export default {
   <head><meta charset="utf-8" /></head>
   <body>
     <script>
-      window.opener && window.opener.postMessage(
-        'authorization:github:success:${token}',
-        '*'
-      );
-      window.close();
+      (function () {
+        var message = 'authorization:github:success:${token}';
+        var target = '*';
+        var attempts = 0;
+        var maxAttempts = 10;
+        var interval = 500;
+
+        function sendMessage() {
+          if (window.opener) {
+            window.opener.postMessage(message, target);
+          }
+          attempts += 1;
+          if (attempts >= maxAttempts) {
+            window.close();
+          }
+        }
+
+        sendMessage();
+        setInterval(sendMessage, interval);
+      })();
     </script>
   </body>
 </html>`;
