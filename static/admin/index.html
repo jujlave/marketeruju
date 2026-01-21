@@ -7,8 +7,34 @@
   </head>
   <body>
     <script>
-      window.CMS_MANUAL_INIT = false;
+      window.CMS_MANUAL_INIT = true;
     </script>
     <script src="https://unpkg.com/decap-cms@3.3.1/dist/decap-cms.js"></script>
+    <script>
+      (function () {
+        if (window.__CMS_INITED) {
+          return;
+        }
+        window.__CMS_INITED = true;
+
+        function initCMS() {
+          if (!window.CMS || !window.CMS.init) {
+            setTimeout(initCMS, 50);
+            return;
+          }
+
+          fetch("/admin/config.yml")
+            .then((res) => res.text())
+            .then((config) => window.CMS.init({ config }))
+            .catch((err) => console.error("Failed to load CMS config", err));
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initCMS);
+        } else {
+          initCMS();
+        }
+      })();
+    </script>
   </body>
 </html>
