@@ -2,9 +2,9 @@ backend:
   name: github
   repo: jujlave/marketeruju
   branch: main
-  # Cloudflare Worker OAuth endpoint (Netlify auth client expects base_url + auth_endpoint)
-  base_url: https://cms-auth.marketeruju.com
-  auth_endpoint: auth
+  # Cloudflare Worker OAuth endpoint
+  auth_endpoint: https://cms-auth.marketeruju.com/auth
+  site_id: marketeruju.com
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
