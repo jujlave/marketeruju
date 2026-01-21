@@ -49,7 +49,7 @@ export default {
     <script>
       window.opener && window.opener.postMessage(
         'authorization:github:success:${token}',
-        '${callbackUrl}'
+        '*'
       );
       window.close();
     </script>
