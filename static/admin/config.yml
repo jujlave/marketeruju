@@ -3,7 +3,8 @@ backend:
   repo: jujlave/marketeruju
   branch: main
   # Cloudflare Worker OAuth endpoint
-  auth_endpoint: https://cms-auth.marketeruju.com/auth
+  base_url: https://cms-auth.marketeruju.com
+  auth_endpoint: auth
   site_id: marketeruju.com
 
 media_folder: "static/images/uploads"
