@@ -1,6 +1,5 @@
 {{- $ga4 := site.Params.ga4MeasurementId | default "" -}}
 {{- $gsc := site.Params.googleSearchConsoleVerification | default "" -}}
-{{- $naver := site.Params.naverAnalyticsSiteId | default "" -}}
 {{- $gtm := site.Params.gtmId | default "" -}}
 
 {{- if $gsc }}
@@ -27,13 +26,4 @@
   })(window,document,'script','dataLayer','{{ $gtm }}');
 </script>
 <!-- End Google Tag Manager -->
-{{- end }}
-
-{{- if $naver }}
-<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
-<script type="text/javascript">
-  if (!window.wcs_add) window.wcs_add = {};
-  window.wcs_add["wa"] = "{{ $naver }}";
-  if (window.wcs) window.wcs_do();
-</script>
 {{- end }}

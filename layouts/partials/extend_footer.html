@@ -1,0 +1,11 @@
+{{- $naver := site.Params.naverAnalyticsSiteId | default "" -}}
+{{- if $naver }}
+<script type="text/javascript" src="//wcs.pstatic.net/wcslog.js"></script>
+<script type="text/javascript">
+  if (!window.wcs_add) window.wcs_add = {};
+  window.wcs_add["wa"] = "{{ $naver }}";
+  if (window.wcs) {
+    window.wcs_do();
+  }
+</script>
+{{- end }}
