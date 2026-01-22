@@ -1,0 +1,39 @@
+{{- $ga4 := site.Params.ga4MeasurementId | default "" -}}
+{{- $gsc := site.Params.googleSearchConsoleVerification | default "" -}}
+{{- $naver := site.Params.naverAnalyticsSiteId | default "" -}}
+{{- $gtm := site.Params.gtmId | default "" -}}
+
+{{- if $gsc }}
+<meta name="google-site-verification" content="{{ $gsc }}">
+{{- end }}
+
+{{- if $ga4 }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $ga4 }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $ga4 }}');
+</script>
+{{- end }}
+
+{{- if $gtm }}
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ $gtm }}');
+</script>
+<!-- End Google Tag Manager -->
+{{- end }}
+
+{{- if $naver }}
+<script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+  if (!window.wcs_add) window.wcs_add = {};
+  window.wcs_add["wa"] = "{{ $naver }}";
+  if (window.wcs) window.wcs_do();
+</script>
+{{- end }}

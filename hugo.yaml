@@ -93,3 +93,9 @@ params:
       url: "https://github.com/"
     - name: linkedin
       url: "https://www.linkedin.com/"
+
+  # Analytics / Verification
+  ga4MeasurementId: "" # e.g., "G-XXXXXXXXXX"
+  gtmId: "GTM-M39S9VF8"
+  googleSearchConsoleVerification: "" # meta content value
+  naverAnalyticsSiteId: "" # Naver Analytics site ID

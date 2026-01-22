@@ -29,6 +29,12 @@
 {{- end -}}
 
 <body{{ if $bodyClass }} class="{{ $bodyClass }}"{{ end }} id="top">
+    {{- if site.Params.gtmId }}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.Params.gtmId }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{- end }}
     {{ partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
