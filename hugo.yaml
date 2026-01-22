@@ -95,7 +95,7 @@ params:
       url: "https://www.linkedin.com/"
 
   # Analytics / Verification
-  ga4MeasurementId: "" # e.g., "G-XXXXXXXXXX"
+  ga4MeasurementId: "G-KBJ6JEZ4TV" # e.g., "G-XXXXXXXXXX"
   gtmId: "GTM-M39S9VF8"
   googleSearchConsoleVerification: "" # meta content value
   naverAnalyticsSiteId: "" # Naver Analytics site ID
