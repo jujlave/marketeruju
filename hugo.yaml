@@ -47,15 +47,6 @@ menu:
       pageRef: "tags"
       weight: 50
 
-    - name: "About"
-      identifier: "about"
-      pageRef: "about"
-      weight: 60
-
-    - name: "Contact"
-      identifier: "contact"
-      pageRef: "contact"
-      weight: 70
 
 params:
   env: production
