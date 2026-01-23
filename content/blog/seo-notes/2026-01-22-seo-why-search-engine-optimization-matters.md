@@ -6,6 +6,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["seo", "검색엔진최적화", "seo란?", "seo 종류"]
+cover:
+  image: "/images/seo-notes/seo-why-search-engine-optimization-matters.png"
+  alt: "SEO, 검색엔진 최적화가 필요한 이유는 무엇일까? 썸네일"
+  relative: false
 ---
 
 <p><strong>SEO(Search Engine Optimization, 검색엔진 최적화)</strong>는 검색엔진에서 웹사이트나 콘텐츠가 더 잘 노출되도록 구조, 콘텐츠, 기술 요소를 최적화하는 작업입니다. 광고처럼 비용을 지불해 노출을 구매하는 방식이 아니라, 사용자가 실제로 검색하는 키워드와 의도에 맞춰 콘텐츠를 설계하고 검색엔진이 이해하기 쉬운 형태로 정비함으로써 자연 유입(오가닉 트래픽)을 늘리는 전략입니다. 특히 검색 결과에서 상위에 노출되는 콘텐츠는 반복적인 유입을 만들며, 시간이 지날수록 브랜드 신뢰도와 전환 성과에 영향을 미칩니다. 따라서 SEO는 단순한 마케팅 기법이라기보다, 웹에서 콘텐츠의 ‘발견 가능성’을 높이기 위한 기본 인프라에 가깝습니다.</p>

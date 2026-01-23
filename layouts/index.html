@@ -3,10 +3,10 @@
 
 {{- $recent := where site.RegularPages "Section" "blog" -}}
 {{- $recent = sort $recent "Date" "desc" -}}
-{{- $hero := first 1 $recent -}}
 {{- $grid := first 9 $recent -}}
-{{- $portfolio := where site.RegularPages "Section" "portfolio" -}}
-{{- $portfolio = first 6 (sort $portfolio "Date" "desc") -}}
+{{- $portfolioAll := sort (where site.RegularPages "Section" "portfolio") "Date" "desc" -}}
+{{- $hero := first 1 $portfolioAll -}}
+{{- $portfolio := first 6 $portfolioAll -}}
 
 <section class="home-hero">
   <div class="home-shell-wide">
