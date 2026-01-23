@@ -16,3 +16,4 @@ E-commerce / 콘텐츠 / 테크 SEO를 기반으로
 ### Featured
 - [Portfolio 보러가기](/portfolio/)
 - [Blog 보러가기](/blog/)
+- [Contact](/contact/)
