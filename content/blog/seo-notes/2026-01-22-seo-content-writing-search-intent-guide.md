@@ -1,5 +1,6 @@
 ---
 title: "SEO 콘텐츠는 어떻게 작성해야 할까? 검색 의도 기반 글쓰기 가이드"
+description: "검색 의도를 기준으로 SEO 콘텐츠를 설계하고 유형별 글쓰기 전략을 정리합니다."
 slug: "seo-content-writing-search-intent-guide"
 date: "2026-01-22"
 draft: false

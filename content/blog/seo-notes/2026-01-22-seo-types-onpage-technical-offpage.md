@@ -1,5 +1,6 @@
 ---
 title: "SEO의 종류 정리: 온페이지·기술·오프페이지 SEO 차이와 역할"
+description: "온페이지, 기술, 오프페이지 SEO의 역할과 차이, 그리고 우선순위 기준을 정리합니다."
 slug: "seo-types-onpage-technical-offpage"
 date: "2026-01-22"
 draft: false

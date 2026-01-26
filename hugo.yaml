@@ -1,5 +1,6 @@
 baseURL: "https://marketeruju.com/"
-languageCode: "ko-kr"
+languageCode: "ko-KR"
+defaultContentLanguage: "ko"
 title: "Marketer UJU SEO Log"
 theme: "PaperMod"
 taxonomies:
@@ -47,14 +48,11 @@ menu:
       pageRef: "blog/seo-notes"
       weight: 40
 
-    - name: "Tags"
-      identifier: "tags"
-      pageRef: "tags"
-      weight: 50
-
 
 params:
   env: production
+  description: "SEO 포트폴리오 & 실무 블로그"
+  author: "Marketer UJU"
   defaultTheme: auto       # auto / light / dark
   disableThemeToggle: false
   ShowReadingTime: true
@@ -85,13 +83,18 @@ params:
 
   # Optional: social icons (원하는 것만)
   socialIcons:
-    - name: github
-      url: "https://github.com/"
     - name: linkedin
-      url: "https://www.linkedin.com/"
+      url: "https://www.linkedin.com/in/uju-jun-58976b348"
+
+  # Schema
+  schema:
+    publisherType: "Person"
+    sameAs:
+      - "https://www.linkedin.com/in/uju-jun-58976b348"
 
   # Analytics / Verification
   ga4MeasurementId: "G-KBJ6JEZ4TV" # e.g., "G-XXXXXXXXXX"
   gtmId: "GTM-M39S9VF8"
-  googleSearchConsoleVerification: "" # meta content value
+  googleSearchConsoleVerification: "HcLmBEsLGWXCHn8lpGiiUGsPounTzA_RkDNSD64HSV4" # meta content value
+  naverSiteVerification: "25e972b183eff370540ac3edb9a0a903cfe51c60"
   naverAnalyticsSiteId: "23f38165a53d96" # Naver Analytics site ID

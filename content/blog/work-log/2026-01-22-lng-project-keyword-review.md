@@ -1,5 +1,6 @@
 ---
 title: "1월 4주차 작업 로그: LNG 프로젝트 키워드 검수"
+description: "LNG 프로젝트 키워드 검수 진행 내용과 이슈, 다음 액션을 정리합니다."
 slug: "2026-01-22-lng-project-keyword-review"
 date: "2026-01-22"
 draft: false

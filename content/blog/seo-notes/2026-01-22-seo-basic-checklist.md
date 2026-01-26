@@ -1,5 +1,6 @@
 ---
 title: "SEO 기본 체크리스트: 지금 바로 점검해야 할 핵심 항목"
+description: "콘텐츠, 메타, 기술 요소까지 빠르게 점검할 수 있는 SEO 기본 체크리스트를 정리합니다."
 slug: "seo-basic-checklist"
 date: "2026-01-22"
 draft: false

@@ -1,12 +1,15 @@
 {{- $ga4 := site.Params.ga4MeasurementId | default "" -}}
 {{- $gsc := site.Params.googleSearchConsoleVerification | default "" -}}
 {{- $gtm := site.Params.gtmId | default "" -}}
+{{- $naver := site.Params.naverSiteVerification | default "" -}}
 
 {{- if $gsc }}
 <meta name="google-site-verification" content="{{ $gsc }}">
 {{- end }}
 
-<meta name="naver-site-verification" content="25e972b183eff370540ac3edb9a0a903cfe51c60">
+{{- if $naver }}
+<meta name="naver-site-verification" content="{{ $naver }}">
+{{- end }}
 
 {{- if $ga4 }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ $ga4 }}"></script>
