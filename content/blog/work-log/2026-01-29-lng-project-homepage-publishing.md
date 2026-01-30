@@ -1,5 +1,5 @@
 ---
-title: "1월 4주차 작업 로그: LNG 프로젝트 홈페이지 퍼블리싱"
+title: "1월 5주차 작업 로그: LNG 프로젝트 홈페이지 퍼블리싱"
 description: "LNG 프로젝트 홈페이지 퍼블리싱, AI 기반 콘텐츠 검수, 트래픽 모니터링 진행 내용을 정리합니다."
 slug: "2026-01-29-lng-project-homepage-publishing"
 date: "2026-01-29"
