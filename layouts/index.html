@@ -20,6 +20,7 @@
           <a class="home-hero-btn ghost" href="/blog/">Blog</a>
         </div>
       </div>
+      {{- if gt (len $hero) 0 -}}
       <div class="home-hero-panel">
         {{- range $hero -}}
         <a class="hero-card" href="{{ .RelPermalink }}">
@@ -28,10 +29,9 @@
           <p>{{ .Summary | plainify | truncate 140 }}</p>
           <span class="hero-cta">Read →</span>
         </a>
-        {{- else -}}
-        <div class="hero-card empty">아직 게시글이 없습니다. 첫 글을 올려주세요.</div>
         {{- end -}}
       </div>
+      {{- end -}}
     </div>
   </div>
 </section>
