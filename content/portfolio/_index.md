@@ -15,6 +15,170 @@ SEO 운영 업무를 **문제 → 실행 → 결과 → 배운 점** 흐름으�
 
 이 페이지는 사이트 메뉴와 홈 화면에 노출하지 않고, 직접 전달받은 링크로만 확인할 수 있도록 관리합니다.
 
+## 글로벌 성형외과 콘텐츠 캠페인
+
+<section class="portfolio-chart-section" aria-label="글로벌 성형외과 콘텐츠 캠페인 월별 총합 추이">
+  <div class="portfolio-chart-wrap">
+    <h3>월별 총합 추이</h3>
+    <canvas id="globalClinicTotalChart"></canvas>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+  .portfolio-chart-section {
+    margin: 32px 0 48px;
+  }
+
+  .portfolio-chart-wrap {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 14px 38px rgba(15, 23, 42, 0.12);
+    animation: portfolioFadeUp 900ms ease both;
+  }
+
+  .portfolio-chart-wrap h3 {
+    margin: 0 0 24px;
+    color: #111827;
+    font-size: 1.25rem;
+  }
+
+  .portfolio-chart-wrap canvas {
+    min-height: 360px;
+  }
+
+  @keyframes portfolioFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .portfolio-chart-wrap {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .portfolio-chart-wrap {
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .portfolio-chart-wrap canvas {
+      min-height: 300px;
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const chartElement = document.getElementById("globalClinicTotalChart");
+
+    if (!chartElement || typeof Chart === "undefined") {
+      return;
+    }
+
+    const labels = [
+      "25.01", "25.02", "25.03", "25.04",
+      "25.05", "25.06", "25.07", "25.08",
+      "25.09", "25.10", "25.11", "25.12",
+      "26.01", "26.02", "26.03", "26.04"
+    ];
+
+    const totals = [
+      19350, 19035, 21820, 21185,
+      19576, 16520, 19195, 18604,
+      18799, 19745, 20375, 23403,
+      24441, 17962, 19681, 19629
+    ];
+
+    new Chart(chartElement, {
+      type: "line",
+      data: {
+        labels: labels,
+        datasets: [{
+          label: "총합",
+          data: totals,
+          borderColor: "#3b82f6",
+          backgroundColor: "rgba(59, 130, 246, 0.15)",
+          borderWidth: 4,
+          fill: true,
+          tension: 0.4,
+          pointRadius: 5,
+          pointHoverRadius: 8,
+          pointBackgroundColor: "#2563eb",
+          pointBorderColor: "#ffffff",
+          pointBorderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          intersect: false,
+          mode: "index"
+        },
+        plugins: {
+          legend: {
+            labels: {
+              color: "#111827",
+              font: {
+                size: 14,
+                weight: "bold"
+              }
+            }
+          },
+          tooltip: {
+            backgroundColor: "#111827",
+            callbacks: {
+              label: function (context) {
+                return " " + context.raw.toLocaleString() + "건";
+              }
+            }
+          }
+        },
+        animation: {
+          duration: 2200,
+          easing: "easeOutQuart"
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: "#374151"
+            },
+            grid: {
+              display: false
+            }
+          },
+          y: {
+            ticks: {
+              color: "#374151",
+              callback: function (value) {
+                return value.toLocaleString();
+              }
+            },
+            grid: {
+              color: "rgba(0, 0, 0, 0.06)"
+            }
+          }
+        }
+      }
+    });
+  });
+</script>
+
 ## 일본 이커머스 SEO 운영 리포트 및 글로벌 협업
 
 ### 프로젝트 개요
