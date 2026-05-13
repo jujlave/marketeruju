@@ -661,33 +661,10 @@ a.tag{
   color: var(--muted);
 }
 
-.home-portfolio-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
 .home-utility-grid{
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 16px;
-}
-.home-portfolio-card{
-  display: block;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 16px;
-  text-decoration: none;
-  color: inherit;
-  background: var(--surface-2);
-}
-.home-portfolio-title{
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.home-portfolio-desc{
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .home-widget{
@@ -749,8 +726,7 @@ a.tag{
   .home-hero-inner{
     grid-template-columns: 1fr;
   }
-  .home-post-grid,
-  .home-portfolio-grid{
+  .home-post-grid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .home-utility-grid{
@@ -778,8 +754,7 @@ a.tag{
   .home-hero-inner{
     padding: 18px;
   }
-  .home-post-grid,
-  .home-portfolio-grid{
+  .home-post-grid{
     grid-template-columns: 1fr;
   }
   .home-block{
@@ -787,9 +762,6 @@ a.tag{
   }
   .home-post-card{
     padding: 12px;
-  }
-  .home-portfolio-card{
-    padding: 14px;
   }
 }
 
@@ -1176,28 +1148,6 @@ body{
   margin-top: 18px;
 }
 
-.home-portfolio-grid{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.home-portfolio-card{
-  padding: 18px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.72);
-  transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
-}
-
-.dark .home-portfolio-card{
-  background: rgba(11, 18, 32, 0.8);
-}
-
-.home-portfolio-card:hover{
-  transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--accent) 24%, var(--line));
-  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.1);
-}
-
 .home-chip{
   display: inline-flex;
   align-items: center;
@@ -1213,12 +1163,6 @@ body{
 .dark .home-chip{
   background: rgba(71, 133, 255, 0.12);
   color: #dbe8ff;
-}
-
-.home-portfolio-title{
-  font-family: var(--font-display);
-  font-size: 1.12rem;
-  line-height: 1.18;
 }
 
 .home-utility-stack{
@@ -1331,7 +1275,6 @@ body{
   }
 
   .home-metric-row,
-  .home-portfolio-grid,
   .home-search{
     grid-template-columns: 1fr;
   }

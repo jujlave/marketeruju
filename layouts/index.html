@@ -4,11 +4,8 @@
 {{- $postCount := len $posts -}}
 {{- $featuredPosts := first 6 $posts -}}
 {{- $spotlightPosts := first 3 $posts -}}
-{{- $portfolioAll := sort (where site.RegularPages "Section" "portfolio") "Date" "desc" -}}
-{{- $portfolioCount := len $portfolioAll -}}
-{{- $heroCase := first 1 $portfolioAll -}}
-{{- $portfolio := first 4 $portfolioAll -}}
 {{- $tagCount := len site.Taxonomies.tags -}}
+{{- $latestPost := first 1 $posts -}}
 
 <section class="home-hero">
   <div class="home-shell-wide">
@@ -17,20 +14,16 @@
         <p class="home-kicker">SEO Operator · Marketer UJU</p>
         <h1>구조 설계부터 리포트까지, 실무형 SEO 홈페이지로 정리했습니다.</h1>
         <p class="home-hero-sub">
-          이 사이트는 포트폴리오, 운영 로그, SEO 노트를 한 흐름으로 묶습니다.
+          이 사이트는 운영 로그와 SEO 노트를 한 흐름으로 묶습니다.
           무엇을 바꿨고 왜 바꿨는지, 그리고 어떤 숫자로 확인했는지 빠르게 읽을 수 있게 구성했습니다.
         </p>
 
         <div class="home-hero-actions">
-          <a class="home-hero-btn" href="/portfolio/">케이스 보기</a>
-          <a class="home-hero-btn ghost" href="/blog/">최근 글 보기</a>
+          <a class="home-hero-btn" href="/blog/">최근 글 보기</a>
+          <a class="home-hero-btn ghost" href="/blog/seo-notes/">SEO Notes</a>
         </div>
 
         <div class="home-metric-row" aria-label="사이트 요약 지표">
-          <div class="home-metric-card">
-            <span class="home-metric-value">{{ $portfolioCount }}</span>
-            <span class="home-metric-label">Portfolio Cases</span>
-          </div>
           <div class="home-metric-card">
             <span class="home-metric-value">{{ $postCount }}</span>
             <span class="home-metric-label">Blog Posts</span>
@@ -43,20 +36,20 @@
       </div>
 
       <div class="home-hero-side">
-        {{- if gt (len $heroCase) 0 -}}
-          {{- range $heroCase -}}
+        {{- if gt (len $latestPost) 0 -}}
+          {{- range $latestPost -}}
           <a class="hero-spotlight" href="{{ .RelPermalink }}">
-            <span class="hero-spotlight-label">Latest Case Study</span>
+            <span class="hero-spotlight-label">Latest Update</span>
             <h2>{{ .Title }}</h2>
             <p>{{ .Summary | plainify | truncate 150 }}</p>
-            <span class="hero-spotlight-cta">포트폴리오 열기</span>
+            <span class="hero-spotlight-cta">글 읽기</span>
           </a>
           {{- end -}}
         {{- else -}}
           <div class="hero-spotlight empty">
-            <span class="hero-spotlight-label">Portfolio</span>
-            <h2>대표 케이스를 준비 중입니다.</h2>
-            <p>포트폴리오 글이 추가되면 이 영역에 가장 최근 프로젝트가 노출됩니다.</p>
+            <span class="hero-spotlight-label">Blog</span>
+            <h2>최근 글을 준비 중입니다.</h2>
+            <p>운영 로그와 SEO 노트가 추가되면 이 영역에 가장 최근 글이 노출됩니다.</p>
           </div>
         {{- end -}}
 
@@ -79,11 +72,11 @@
       <article class="home-story-card accent">
         <p class="home-panel-kicker">Design Focus</p>
         <h2>콘텐츠를 나열하지 않고, 실행 흐름이 보이게 정리합니다.</h2>
-        <p>읽는 사람이 포트폴리오, 실무 로그, 레퍼런스 노트를 자연스럽게 오가도록 홈 구조를 설계했습니다.</p>
+        <p>읽는 사람이 실무 로그와 레퍼런스 노트를 자연스럽게 오가도록 홈 구조를 설계했습니다.</p>
       </article>
       <article class="home-story-card">
         <p class="home-panel-kicker">What You Can Scan</p>
-        <p>최근 운영 기록, 대표 케이스, 태그 탐색, 검색 진입을 홈에서 바로 확인할 수 있습니다.</p>
+        <p>최근 운영 기록, 태그 탐색, 검색 진입을 홈에서 바로 확인할 수 있습니다.</p>
       </article>
       <article class="home-story-card">
         <p class="home-panel-kicker">Audience</p>
@@ -131,68 +124,42 @@
       </div>
     </section>
 
-    <section class="home-dual-grid">
-      <div class="home-block">
-        <div class="home-block-head">
-          <div>
-            <p class="home-panel-kicker">Portfolio</p>
-            <h2>대표 프로젝트</h2>
-          </div>
-          <a class="home-more" href="/portfolio/">포트폴리오 전체</a>
-        </div>
-
-        <div class="home-portfolio-grid">
-          {{- range $portfolio -}}
-          <a class="home-portfolio-card" href="{{ .RelPermalink }}">
-            <span class="home-chip">Case Study</span>
-            <div class="home-portfolio-title">{{ .Title }}</div>
-            <div class="home-portfolio-desc">{{ .Summary | plainify | truncate 130 }}</div>
-          </a>
-          {{- end -}}
-
-          {{- if eq (len $portfolio) 0 -}}
-          <div class="home-empty">포트폴리오 글이 아직 없습니다.</div>
-          {{- end -}}
+    <section class="home-block">
+      <div class="home-block-head">
+        <div>
+          <p class="home-panel-kicker">Quick Access</p>
+          <h2>탐색 도구</h2>
         </div>
       </div>
 
-      <div class="home-block">
-        <div class="home-block-head">
-          <div>
-            <p class="home-panel-kicker">Quick Access</p>
-            <h2>탐색 도구</h2>
+      <div class="home-utility-stack">
+        <div class="home-widget">
+          <h3>최근 주제</h3>
+          <div class="home-mini-list">
+            {{- range $spotlightPosts -}}
+            <a href="{{ .RelPermalink }}">
+              <span>{{ .Title }}</span>
+              <small>{{ .Date.Format "01.02" }}</small>
+            </a>
+            {{- end -}}
           </div>
         </div>
 
-        <div class="home-utility-stack">
-          <div class="home-widget">
-            <h3>최근 주제</h3>
-            <div class="home-mini-list">
-              {{- range $spotlightPosts -}}
-              <a href="{{ .RelPermalink }}">
-                <span>{{ .Title }}</span>
-                <small>{{ .Date.Format "01.02" }}</small>
-              </a>
-              {{- end -}}
-            </div>
+        <div class="home-widget compact">
+          <h3>Tags</h3>
+          <div class="home-tags">
+            {{- range first 10 site.Taxonomies.tags.ByCount -}}
+            <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            {{- end -}}
           </div>
+        </div>
 
-          <div class="home-widget compact">
-            <h3>Tags</h3>
-            <div class="home-tags">
-              {{- range first 10 site.Taxonomies.tags.ByCount -}}
-              <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-              {{- end -}}
-            </div>
-          </div>
-
-          <div class="home-widget compact">
-            <h3>Search</h3>
-            <form class="home-search" action="/search/">
-              <input type="text" name="q" placeholder="검색어 입력" aria-label="검색어 입력">
-              <button type="submit">검색</button>
-            </form>
-          </div>
+        <div class="home-widget compact">
+          <h3>Search</h3>
+          <form class="home-search" action="/search/">
+            <input type="text" name="q" placeholder="검색어 입력" aria-label="검색어 입력">
+            <button type="submit">검색</button>
+          </form>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 ---
 title: "Marketer UJU SEO Log"
-description: "SEO 포트폴리오 & 실무 블로그"
+description: "SEO 실무 로그와 운영 노트"
 ---
 
 ## SEO를 데이터로 설명하는 마케터 우주
@@ -14,6 +14,5 @@ E-commerce / 콘텐츠 / 테크 SEO를 기반으로
 - 다국어/로컬라이징 SEO 운영
 
 ### Featured
-- [Portfolio 보러가기](/portfolio/)
 - [Blog 보러가기](/blog/)
 - [Contact](/contact/)

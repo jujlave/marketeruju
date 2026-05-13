@@ -28,11 +28,6 @@ cascade:
 
 menu:
   main:
-    - name: "Portfolio"
-      identifier: "portfolio"
-      pageRef: "portfolio"
-      weight: 10
-
     - name: "Work Log"
       identifier: "blog/work-log"
       pageRef: "blog/work-log"
@@ -51,7 +46,7 @@ menu:
 
 params:
   env: production
-  description: "SEO 포트폴리오 & 실무 블로그"
+  description: "SEO 실무 로그와 운영 노트"
   author: "Marketer UJU"
   defaultTheme: auto       # auto / light / dark
   disableThemeToggle: false
@@ -70,14 +65,12 @@ params:
   profileMode:
     enabled: true
     title: "Marketer UJU"
-    subtitle: "SEO 구조 설계 · 리포트 템플릿 · 케이스 스터디"
+    subtitle: "SEO 구조 설계 · 리포트 템플릿 · 운영 노트"
     imageUrl: ""
     imageTitle: ""
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: "Portfolio"
-        url: "/portfolio/"
       - name: "SEO Notes"
         url: "/blog/seo-notes/"
 
