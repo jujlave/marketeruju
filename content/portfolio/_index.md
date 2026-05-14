@@ -22,15 +22,6 @@ sitemap:
   </a>
 </nav>
 
-<h2 id="portfolio-intro-heading">Intro</h2>
-
-<section id="intro" class="portfolio-section intro-section" aria-label="소개">
-  <div class="portfolio-panel">
-    <p>브랜드가 전하고 싶은 메시지를 사용자가 실제로 검색하고 이해하는 언어로 바꾸는 일을 합니다.</p>
-    <p>검색 데이터, 콘텐츠 구조, 사용자 경험을 함께 보며 발견부터 전환까지 이어지는 마케팅 흐름을 설계합니다.</p>
-  </div>
-</section>
-
 <h2 id="portfolio-about-heading">About UJU</h2>
 
 <section id="about-uju" class="portfolio-section" aria-label="About UJU">
@@ -161,7 +152,6 @@ sitemap:
     letter-spacing: -0.5px;
   }
 
-  #portfolio-intro-heading,
   #portfolio-about-heading,
   #portfolio-career-heading,
   #portfolio-projects-heading,
@@ -319,7 +309,8 @@ sitemap:
   }
 
   .career-box {
-    padding: 24px;
+    position: relative;
+    padding: 28px 24px;
     background: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 18px;
@@ -327,23 +318,56 @@ sitemap:
   }
 
   .career-item {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
-    gap: 15px;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 28px;
+    padding: 0 0 28px;
+  }
+
+  .career-item:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .career-item::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 147px;
+    width: 1px;
+    height: calc(100% - 10px);
+    background: rgba(37, 99, 235, 0.24);
+  }
+
+  .career-item:last-of-type::before {
+    display: none;
   }
 
   .career-divider {
-    height: 1px;
-    margin: 15px 0;
-    background: rgba(15, 23, 42, 0.12);
-    border: 0;
+    display: none;
   }
 
   .career-period {
-    color: #1f5aa6;
+    position: relative;
+    color: #2563eb;
     font-size: 0.95rem;
     font-weight: 700;
     line-height: 1.5;
+    text-align: right;
+  }
+
+  .career-period::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -19px;
+    z-index: 2;
+    width: 11px;
+    height: 11px;
+    background: #2563eb;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
   }
 
   .career-content h3 {
@@ -445,7 +469,21 @@ sitemap:
 
     .career-item {
       grid-template-columns: 1fr;
-      gap: 10px;
+      gap: 8px;
+      padding-left: 22px;
+    }
+
+    .career-period {
+      text-align: left;
+    }
+
+    .career-period::after {
+      right: auto;
+      left: -22px;
+    }
+
+    .career-item::before {
+      left: 5px;
     }
 
     .career-box {
