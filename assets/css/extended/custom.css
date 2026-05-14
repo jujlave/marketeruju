@@ -41,7 +41,7 @@
 body{
   background: var(--bg);
   color: var(--text);
-  letter-spacing: -0.2px;
+  letter-spacing: -0.4px;
 }
 
 /* Make content width feel premium */
@@ -788,11 +788,11 @@ body{
 
 .post-title,
 .md-content h1{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .md-content h2{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .md-content h3{

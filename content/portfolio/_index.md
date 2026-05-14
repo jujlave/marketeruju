@@ -15,6 +15,11 @@ sitemap:
   <a href="#projects"><span class="nav-initial">P</span>rojects</a>
   <a href="#how-i-work"><span class="nav-initial">H</span>ow I Work</a>
   <a href="#skills"><span class="nav-initial">S</span>kills</a>
+  <a class="portfolio-nav-top" href="#top" aria-label="맨 위로" title="맨 위로">
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path d="M12 5.5 5.75 11.75l1.42 1.42L11 9.33V20h2V9.33l3.83 3.84 1.42-1.42L12 5.5Z" />
+    </svg>
+  </a>
 </nav>
 
 ## Intro
@@ -122,7 +127,6 @@ sitemap:
       <li>프로젝트 매니징</li>
     </ul>
   </div>
-  <a class="portfolio-top-link" href="#top">맨 위로</a>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -136,6 +140,7 @@ sitemap:
   .main,
   .post-single {
     background: #ffffff;
+    letter-spacing: -0.5px;
   }
 
   .top-link {
@@ -143,13 +148,20 @@ sitemap:
   }
 
   .post-header .post-title {
-    font-size: 20px !important;
+    font-size: 16px !important;
     line-height: 1.35;
+    letter-spacing: -0.7px;
   }
 
   .post-header .post-description {
     font-size: 12px;
     line-height: 1.7;
+    letter-spacing: -0.5px;
+  }
+
+  .md-content h2 {
+    font-size: 14px !important;
+    letter-spacing: -0.5px;
   }
 
   .portfolio-side-nav {
@@ -202,6 +214,36 @@ sitemap:
     background: #2563eb;
     border-radius: 999px;
     transform: translateY(-50%);
+  }
+
+  .portfolio-side-nav .portfolio-nav-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 36px;
+    min-width: 0;
+    margin-top: 4px;
+    padding: 8px 0 8px 14px;
+    color: #2563eb;
+    font-weight: 700;
+  }
+
+  .portfolio-side-nav .portfolio-nav-top::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 18px;
+    background: #2563eb;
+    border-radius: 999px;
+    transform: translateY(-50%);
+  }
+
+  .portfolio-side-nav .portfolio-nav-top svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
   }
 
   .portfolio-side-nav .nav-initial {
@@ -260,31 +302,6 @@ sitemap:
     background: rgba(241, 245, 249, 0.88);
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 999px;
-  }
-
-  .portfolio-top-link {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    margin-top: 18px;
-    padding: 8px 0 8px 14px;
-    color: #2563eb;
-    font-size: 0.92rem;
-    font-weight: 700;
-    line-height: 1;
-    text-decoration: none;
-  }
-
-  .portfolio-top-link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 3px;
-    height: 18px;
-    background: #2563eb;
-    border-radius: 999px;
-    transform: translateY(-50%);
   }
 
   .career-section {
@@ -405,6 +422,12 @@ sitemap:
       font-size: 0.86rem;
     }
 
+    .portfolio-side-nav .portfolio-nav-top {
+      width: 34px;
+      min-width: 0;
+      padding-left: 10px;
+    }
+
     .portfolio-panel {
       padding: 20px;
       border-radius: 16px;
@@ -433,7 +456,7 @@ sitemap:
 
 <script>
   window.addEventListener("DOMContentLoaded", function () {
-    const navLinks = Array.from(document.querySelectorAll(".portfolio-side-nav a"));
+    const navLinks = Array.from(document.querySelectorAll(".portfolio-side-nav a:not(.portfolio-nav-top)"));
     const sections = navLinks
       .map(function (link) {
         return document.querySelector(link.getAttribute("href"));
