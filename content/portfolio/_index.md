@@ -10,7 +10,6 @@ sitemap:
 ---
 
 <nav class="portfolio-side-nav" aria-label="포트폴리오 섹션 내비게이션">
-  <a href="#intro"><span class="nav-initial">I</span>ntro</a>
   <a href="#about-uju"><span class="nav-initial">A</span>bout UJU</a>
   <a href="#career"><span class="nav-initial">C</span>areer</a>
   <a href="#projects"><span class="nav-initial">P</span>rojects</a>
@@ -123,6 +122,7 @@ sitemap:
       <li>프로젝트 매니징</li>
     </ul>
   </div>
+  <a class="portfolio-top-link" href="#top">맨 위로</a>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -136,6 +136,10 @@ sitemap:
   .main,
   .post-single {
     background: #ffffff;
+  }
+
+  .top-link {
+    display: none;
   }
 
   .post-header .post-title {
@@ -220,7 +224,7 @@ sitemap:
   }
 
   .portfolio-panel p {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     color: #374151;
     line-height: 1.75;
   }
@@ -256,6 +260,31 @@ sitemap:
     background: rgba(241, 245, 249, 0.88);
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 999px;
+  }
+
+  .portfolio-top-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 18px;
+    padding: 8px 0 8px 14px;
+    color: #2563eb;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .portfolio-top-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 18px;
+    background: #2563eb;
+    border-radius: 999px;
+    transform: translateY(-50%);
   }
 
   .career-section {
@@ -298,7 +327,7 @@ sitemap:
   }
 
   .career-content p {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     color: #374151;
     line-height: 1.75;
   }
