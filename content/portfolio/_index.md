@@ -1,6 +1,6 @@
 ---
-title: "Marketer UJU SEO Operations Portfolio"
-description: "제출용 SEO 운영 포트폴리오"
+title: "브랜드의 메시지를 고객의 언어로 전달하는 마케터"
+description: "SEO와 콘텐츠, 데이터를 연결하여 실제 비즈니스 성과로 이어지는 마케팅을 지향합니다. 빠르게 변화하는 검색 및 AI 기반 환경 속에서도 브랜드의 방향성과 사용자 경험을 중심으로, 꾸준히 배우고 실행하며 성장하는 SEO 마케터입니다."
 type: "portfolio"
 draft: false
 robotsNoIndex: true
@@ -8,12 +8,6 @@ outputs: ["HTML"]
 sitemap:
   disable: true
 ---
-
-## 소개
-
-SEO 운영 업무를 **문제 → 실행 → 결과 → 배운 점** 흐름으로 정리한 제출용 페이지입니다.
-
-이 페이지는 사이트 메뉴와 홈 화면에 노출하지 않고, 직접 전달받은 링크로만 확인할 수 있도록 관리합니다.
 
 <nav class="portfolio-side-nav" aria-label="포트폴리오 섹션 내비게이션">
   <a href="#career">Career</a>

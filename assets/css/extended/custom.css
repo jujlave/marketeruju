@@ -783,6 +783,28 @@ a.tag{
 
 body{
   font-family: var(--font-body);
+  font-size: 13px;
+}
+
+.post-title,
+.md-content h1{
+  font-size: 20px;
+}
+
+.md-content h2{
+  font-size: 18px;
+}
+
+.md-content h3{
+  font-size: 16px;
+}
+
+.md-content h4{
+  font-size: 14px;
+}
+
+.md-content p{
+  font-size: 12px;
 }
 
 .home .main{
