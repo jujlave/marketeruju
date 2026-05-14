@@ -40,51 +40,47 @@ sitemap:
 
 <section id="career" class="portfolio-section career-section" aria-label="경력">
   <div class="career-box">
-    <article class="career-item">
-      <div class="career-period">2019.03 – 2022.03</div>
-      <div class="career-content">
-        <h3>씨티애드 | 콘텐츠 마케터</h3>
-        <p>브랜드 및 병·의원 대상 콘텐츠 마케팅 프로젝트 운영</p>
-        <p>SEO 기반 콘텐츠 기획, 블로그/SNS 운영, 키워드 리서치 및 콘텐츠 성과 분석 업무 수행</p>
-      </div>
-    </article>
-
-    <hr class="career-divider">
-
-    <article class="career-item">
-      <div class="career-period">2022.04 – 2024.02</div>
-      <div class="career-content">
-        <h3>꿀이유 | 브랜드 운영 (창업)</h3>
-        <p>충남 지역 생산 꿀 브랜드 운영 및 스마트스토어 기반 판매 경험</p>
-        <p>브랜드 기획, 제품 판매, 상세페이지 제작, 제품 촬영, 콘텐츠 제작 등 브랜드 운영 전반 업무 직접 수행</p>
-        <ul>
-          <li>스마트스토어 운영</li>
-          <li>브랜드 아이덴티티 기획</li>
-          <li>제품 상세페이지 제작</li>
-          <li>제품 촬영 및 콘텐츠 제작</li>
-          <li>온라인 판매 운영 및 고객 대응</li>
-        </ul>
-      </div>
-    </article>
-
-    <hr class="career-divider">
-
-    <article class="career-item">
-      <div class="career-period">2024.03 – Present</div>
-      <div class="career-content">
-        <h3>위볼린 | 콘텐츠 · SEO 마케터</h3>
-        <p>SEO 기반 콘텐츠 마케팅 및 글로벌 프로젝트 운영</p>
-        <p>adidas Korea / Japan, AB성형외과, 효성FMS 프로젝트 PM 및 SEO 운영 수행</p>
-        <ul>
-          <li>adidas KR / JP SEO 프로젝트 운영</li>
-          <li>AB성형외과 글로벌 SEO 운영</li>
-          <li>SEO 콘텐츠 전략 및 데이터 분석</li>
-          <li>Adobe Analytics / GA4 / GSC 기반 모니터링</li>
-          <li>AI 기반 콘텐츠 및 자동화 프로젝트 운영</li>
-          <li>클라이언트 커뮤니케이션 및 프로젝트 매니징</li>
-        </ul>
-      </div>
-    </article>
+<article class="career-item">
+<div class="career-period">2019.03 – 2022.03</div>
+<div class="career-content">
+<h3>씨티애드 | 콘텐츠 마케터</h3>
+<p>브랜드 및 병·의원 대상 콘텐츠 마케팅 프로젝트 운영</p>
+<p>SEO 기반 콘텐츠 기획, 블로그/SNS 운영, 키워드 리서치 및 콘텐츠 성과 분석 업무 수행</p>
+</div>
+</article>
+<div class="career-divider" aria-hidden="true"></div>
+<article class="career-item">
+<div class="career-period">2022.04 – 2024.02</div>
+<div class="career-content">
+<h3>꿀이유 | 브랜드 운영 (창업)</h3>
+<p>충남 지역 생산 꿀 브랜드 운영 및 스마트스토어 기반 판매 경험</p>
+<p>브랜드 기획, 제품 판매, 상세페이지 제작, 제품 촬영, 콘텐츠 제작 등 브랜드 운영 전반 업무 직접 수행</p>
+<ul>
+<li>스마트스토어 운영</li>
+<li>브랜드 아이덴티티 기획</li>
+<li>제품 상세페이지 제작</li>
+<li>제품 촬영 및 콘텐츠 제작</li>
+<li>온라인 판매 운영 및 고객 대응</li>
+</ul>
+</div>
+</article>
+<div class="career-divider" aria-hidden="true"></div>
+<article class="career-item">
+<div class="career-period">2024.03 – Present</div>
+<div class="career-content">
+<h3>위볼린 | 콘텐츠 · SEO 마케터</h3>
+<p>SEO 기반 콘텐츠 마케팅 및 글로벌 프로젝트 운영</p>
+<p>adidas Korea / Japan, AB성형외과, 효성FMS 프로젝트 PM 및 SEO 운영 수행</p>
+<ul>
+<li>adidas KR / JP SEO 프로젝트 운영</li>
+<li>AB성형외과 글로벌 SEO 운영</li>
+<li>SEO 콘텐츠 전략 및 데이터 분석</li>
+<li>Adobe Analytics / GA4 / GSC 기반 모니터링</li>
+<li>AI 기반 콘텐츠 및 자동화 프로젝트 운영</li>
+<li>클라이언트 커뮤니케이션 및 프로젝트 매니징</li>
+</ul>
+</div>
+</article>
   </div>
 </section>
 
@@ -160,40 +156,53 @@ sitemap:
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.58);
-    border: 1px solid rgba(255, 255, 255, 0.82);
-    border-radius: 16px;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-    backdrop-filter: blur(18px) saturate(145%);
-    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
     transform: translateY(-50%);
   }
 
   .portfolio-side-nav a {
+    position: relative;
     display: block;
     min-width: 108px;
-    padding: 9px 12px;
-    color: #2563eb;
+    padding: 8px 0 8px 14px;
+    color: #9ca3af;
     font-size: 0.92rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.42);
+    background: transparent;
   }
 
   .portfolio-side-nav a:hover,
   .portfolio-side-nav a:focus {
-    color: #1d4ed8;
-    background: rgba(255, 255, 255, 0.84);
+    color: #2563eb;
     outline: none;
   }
 
+  .portfolio-side-nav a.is-active {
+    color: #2563eb;
+    font-weight: 700;
+  }
+
+  .portfolio-side-nav a.is-active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 18px;
+    background: #2563eb;
+    border-radius: 999px;
+    transform: translateY(-50%);
+  }
+
   .portfolio-side-nav .nav-initial {
-    color: #0b2a4a;
-    font-size: calc(0.92rem + 2px);
+    color: inherit;
+    font-size: inherit;
     line-height: 1;
   }
 
@@ -395,6 +404,30 @@ sitemap:
 
 <script>
   window.addEventListener("DOMContentLoaded", function () {
+    const navLinks = Array.from(document.querySelectorAll(".portfolio-side-nav a"));
+    const sections = navLinks
+      .map(function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      })
+      .filter(Boolean);
+
+    function setActiveNav() {
+      let activeSection = sections[0];
+
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= 140) {
+          activeSection = section;
+        }
+      });
+
+      navLinks.forEach(function (link) {
+        link.classList.toggle("is-active", link.getAttribute("href") === "#" + activeSection.id);
+      });
+    }
+
+    setActiveNav();
+    window.addEventListener("scroll", setActiveNav, { passive: true });
+
     const chartElement = document.getElementById("globalClinicTotalChart");
 
     if (!chartElement || typeof Chart === "undefined") {
