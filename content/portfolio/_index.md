@@ -9,8 +9,8 @@ sitemap:
   disable: true
 ---
 
+{{< rawhtml >}}
 <nav class="portfolio-side-nav" aria-label="포트폴리오 섹션 내비게이션">
-  <a href="#intro"><span class="nav-initial">I</span>ntro</a>
   <a href="#about-uju"><span class="nav-initial">A</span>bout UJU</a>
   <a href="#career"><span class="nav-initial">C</span>areer</a>
   <a href="#projects"><span class="nav-initial">P</span>rojects</a>
@@ -402,8 +402,7 @@ sitemap:
     font-weight: 700;
   }
 
-  .portfolio-side-nav a.is-active::before,
-  .portfolio-side-nav .portfolio-nav-top::before {
+  .portfolio-side-nav a.is-active::before {
     content: "";
     position: absolute;
     left: 0;
@@ -427,10 +426,28 @@ sitemap:
     font-weight: 700;
   }
 
+  .portfolio-side-nav .portfolio-nav-top::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 18px;
+    background: #2563eb;
+    border-radius: 999px;
+    transform: translateY(-50%);
+  }
+
   .portfolio-side-nav .portfolio-nav-top svg {
     width: 18px;
     height: 18px;
     fill: currentColor;
+  }
+
+  .portfolio-side-nav .nav-initial {
+    color: inherit;
+    font-size: inherit;
+    line-height: 1;
   }
 
   .portfolio-section {
@@ -820,10 +837,6 @@ sitemap:
   }
 
   @media (max-width: 960px) {
-    .portfolio-side-nav {
-      display: none;
-    }
-
     .project-card,
     .about-grid {
       grid-template-columns: 1fr;
@@ -839,6 +852,26 @@ sitemap:
   }
 
   @media (max-width: 720px) {
+    .portfolio-side-nav {
+      top: auto;
+      right: 16px;
+      bottom: 18px;
+      padding: 10px;
+      transform: none;
+    }
+
+    .portfolio-side-nav a {
+      min-width: 92px;
+      padding: 8px 10px;
+      font-size: 0.86rem;
+    }
+
+    .portfolio-side-nav .portfolio-nav-top {
+      width: 34px;
+      min-width: 0;
+      padding-left: 10px;
+    }
+
     .hero-panel,
     .portfolio-panel,
     .career-box,
@@ -1012,3 +1045,4 @@ sitemap:
     });
   });
 </script>
+{{< /rawhtml >}}
