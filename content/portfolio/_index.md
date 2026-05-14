@@ -147,20 +147,24 @@ sitemap:
     display: none;
   }
 
+  .page-header h1,
   .post-header .post-title {
     font-size: 16px !important;
     line-height: 1.35;
     letter-spacing: -0.7px;
   }
 
+  .page-header .post-description,
   .post-header .post-description {
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: -0.5px;
   }
 
+  .post-content.md-content > h2,
   .md-content h2 {
     font-size: 14px !important;
+    margin: 24px auto 14px;
     letter-spacing: -0.5px;
   }
 
