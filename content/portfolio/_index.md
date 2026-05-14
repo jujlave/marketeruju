@@ -10,63 +10,122 @@ sitemap:
 ---
 
 <nav class="portfolio-side-nav" aria-label="포트폴리오 섹션 내비게이션">
-  <a href="#career">Career</a>
+  <a href="#intro"><span class="nav-initial">I</span>ntro</a>
+  <a href="#about-uju"><span class="nav-initial">A</span>bout UJU</a>
+  <a href="#career"><span class="nav-initial">C</span>areer</a>
+  <a href="#projects"><span class="nav-initial">P</span>rojects</a>
+  <a href="#how-i-work"><span class="nav-initial">H</span>ow I Work</a>
+  <a href="#skills"><span class="nav-initial">S</span>kills</a>
 </nav>
+
+## Intro
+
+<section id="intro" class="portfolio-section intro-section" aria-label="소개">
+  <div class="portfolio-panel">
+    <p>브랜드가 전하고 싶은 메시지를 사용자가 실제로 검색하고 이해하는 언어로 바꾸는 일을 합니다.</p>
+    <p>검색 데이터, 콘텐츠 구조, 사용자 경험을 함께 보며 발견부터 전환까지 이어지는 마케팅 흐름을 설계합니다.</p>
+  </div>
+</section>
+
+## About UJU
+
+<section id="about-uju" class="portfolio-section" aria-label="About UJU">
+  <div class="portfolio-panel">
+    <p>콘텐츠 마케팅, 브랜드 운영, 글로벌 SEO 프로젝트를 경험하며 콘텐츠가 비즈니스 성과로 이어지는 과정을 실무에서 다뤄왔습니다.</p>
+    <p>빠르게 바뀌는 검색 환경과 AI 기반 노출 방식 안에서도 브랜드의 방향성과 사용자 경험을 중심에 두고 실행합니다.</p>
+  </div>
+</section>
 
 ## Career
 
-<section id="career" class="career-section" aria-label="경력">
-  <article class="career-item">
-    <div class="career-period">2019.03 – 2022.03</div>
-    <div class="career-content">
-      <h3>씨티애드 | 콘텐츠 마케터</h3>
-      <p>브랜드 및 병·의원 대상 콘텐츠 마케팅 프로젝트 운영</p>
-      <p>SEO 기반 콘텐츠 기획, 블로그/SNS 운영, 키워드 리서치 및 콘텐츠 성과 분석 업무 수행</p>
-    </div>
-  </article>
+<section id="career" class="portfolio-section career-section" aria-label="경력">
+  <div class="career-box">
+    <article class="career-item">
+      <div class="career-period">2019.03 – 2022.03</div>
+      <div class="career-content">
+        <h3>씨티애드 | 콘텐츠 마케터</h3>
+        <p>브랜드 및 병·의원 대상 콘텐츠 마케팅 프로젝트 운영</p>
+        <p>SEO 기반 콘텐츠 기획, 블로그/SNS 운영, 키워드 리서치 및 콘텐츠 성과 분석 업무 수행</p>
+      </div>
+    </article>
 
-  <article class="career-item">
-    <div class="career-period">2022.04 – 2024.02</div>
-    <div class="career-content">
-      <h3>꿀이유 | 브랜드 운영 (창업)</h3>
-      <p>충남 지역 생산 꿀 브랜드 운영 및 스마트스토어 기반 판매 경험</p>
-      <p>브랜드 기획, 제품 판매, 상세페이지 제작, 제품 촬영, 콘텐츠 제작 등 브랜드 운영 전반 업무 직접 수행</p>
-      <ul>
-        <li>스마트스토어 운영</li>
-        <li>브랜드 아이덴티티 기획</li>
-        <li>제품 상세페이지 제작</li>
-        <li>제품 촬영 및 콘텐츠 제작</li>
-        <li>온라인 판매 운영 및 고객 대응</li>
-      </ul>
-    </div>
-  </article>
+    <hr class="career-divider">
 
-  <article class="career-item">
-    <div class="career-period">2024.03 – Present</div>
-    <div class="career-content">
-      <h3>위볼린 | 콘텐츠 · SEO 마케터</h3>
-      <p>SEO 기반 콘텐츠 마케팅 및 글로벌 프로젝트 운영</p>
-      <p>adidas Korea / Japan, AB성형외과, 효성FMS 프로젝트 PM 및 SEO 운영 수행</p>
-      <ul>
-        <li>adidas KR / JP SEO 프로젝트 운영</li>
-        <li>AB성형외과 글로벌 SEO 운영</li>
-        <li>SEO 콘텐츠 전략 및 데이터 분석</li>
-        <li>Adobe Analytics / GA4 / GSC 기반 모니터링</li>
-        <li>AI 기반 콘텐츠 및 자동화 프로젝트 운영</li>
-        <li>클라이언트 커뮤니케이션 및 프로젝트 매니징</li>
-      </ul>
-    </div>
-  </article>
+    <article class="career-item">
+      <div class="career-period">2022.04 – 2024.02</div>
+      <div class="career-content">
+        <h3>꿀이유 | 브랜드 운영 (창업)</h3>
+        <p>충남 지역 생산 꿀 브랜드 운영 및 스마트스토어 기반 판매 경험</p>
+        <p>브랜드 기획, 제품 판매, 상세페이지 제작, 제품 촬영, 콘텐츠 제작 등 브랜드 운영 전반 업무 직접 수행</p>
+        <ul>
+          <li>스마트스토어 운영</li>
+          <li>브랜드 아이덴티티 기획</li>
+          <li>제품 상세페이지 제작</li>
+          <li>제품 촬영 및 콘텐츠 제작</li>
+          <li>온라인 판매 운영 및 고객 대응</li>
+        </ul>
+      </div>
+    </article>
+
+    <hr class="career-divider">
+
+    <article class="career-item">
+      <div class="career-period">2024.03 – Present</div>
+      <div class="career-content">
+        <h3>위볼린 | 콘텐츠 · SEO 마케터</h3>
+        <p>SEO 기반 콘텐츠 마케팅 및 글로벌 프로젝트 운영</p>
+        <p>adidas Korea / Japan, AB성형외과, 효성FMS 프로젝트 PM 및 SEO 운영 수행</p>
+        <ul>
+          <li>adidas KR / JP SEO 프로젝트 운영</li>
+          <li>AB성형외과 글로벌 SEO 운영</li>
+          <li>SEO 콘텐츠 전략 및 데이터 분석</li>
+          <li>Adobe Analytics / GA4 / GSC 기반 모니터링</li>
+          <li>AI 기반 콘텐츠 및 자동화 프로젝트 운영</li>
+          <li>클라이언트 커뮤니케이션 및 프로젝트 매니징</li>
+        </ul>
+      </div>
+    </article>
+  </div>
 </section>
 
-## 글로벌 성형외과 콘텐츠 캠페인
+## Projects
 
-<section class="portfolio-chart-section" aria-label="글로벌 성형외과 콘텐츠 캠페인 월별 총합 추이">
+<section id="projects" class="portfolio-section portfolio-chart-section" aria-label="프로젝트">
   <div class="portfolio-chart-wrap">
-    <h3>월별 총합 추이</h3>
+    <h3>글로벌 성형외과 콘텐츠 캠페인</h3>
     <div class="portfolio-chart-canvas">
       <canvas id="globalClinicTotalChart"></canvas>
     </div>
+  </div>
+</section>
+
+## How I Work
+
+<section id="how-i-work" class="portfolio-section" aria-label="업무 방식">
+  <div class="portfolio-panel">
+    <ul class="portfolio-simple-list">
+      <li>브랜드의 목표와 사용자의 검색 의도를 먼저 연결합니다.</li>
+      <li>GSC, GA4, Adobe Analytics 데이터를 기준으로 실행 우선순위를 정합니다.</li>
+      <li>콘텐츠 기획, 제작, 모니터링, 리포트까지 운영 흐름이 끊기지 않게 관리합니다.</li>
+      <li>글로벌팀 및 클라이언트와 필요한 액션을 명확히 정리해 프로젝트를 진행합니다.</li>
+    </ul>
+  </div>
+</section>
+
+## Skills
+
+<section id="skills" class="portfolio-section" aria-label="스킬">
+  <div class="portfolio-panel">
+    <ul class="portfolio-skill-list">
+      <li>SEO 콘텐츠 전략</li>
+      <li>키워드 리서치</li>
+      <li>콘텐츠 성과 분석</li>
+      <li>GA4 / GSC / Adobe Analytics</li>
+      <li>스마트스토어 운영</li>
+      <li>상세페이지 기획</li>
+      <li>AI 기반 콘텐츠 및 자동화</li>
+      <li>프로젝트 매니징</li>
+    </ul>
   </div>
 </section>
 
@@ -83,6 +142,16 @@ sitemap:
     background: #ffffff;
   }
 
+  .post-header .post-title {
+    font-size: 20px !important;
+    line-height: 1.35;
+  }
+
+  .post-header .post-description {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
   .portfolio-side-nav {
     position: fixed;
     top: 50%;
@@ -92,52 +161,117 @@ sitemap:
     flex-direction: column;
     gap: 8px;
     padding: 12px;
-    background: rgba(186, 230, 253, 0.72);
-    border: 1px solid rgba(56, 189, 248, 0.34);
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.82);
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(14, 116, 144, 0.14);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(18px) saturate(145%);
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
     transform: translateY(-50%);
   }
 
   .portfolio-side-nav a {
     display: block;
-    min-width: 86px;
+    min-width: 108px;
     padding: 9px 12px;
-    color: #075985;
+    color: #2563eb;
     font-size: 0.92rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
     text-decoration: none;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.62);
+    background: rgba(255, 255, 255, 0.42);
   }
 
   .portfolio-side-nav a:hover,
   .portfolio-side-nav a:focus {
-    color: #0c4a6e;
-    background: rgba(255, 255, 255, 0.86);
+    color: #1d4ed8;
+    background: rgba(255, 255, 255, 0.84);
     outline: none;
   }
 
-  .career-section {
+  .portfolio-side-nav .nav-initial {
+    color: #0b2a4a;
+    font-size: calc(0.92rem + 2px);
+    line-height: 1;
+  }
+
+  .portfolio-section {
     scroll-margin-top: 96px;
-    display: grid;
-    gap: 18px;
     margin: 28px 0 48px;
   }
 
-  .career-item {
-    display: grid;
-    grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
-    gap: 24px;
+  .portfolio-panel {
     padding: 24px;
     background: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 18px;
     box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  }
+
+  .portfolio-panel p {
+    margin: 0 0 10px;
+    color: #374151;
+    line-height: 1.75;
+  }
+
+  .portfolio-panel p:last-child {
+    margin-bottom: 0;
+  }
+
+  .portfolio-simple-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #374151;
+  }
+
+  .portfolio-simple-list li {
+    margin: 10px 0;
+    line-height: 1.65;
+  }
+
+  .portfolio-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .portfolio-skill-list li {
+    padding: 8px 11px;
+    color: #1f2937;
+    line-height: 1.3;
+    background: rgba(241, 245, 249, 0.88);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 999px;
+  }
+
+  .career-section {
+    margin-top: 28px;
+  }
+
+  .career-box {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  }
+
+  .career-item {
+    display: grid;
+    grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .career-divider {
+    height: 1px;
+    margin: 15px 0;
+    background: rgba(15, 23, 42, 0.12);
+    border: 0;
   }
 
   .career-period {
@@ -148,42 +282,36 @@ sitemap:
   }
 
   .career-content h3 {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: #111827;
     font-size: 1.18rem;
     line-height: 1.35;
   }
 
   .career-content p {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     color: #374151;
     line-height: 1.75;
   }
 
   .career-content ul {
-    margin: 14px 0 0;
+    margin: 10px 0 0;
     padding-left: 20px;
     color: #374151;
   }
 
   .career-content li {
-    margin: 6px 0;
+    margin: 10px 0;
     line-height: 1.65;
-  }
-
-  .portfolio-chart-section {
-    margin: 32px 0 48px;
   }
 
   .portfolio-chart-wrap {
     width: 100%;
-    max-width: 840px;
-    margin: 0 auto;
     background: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 14px 38px rgba(15, 23, 42, 0.12);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
     animation: portfolioFadeUp 900ms ease both;
   }
 
@@ -234,14 +362,22 @@ sitemap:
     }
 
     .portfolio-side-nav a {
-      min-width: 76px;
+      min-width: 92px;
       padding: 8px 10px;
       font-size: 0.86rem;
+    }
+
+    .portfolio-panel {
+      padding: 20px;
+      border-radius: 16px;
     }
 
     .career-item {
       grid-template-columns: 1fr;
       gap: 10px;
+    }
+
+    .career-box {
       padding: 20px;
       border-radius: 16px;
     }
@@ -353,64 +489,3 @@ sitemap:
     });
   });
 </script>
-
-## 일본 이커머스 SEO 운영 리포트 및 글로벌 협업
-
-### 프로젝트 개요
-
-일본 이커머스 사이트의 SEO 운영 흐름을 주간 리포트, 트래픽 모니터링, 글로벌 SEO팀 협업, AI 쇼핑 리서치까지 연결해 정리한 케이스입니다.
-
-단순히 보고서를 작성하는 데서 끝내지 않고, 어떤 변화가 있었는지와 다음 실행 항목이 무엇인지 구분해 운영 우선순위를 잡는 데 초점을 맞췄습니다.
-
-### 문제
-
-일본 이커머스 운영에서는 신규 콜라보, 펫 컬렉션, 프로모션, PDP 테스트처럼 여러 이슈가 동시에 움직였습니다.
-
-이 때문에 단일 지표만 보면 트래픽 상승 원인을 분리하기 어렵고, 글로벌팀 논의 사항과 로컬 운영 액션을 따로 관리하면 후속 작업이 끊길 수 있는 상황이었습니다.
-
-### 실행
-
-#### 1. GSC 기준 트래픽 변화 정리
-
-Search Console 데이터를 기준으로 주간 트래픽 흐름을 확인하고, 신규 콜라보 관련 상승 구간과 펫 컬렉션 관련 흐름을 분리해 정리했습니다.
-
-전주 대비 변화가 있는 구간은 별도로 표시해, 단순 증감이 아니라 어떤 카테고리와 이슈에서 움직임이 발생했는지 확인할 수 있게 했습니다.
-
-#### 2. 데이터 시트 기준 정비
-
-주간·월간 보고에서 같은 지표를 다르게 해석하지 않도록 필터링 조건과 확인 기준을 통일했습니다.
-
-보고용 데이터 시트를 정리해 이후 NLG 업데이트, PDP 테스트, PLP 업데이트 같은 후속 작업으로 바로 연결될 수 있는 형태로 만들었습니다.
-
-#### 3. 글로벌 SEO팀 협업 항목 분리
-
-글로벌 SEO팀 미팅에서 논의된 PDP 테스트와 운영 업데이트 항목을 검토 필요 항목과 실행 가능 항목으로 나눴습니다.
-
-로컬 운영에서 바로 반영할 수 있는 작업과 추가 확인이 필요한 작업을 분리해 다음 주 액션으로 정리했습니다.
-
-#### 4. AI 쇼핑 리서치 반영 포인트 정리
-
-AI 쇼핑 관련 변화와 참고 사례를 조사해, 향후 이커머스 SEO에서 검토해야 할 포인트를 정리했습니다.
-
-검색 결과 노출 방식이 바뀔 때 상품 상세 페이지, 카테고리 페이지, 구조화된 콘텐츠가 어떤 역할을 할 수 있는지 운영 관점에서 검토했습니다.
-
-### 결과
-
-- 신규 콜라보 트래픽 상승 구간과 펫 컬렉션 흐름을 분리해 후속 모니터링 기준으로 정리
-- 일본 이커머스 주간·월간 보고에 사용할 데이터 필터링 조건 통일
-- 글로벌 SEO팀 미팅 후속 액션을 PDP 테스트, NLG 전달, PLP 업데이트로 구분
-- AI 쇼핑 변화에 대응하기 위한 이커머스 SEO 검토 포인트 정리
-
-### 사용한 데이터와 도구
-
-- Google Search Console
-- GA4
-- 주간·월간 SEO 리포트
-- 글로벌 SEO팀 미팅 노트
-- AI 쇼핑 리서치 자료
-
-### 배운 점
-
-이커머스 SEO 운영에서는 트래픽 변화를 확인하는 것만큼, 변화 원인을 실행 단위로 나눠 관리하는 것이 중요했습니다.
-
-특히 글로벌팀과 로컬 운영이 함께 움직이는 프로젝트에서는 보고서가 단순 공유 문서가 아니라 다음 실행을 정리하는 운영 도구가 되어야 합니다.
