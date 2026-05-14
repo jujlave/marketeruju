@@ -22,7 +22,7 @@ sitemap:
   </a>
 </nav>
 
-## Intro
+<h2 id="portfolio-intro-heading">Intro</h2>
 
 <section id="intro" class="portfolio-section intro-section" aria-label="소개">
   <div class="portfolio-panel">
@@ -31,7 +31,7 @@ sitemap:
   </div>
 </section>
 
-## About UJU
+<h2 id="portfolio-about-heading">About UJU</h2>
 
 <section id="about-uju" class="portfolio-section" aria-label="About UJU">
   <div class="portfolio-panel">
@@ -40,7 +40,7 @@ sitemap:
   </div>
 </section>
 
-## Career
+<h2 id="portfolio-career-heading">Career</h2>
 
 <section id="career" class="portfolio-section career-section" aria-label="경력">
   <div class="career-box">
@@ -88,7 +88,7 @@ sitemap:
   </div>
 </section>
 
-## Projects
+<h2 id="portfolio-projects-heading">Projects</h2>
 
 <section id="projects" class="portfolio-section portfolio-chart-section" aria-label="프로젝트">
   <div class="portfolio-chart-wrap">
@@ -99,7 +99,7 @@ sitemap:
   </div>
 </section>
 
-## How I Work
+<h2 id="portfolio-work-heading">How I Work</h2>
 
 <section id="how-i-work" class="portfolio-section" aria-label="업무 방식">
   <div class="portfolio-panel">
@@ -112,7 +112,7 @@ sitemap:
   </div>
 </section>
 
-## Skills
+<h2 id="portfolio-skills-heading">Skills</h2>
 
 <section id="skills" class="portfolio-section" aria-label="스킬">
   <div class="portfolio-panel">
@@ -149,7 +149,7 @@ sitemap:
 
   .page-header h1,
   .post-header .post-title {
-    font-size: 16px !important;
+    font-size: 20px !important;
     line-height: 1.35;
     letter-spacing: -0.7px;
   }
@@ -161,10 +161,16 @@ sitemap:
     letter-spacing: -0.5px;
   }
 
-  .post-content.md-content > h2,
-  .md-content h2 {
+  #portfolio-intro-heading,
+  #portfolio-about-heading,
+  #portfolio-career-heading,
+  #portfolio-projects-heading,
+  #portfolio-work-heading,
+  #portfolio-skills-heading {
+    display: block;
     font-size: 14px !important;
     margin: 24px auto 14px;
+    line-height: 1.35;
     letter-spacing: -0.5px;
   }
 
