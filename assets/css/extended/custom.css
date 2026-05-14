@@ -777,8 +777,8 @@ a.tag{
 
 /* ===== Home refresh override ===== */
 :root{
-  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --font-display: "Space Grotesk", "Noto Sans KR", sans-serif;
+  --font-body: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-display: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 body{
