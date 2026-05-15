@@ -1,12 +1,12 @@
 ---
-title: "Marketer UJU SEO Log"
-description: "SEO 실무 로그와 운영 노트"
+title: "콘텐츠 SEO 마케터 전우주"
+description: "SEO와 콘텐츠, 데이터를 연결해 비즈니스 성과로 이어지는 마케팅을 실행합니다."
 ---
 
-## SEO를 데이터로 설명하는 마케터 우주
+## 콘텐츠 SEO 마케터 전우주
 
-E-commerce / 콘텐츠 / 테크 SEO를 기반으로  
-**구조 개선 → 실행 → 성과 측정**까지 한 번에 정리합니다.
+SEO와 콘텐츠, 데이터를 연결해  
+**비즈니스 성과로 이어지는 마케팅**을 실행합니다.
 
 ### What I do
 - PLP/CLP 정보 구조(IA) & 내부링크 설계
