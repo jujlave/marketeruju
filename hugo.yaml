@@ -33,11 +33,6 @@ menu:
       pageRef: "blog/work-log"
       weight: 20
 
-    - name: "Life Log"
-      identifier: "blog/life-log"
-      pageRef: "blog/life-log"
-      weight: 30
-
     - name: "SEO Notes"
       identifier: "blog/seo-notes"
       pageRef: "blog/seo-notes"

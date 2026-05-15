@@ -738,6 +738,40 @@ a.tag{
   }
 }
 
+/* ===== Heading size normalization ===== */
+h1,
+.post-title,
+.page-header h1,
+.post-header h1,
+.home-hero-copy h1,
+.md-content h1{
+  font-size: 22px !important;
+  line-height: 1.35;
+}
+
+h2,
+.entry-header h2,
+.hero-spotlight h2,
+.home-block-head h2,
+.home-story-card h2,
+.md-content h2{
+  font-size: 20px !important;
+  line-height: 1.4;
+}
+
+h3,
+.home-widget h3,
+.md-content h3{
+  font-size: 18px !important;
+  line-height: 1.45;
+}
+
+h4,
+.md-content h4{
+  font-size: 16px !important;
+  line-height: 1.5;
+}
+
 @media (max-width: 720px){
   .home-shell{
     padding: 4px 0 44px;
@@ -783,28 +817,40 @@ a.tag{
 
 body{
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 .post-title,
 .md-content h1{
-  font-size: 16px;
+  font-size: 40px;
+  line-height: 1.25;
 }
 
 .md-content h2{
-  font-size: 14px;
+  font-size: 32px;
+  line-height: 1.35;
 }
 
 .md-content h3{
-  font-size: 16px;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 .md-content h4{
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.45;
 }
 
-.md-content p{
-  font-size: 12px;
+.md-content p,
+.md-content li{
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.entry-content{
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .home .main{
@@ -1316,4 +1362,38 @@ body{
     width: 100%;
     justify-content: center;
   }
+}
+
+/* Final heading size normalization */
+h1,
+.post-title,
+.page-header h1,
+.post-header h1,
+.home-hero-copy h1,
+.md-content h1{
+  font-size: 22px !important;
+  line-height: 1.35;
+}
+
+h2,
+.entry-header h2,
+.hero-spotlight h2,
+.home-block-head h2,
+.home-story-card h2,
+.md-content h2{
+  font-size: 20px !important;
+  line-height: 1.4;
+}
+
+h3,
+.home-widget h3,
+.md-content h3{
+  font-size: 18px !important;
+  line-height: 1.45;
+}
+
+h4,
+.md-content h4{
+  font-size: 16px !important;
+  line-height: 1.5;
 }

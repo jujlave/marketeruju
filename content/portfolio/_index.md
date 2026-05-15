@@ -116,7 +116,7 @@ sitemap:
     </article>
 
     <article class="career-item">
-      <div class="career-period">2024.03 – Present</div>
+      <div class="career-period">2024.03 – </div>
       <div class="career-content">
         <h3>위볼린 | 콘텐츠 · SEO 마케터</h3>
         <p>SEO 기반 콘텐츠 마케팅 및 글로벌 프로젝트 운영</p>
@@ -357,7 +357,7 @@ sitemap:
     display: block;
     margin: 44px auto 16px;
     color: #111827;
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 1.35;
     letter-spacing: -0.6px;
   }
@@ -500,7 +500,7 @@ sitemap:
   .hero-panel h1 {
     margin: 0;
     color: #0f172a;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: 22px;
     line-height: 1.12;
     letter-spacing: -1.8px;
   }
@@ -582,7 +582,7 @@ sitemap:
   .about-grid h3 {
     margin: 0;
     color: #111827;
-    font-size: 1.45rem;
+    font-size: 18px;
     line-height: 1.45;
     letter-spacing: -0.7px;
   }
@@ -657,7 +657,7 @@ sitemap:
   .skill-group h3 {
     margin: 0 0 10px;
     color: #111827;
-    font-size: 1.18rem;
+    font-size: 18px;
     line-height: 1.35;
   }
 
@@ -759,7 +759,7 @@ sitemap:
   .portfolio-chart-wrap h4 {
     margin: 0 0 18px;
     color: #111827;
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .portfolio-chart-wrap canvas {
@@ -887,7 +887,7 @@ sitemap:
     }
 
     .hero-panel h1 {
-      font-size: 2.2rem;
+      font-size: 22px;
     }
 
     .hero-metrics,

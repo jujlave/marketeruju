@@ -1,6 +1,6 @@
 {{- define "main" -}}
 
-{{- $posts := sort (where site.RegularPages "Section" "blog") "Date" "desc" -}}
+{{- $posts := sort (where (where site.RegularPages "Section" "blog") "File.Dir" "ne" "blog/life-log/") "Date" "desc" -}}
 {{- $postCount := len $posts -}}
 {{- $featuredPosts := first 6 $posts -}}
 {{- $spotlightPosts := first 3 $posts -}}
@@ -51,15 +51,6 @@
             <p>운영 로그와 SEO 노트가 추가되면 이 영역에 가장 최근 글이 노출됩니다.</p>
           </div>
         {{- end -}}
-
-        <div class="home-signal-card">
-          <p class="home-signal-label">How I Work</p>
-          <ul class="home-signal-list">
-            <li>IA, 내부링크, 카테고리 구조를 먼저 점검합니다.</li>
-            <li>GSC·GA4 기준으로 실행 우선순위를 정리합니다.</li>
-            <li>성과 보고에 바로 쓸 수 있게 템플릿화합니다.</li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
@@ -67,22 +58,6 @@
 
 <div class="home-shell">
   <div class="home-shell-wide">
-    <section class="home-story-grid" aria-label="핵심 소개">
-      <article class="home-story-card accent">
-        <p class="home-panel-kicker">Design Focus</p>
-        <h2>콘텐츠를 나열하지 않고, 실행 흐름이 보이게 정리합니다.</h2>
-        <p>읽는 사람이 실무 로그와 레퍼런스 노트를 자연스럽게 오가도록 홈 구조를 설계했습니다.</p>
-      </article>
-      <article class="home-story-card">
-        <p class="home-panel-kicker">What You Can Scan</p>
-        <p>최근 운영 기록, 태그 탐색, 검색 진입을 홈에서 바로 확인할 수 있습니다.</p>
-      </article>
-      <article class="home-story-card">
-        <p class="home-panel-kicker">Audience</p>
-        <p>SEO 실무자, 채용 담당자, 협업 파트너가 사이트 맥락을 빠르게 이해할 수 있게 구성했습니다.</p>
-      </article>
-    </section>
-
     <section class="home-block">
       <div class="home-block-head">
         <div>

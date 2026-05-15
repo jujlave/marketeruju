@@ -28,7 +28,6 @@
 <div class="post-content">
   <ul class="terms-tags">
     <li><a href="/blog/work-log/">Work Log</a></li>
-    <li><a href="/blog/life-log/">Life Log</a></li>
     <li><a href="/blog/seo-notes/">SEO Notes</a></li>
   </ul>
 </div>
@@ -41,7 +40,8 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
+{{- $pages := where (union .RegularPages .Sections) "RelPermalink" "ne" "/blog/life-log/" }}
+{{- $pages = where $pages "Params.categories" "not in" "life-log" }}
 
 {{- $paginator := .Paginate $pages }}
 
