@@ -40,8 +40,15 @@
 </div>
 {{- end }}
 
-{{- $pages := where (union .RegularPages .Sections) "RelPermalink" "ne" "/blog/life-log/" }}
-{{- $pages = where $pages "Params.categories" "not in" "life-log" }}
+{{- $pages := where site.RegularPages "Section" "blog" }}
+{{- if eq .RelPermalink "/blog/work-log/" }}
+{{- $pages = where $pages "File.Dir" "blog/work-log/" }}
+{{- else if eq .RelPermalink "/blog/seo-notes/" }}
+{{- $pages = where $pages "File.Dir" "blog/seo-notes/" }}
+{{- else }}
+{{- $pages = where $pages "File.Dir" "ne" "blog/life-log/" }}
+{{- end }}
+{{- $pages = sort $pages "Date" "desc" }}
 
 {{- $paginator := .Paginate $pages }}
 
