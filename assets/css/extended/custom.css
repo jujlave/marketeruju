@@ -772,6 +772,525 @@ h4,
   line-height: 1.5;
 }
 
+/* Home visual refresh: blue tech-meet reference style */
+.home{
+  --home-blue: #343595;
+  --home-blue-soft: #7678ee;
+  --home-ink: #07070a;
+  --home-paper: #f8f8f5;
+  --home-line: rgba(52, 53, 149, 0.48);
+  background: var(--home-paper);
+}
+
+.home .main{
+  color: var(--home-ink);
+  background: var(--home-paper);
+}
+
+.home-shell{
+  padding: 0 0 72px;
+}
+
+.home-shell::before{
+  display: none;
+}
+
+.home-shell-wide{
+  max-width: 1440px;
+  padding: 0 clamp(20px, 5.5vw, 88px);
+}
+
+.home-hero{
+  margin: 0 0 56px;
+}
+
+.home-hero-inner{
+  min-height: min(760px, calc(100vh - 72px));
+  grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+  align-items: center;
+  gap: clamp(30px, 6vw, 92px);
+  padding: clamp(48px, 8vw, 112px) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  overflow: visible;
+}
+
+.home-hero-inner::before,
+.home-hero-inner::after{
+  display: none;
+}
+
+.home-kicker,
+.hero-spotlight-label,
+.home-panel-kicker,
+.home-post-group-head h3,
+.home-more,
+.home-post-meta,
+.home-metric-label,
+.home-event-lines,
+.home-hero-btn{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-kicker{
+  margin: 0 0 26px;
+  color: var(--home-blue-soft);
+  font-size: clamp(0.78rem, 1.2vw, 1rem);
+  font-weight: 800;
+}
+
+.home-hero-copy h1{
+  max-width: 780px;
+  margin: 0;
+  color: var(--home-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(4.7rem, 8.5vw, 8.9rem) !important;
+  font-weight: 900;
+  line-height: 0.93;
+  letter-spacing: -0.055em;
+}
+
+.home-hero-sub{
+  max-width: 720px;
+  margin: 32px 0 0;
+  color: var(--home-blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: clamp(1.02rem, 1.55vw, 1.4rem);
+  line-height: 1.75;
+  letter-spacing: 0.12em;
+  word-break: keep-all;
+}
+
+.home-hero-actions{
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.home-hero-btn{
+  min-width: min(340px, 100%);
+  min-height: 70px;
+  padding: 18px 28px;
+  border: 1px solid var(--home-blue);
+  border-radius: 0;
+  color: var(--home-blue) !important;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.home-hero-btn.ghost{
+  color: var(--home-paper) !important;
+  border-color: var(--home-blue);
+  background: var(--home-blue);
+  box-shadow: none;
+}
+
+.home-hero-btn::after{
+  display: none;
+}
+
+.home-hero-btn:hover{
+  color: var(--home-paper) !important;
+  background: var(--home-blue);
+  box-shadow: none;
+  transform: none;
+}
+
+.home-hero-btn.ghost:hover{
+  color: var(--home-blue) !important;
+  background: transparent;
+}
+
+.home-event-lines{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 620px;
+  margin-top: 52px;
+  color: var(--home-blue);
+  font-size: 0.92rem;
+}
+
+.home-event-lines div{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding-top: 22px;
+  border-top: 3px solid var(--home-blue-soft);
+}
+
+.home-event-lines span{
+  color: var(--home-blue-soft);
+}
+
+.home-metric-row{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 620px;
+  margin-top: 28px;
+  gap: 0;
+  border: 1px solid var(--home-blue);
+}
+
+.home-metric-card{
+  border: 0;
+  border-right: 1px solid var(--home-blue);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 20px 24px;
+}
+
+.home-metric-card:last-child{
+  border-right: 0;
+}
+
+.home-metric-value{
+  color: var(--home-blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-metric-label{
+  margin-top: 8px;
+  color: var(--home-blue-soft);
+  font-size: 0.78rem;
+}
+
+.home-hero-side{
+  align-content: center;
+  gap: 28px;
+}
+
+.home-visual{
+  width: min(100%, 560px);
+  margin-left: auto;
+  color: var(--home-blue);
+}
+
+.home-visual svg{
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.home-visual path,
+.home-visual circle{
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.home-visual .cube path:nth-child(2){
+  fill: var(--home-blue);
+}
+
+.home-visual .guide{
+  stroke: var(--home-blue-soft);
+}
+
+.hero-spotlight{
+  width: min(100%, 560px);
+  min-height: 0;
+  margin-left: auto;
+  padding: 28px;
+  border: 1px solid var(--home-blue);
+  border-radius: 0;
+  color: var(--home-blue);
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-spotlight h2{
+  margin: 18px 0 14px;
+  color: var(--home-ink);
+  font-size: clamp(1.35rem, 2vw, 2.1rem) !important;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.hero-spotlight p{
+  color: var(--home-blue);
+  line-height: 1.8;
+}
+
+.hero-spotlight-cta,
+.hero-spotlight-label{
+  color: var(--home-blue-soft);
+}
+
+.hero-spotlight-cta::before{
+  content: "-> ";
+}
+
+.home-block{
+  margin-bottom: 48px;
+  padding: clamp(28px, 4vw, 54px);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.home-block-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.home-block-head h2{
+  display: inline-flex;
+  min-width: min(100%, 560px);
+  min-height: 82px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 30px;
+  border: 1px solid var(--home-blue);
+  color: var(--home-ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: clamp(1.08rem, 2vw, 1.7rem) !important;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-more{
+  min-height: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--home-blue);
+  background: transparent;
+  font-size: 0.78rem;
+}
+
+.home-post-group-head{
+  margin-bottom: 16px;
+}
+
+.home-post-group-head h3,
+.home-widget h3{
+  color: var(--home-blue);
+  font-size: 0.92rem !important;
+  font-weight: 700;
+}
+
+.home-post-group-head a{
+  color: var(--home-blue-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-post-list{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.home-post-card{
+  display: grid;
+  min-height: 270px;
+  padding: 22px;
+  border: 1px solid var(--home-line);
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
+.home-post-row{
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.home-post-row .home-post-thumb,
+.home-post-row .home-post-thumb .entry-cover,
+.home-post-row .home-post-thumb img,
+.home-post-row .home-post-placeholder{
+  width: 100%;
+  height: 112px;
+}
+
+.home-post-placeholder{
+  border: 1px solid var(--home-blue);
+  border-radius: 0;
+  color: var(--home-blue);
+  background:
+    linear-gradient(135deg, transparent 0 48%, var(--home-line) 48% 49%, transparent 49%),
+    linear-gradient(45deg, transparent 0 48%, var(--home-line) 48% 49%, transparent 49%);
+}
+
+.home-post-placeholder svg{
+  display: none;
+}
+
+.home-post-placeholder span{
+  color: var(--home-blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0.24em;
+}
+
+.home-post-content{
+  gap: 12px;
+}
+
+.home-post-title{
+  color: var(--home-ink);
+  font-size: clamp(1.05rem, 1.45vw, 1.38rem);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+.home-post-excerpt{
+  color: var(--home-blue);
+  font-size: 0.94rem;
+}
+
+.home-post-meta{
+  color: var(--home-blue-soft);
+  font-size: 0.74rem;
+}
+
+.home-utility-stack{
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.home-widget{
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.home-mini-list a{
+  border-bottom-color: var(--home-line);
+}
+
+.home-mini-list small,
+.home-tags a{
+  color: var(--home-blue-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.home-tags a{
+  border: 1px solid var(--home-line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.home-search input,
+.home-search button{
+  border-radius: 0;
+}
+
+.home-search input{
+  border-color: var(--home-line);
+  background: transparent;
+}
+
+.home-search button{
+  border: 1px solid var(--home-blue);
+  color: var(--home-paper);
+  background: var(--home-blue);
+}
+
+@media (max-width: 1100px){
+  .home-hero-inner{
+    min-height: 0;
+    grid-template-columns: 1fr;
+    padding-top: 56px;
+  }
+
+  .home-visual,
+  .hero-spotlight{
+    margin-left: 0;
+  }
+
+  .home-post-list,
+  .home-utility-stack{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px){
+  .home-shell-wide{
+    padding: 0 18px;
+  }
+
+  .home-hero-inner{
+    padding: 38px 0 24px;
+  }
+
+  .home-hero-copy h1{
+    font-size: clamp(3.25rem, 18vw, 5.1rem) !important;
+  }
+
+  .home-hero-sub{
+    font-size: 0.96rem;
+    letter-spacing: 0.08em;
+  }
+
+  .home-event-lines,
+  .home-metric-row,
+  .home-block-head{
+    grid-template-columns: 1fr;
+  }
+
+  .home-event-lines,
+  .home-metric-row{
+    display: grid;
+  }
+
+  .home-metric-card{
+    border-right: 0;
+    border-bottom: 1px solid var(--home-blue);
+  }
+
+  .home-metric-card:last-child{
+    border-bottom: 0;
+  }
+
+  .home-hero-btn{
+    width: 100%;
+  }
+
+  .home-block{
+    padding: 28px 0;
+  }
+
+  .home-block-head{
+    display: grid;
+  }
+
+  .home-block-head h2{
+    min-width: 0;
+    min-height: 68px;
+    justify-content: center;
+    padding: 0 18px;
+  }
+
+  .home-post-card{
+    min-height: 0;
+  }
+}
+
 @media (max-width: 720px){
   .home-shell{
     padding: 4px 0 44px;

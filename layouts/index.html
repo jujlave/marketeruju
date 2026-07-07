@@ -11,15 +11,26 @@
   <div class="home-shell-wide">
     <div class="home-hero-inner">
       <div class="home-hero-copy">
-        <p class="home-kicker">SEO Operator · Marketer UJU</p>
-        <h1>콘텐츠 SEO 마케터 전우주</h1>
+        <p class="home-kicker">SEO OPERATOR / MARKETER UJU</p>
+        <h1>SEO Note<br>Research Archive</h1>
         <p class="home-hero-sub">
-          SEO와 콘텐츠, 데이터를 연결해 비즈니스 성과로 이어지는 마케팅을 실행합니다.
+          검색 의도, AEO, GEO, 콘텐츠 구조를 실무 언어로 정리하는 SEO 기록실입니다.
         </p>
 
         <div class="home-hero-actions">
           <a class="home-hero-btn" href="/blog/seo-notes/">SEO 콘텐츠 보기</a>
           <a class="home-hero-btn ghost" href="/blog/seo-notes/">SEO Notes</a>
+        </div>
+
+        <div class="home-event-lines" aria-label="홈 요약 정보">
+          <div>
+            <span>01</span>
+            <strong>Content SEO</strong>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>AEO / GEO Notes</strong>
+          </div>
         </div>
 
         <div class="home-metric-row" aria-label="사이트 요약 지표">
@@ -35,6 +46,29 @@
       </div>
 
       <div class="home-hero-side">
+        <div class="home-visual" aria-hidden="true">
+          <svg viewBox="0 0 420 360" role="img">
+            <g class="cube cube-lg">
+              <path d="M58 76h86v132H58z" />
+              <path d="M144 76l42-42v132l-42 42z" />
+              <path d="M58 76l42-42h86l-42 42z" />
+              <path d="M82 40v132" />
+              <path d="M58 154h86" />
+            </g>
+            <g class="cube cube-sm">
+              <path d="M240 68h74v74h-74z" />
+              <path d="M314 68l34-34v74l-34 34z" />
+              <path d="M240 68l34-34h74l-34 34z" />
+            </g>
+            <g class="cube cube-md">
+              <path d="M214 208h82v82h-82z" />
+              <path d="M296 208l38-38v82l-38 38z" />
+              <path d="M214 208l38-38h82l-38 38z" />
+            </g>
+            <circle cx="304" cy="188" r="28" />
+            <path class="guide" d="M28 252h126M28 278h212M348 38v114M348 222v96M180 312h190" />
+          </svg>
+        </div>
         {{- if gt (len $latestPost) 0 -}}
           {{- range $latestPost -}}
           <a class="hero-spotlight" href="{{ .RelPermalink }}">
