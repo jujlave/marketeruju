@@ -28,11 +28,6 @@ cascade:
 
 menu:
   main:
-    - name: "Work Log"
-      identifier: "blog/work-log"
-      pageRef: "blog/work-log"
-      weight: 20
-
     - name: "SEO Notes"
       identifier: "blog/seo-notes"
       pageRef: "blog/seo-notes"

@@ -45,8 +45,6 @@
 {{- $pages = where $pages "File.Dir" "blog/work-log/" }}
 {{- else if eq .RelPermalink "/blog/seo-notes/" }}
 {{- $pages = where $pages "File.Dir" "blog/seo-notes/" }}
-{{- else }}
-{{- $pages = where $pages "File.Dir" "ne" "blog/life-log/" }}
 {{- end }}
 {{- $pages = sort $pages "Date" "desc" }}
 

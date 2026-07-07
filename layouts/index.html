@@ -1,8 +1,7 @@
 {{- define "main" -}}
 
-{{- $posts := sort (where (where site.RegularPages "Section" "blog") "File.Dir" "ne" "blog/life-log/") "Date" "desc" -}}
-{{- $workLogPosts := first 3 (sort (where site.RegularPages "File.Dir" "blog/work-log/") "Date" "desc") -}}
-{{- $seoNotePosts := first 3 (sort (where site.RegularPages "File.Dir" "blog/seo-notes/") "Date" "desc") -}}
+{{- $posts := sort (where site.RegularPages "File.Dir" "blog/seo-notes/") "Date" "desc" -}}
+{{- $seoNotePosts := first 6 $posts -}}
 {{- $postCount := len $posts -}}
 {{- $spotlightPosts := first 3 $posts -}}
 {{- $tagCount := len site.Taxonomies.tags -}}
@@ -19,14 +18,14 @@
         </p>
 
         <div class="home-hero-actions">
-          <a class="home-hero-btn" href="/blog/">최근 글 보기</a>
+          <a class="home-hero-btn" href="/blog/seo-notes/">SEO 콘텐츠 보기</a>
           <a class="home-hero-btn ghost" href="/blog/seo-notes/">SEO Notes</a>
         </div>
 
         <div class="home-metric-row" aria-label="사이트 요약 지표">
           <div class="home-metric-card">
             <span class="home-metric-value">{{ $postCount }}</span>
-            <span class="home-metric-label">Blog Posts</span>
+            <span class="home-metric-label">SEO Posts</span>
           </div>
           <div class="home-metric-card">
             <span class="home-metric-value">{{ $tagCount }}</span>
@@ -47,9 +46,9 @@
           {{- end -}}
         {{- else -}}
           <div class="hero-spotlight empty">
-            <span class="hero-spotlight-label">Blog</span>
-            <h2>최근 글을 준비 중입니다.</h2>
-            <p>운영 로그와 SEO 노트가 추가되면 이 영역에 가장 최근 글이 노출됩니다.</p>
+            <span class="hero-spotlight-label">SEO Notes</span>
+            <h2>SEO 콘텐츠를 준비 중입니다.</h2>
+            <p>SEO 노트가 추가되면 이 영역에 가장 최근 콘텐츠가 노출됩니다.</p>
           </div>
         {{- end -}}
       </div>
@@ -62,52 +61,15 @@
     <section class="home-block">
       <div class="home-block-head">
         <div>
-          <h2>최근 업데이트</h2>
+          <h2>최근 SEO 콘텐츠</h2>
         </div>
-        <a class="home-more" href="/blog/">전체 글 보기</a>
+        <a class="home-more" href="/blog/seo-notes/">전체 글 보기</a>
       </div>
 
       <div class="home-latest-groups">
         <div class="home-post-group">
           <div class="home-post-group-head">
-            <h3>Work Log 최신글</h3>
-            <a href="/blog/work-log/">더 보기</a>
-          </div>
-
-          <div class="home-post-list">
-            {{- range $page := $workLogPosts -}}
-            <a class="home-post-card home-post-row" href="{{ $page.RelPermalink }}">
-              <div class="home-post-thumb">
-                {{- $hasCover := $page.Param "cover.image" -}}
-                {{- if $hasCover -}}
-                  {{- $isHidden := ($page.Param "cover.hiddenInList") | default ($page.Param "cover.hidden") | default false -}}
-                  {{- partial "cover.html" (dict "cxt" $page "IsSingle" false "isHidden" $isHidden) -}}
-                {{- else -}}
-                  <div class="home-post-placeholder" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2.5-1A1 1 0 0 0 5.5 6.5v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1h-11Zm2.75 10.25 2.75-3.25 2 2.5 2.75-3.25 3.25 4.25H7.5l1.75-2.25Z" />
-                    </svg>
-                    <span>POST</span>
-                  </div>
-                {{- end -}}
-              </div>
-              <div class="home-post-content">
-                <div class="home-post-title">{{ $page.Title }}</div>
-                <div class="home-post-excerpt">{{ $page.Summary | plainify | truncate 84 }}</div>
-                <div class="home-post-meta">{{ $page.Date.Format "2006-01-02" }}</div>
-              </div>
-            </a>
-            {{- end -}}
-
-            {{- if eq (len $workLogPosts) 0 -}}
-            <div class="home-empty">Work Log 글이 없습니다.</div>
-            {{- end -}}
-          </div>
-        </div>
-
-        <div class="home-post-group">
-          <div class="home-post-group-head">
-            <h3>SEO Notes 최신글</h3>
+            <h3>SEO Notes</h3>
             <a href="/blog/seo-notes/">더 보기</a>
           </div>
 

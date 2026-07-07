@@ -29,21 +29,6 @@ collections:
       - { name: "tags", label: "Tags", widget: "list", default: [] }
       - { name: "body", label: "Body", widget: "markdown" }
 
-  - name: "life-log"
-    label: "Life Log"
-    folder: "content/blog/life-log"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "slug", label: "Slug", widget: "string" }
-      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { name: "draft", label: "Draft", widget: "boolean", default: true }
-      - { name: "type", label: "Type", widget: "hidden", default: "blog" }
-      - { name: "categories", label: "Categories", widget: "hidden", default: ["life-log"] }
-      - { name: "tags", label: "Tags", widget: "list", default: [] }
-      - { name: "body", label: "Body", widget: "markdown" }
-
   - name: "seo-notes"
     label: "SEO Notes"
     folder: "content/blog/seo-notes"
