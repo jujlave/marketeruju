@@ -634,6 +634,13 @@ a.tag{
 .home-post-thumb .entry-cover img{
   display: block;
 }
+
+.entry-cover img[src$=".svg"],
+.home-post-thumb img[src$=".svg"]{
+  object-fit: contain;
+  background: #f8f8f5;
+}
+
 .home-post-placeholder{
   display: grid;
   place-items: center;

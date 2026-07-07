@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Backlink SEO AEO thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="210" y="250" width="300" height="190" rx="30"/>
+    <rect x="650" y="170" width="300" height="190" rx="30"/>
+    <rect x="1090" y="250" width="300" height="190" rx="30"/>
+    <path d="M510 345h140M950 265h140M950 345h140"/>
+    <path d="M310 530h980"/>
+    <path d="M360 300h80M360 350h90M800 220h80M800 270h90M1240 300h80M1240 350h90"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <circle cx="800" cy="530" r="72"/>
+    <path d="M760 538l30 30 62-92"/>
+    <path d="M360 640h310M760 640h460"/>
+  </g>
+  <text x="210" y="740" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">BACKLINK / TRUST</text>
+  <text x="210" y="805" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">External Signals</text>
+</svg>

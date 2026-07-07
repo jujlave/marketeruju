@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="SEO content writing thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="175" y="150" width="700" height="510" rx="34"/>
+    <path d="M175 250h700"/>
+    <circle cx="230" cy="200" r="13"/><circle cx="280" cy="200" r="13"/><circle cx="330" cy="200" r="13"/>
+    <rect x="250" y="325" width="500" height="70" rx="35"/>
+    <path d="M300 360h360"/>
+    <path d="M260 470h520M260 540h430M260 610h490"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <path d="M1030 210h330v250h-330z"/>
+    <path d="M1030 290h330"/>
+    <path d="M1095 380l64-64 76 44 88-104"/>
+    <path d="M990 565h420M1040 635h320M1090 705h220"/>
+  </g>
+  <text x="175" y="758" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">SEARCH INTENT</text>
+  <text x="175" y="823" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Content Writing</text>
+</svg>

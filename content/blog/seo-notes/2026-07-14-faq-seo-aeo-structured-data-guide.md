@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["FAQ", "FAQPage", "SEO", "AEO", "GEO", "structured data", "microdata", "schema"]
+cover:
+  image: "/images/seo-notes/faq-seo-aeo-structured-data-guide.svg"
+  alt: "FAQ SEO AEO 구조화 데이터 전략 썸네일"
+  relative: false
 ---
 
   <p>SEO 콘텐츠를 작성할 때 FAQ는 단순히 페이지 하단에 추가하는 보조 콘텐츠로 여겨지는 경우가 많습니다. 하지만 검색 환경이 질문형 검색과 AI 답변 중심으로 변화하면서 FAQ의 역할은 점점 더 중요해지고 있습니다.</p>

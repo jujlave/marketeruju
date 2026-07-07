@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="SEO basic checklist thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="180" y="150" width="720" height="500" rx="34"/>
+    <path d="M180 250h720"/>
+    <circle cx="235" cy="200" r="13"/><circle cx="285" cy="200" r="13"/><circle cx="335" cy="200" r="13"/>
+    <rect x="260" y="320" width="470" height="68" rx="34"/>
+    <circle cx="305" cy="354" r="16"/><path d="M320 369l22 22M390 354h260"/>
+    <path d="M290 490h420M290 555h300M290 620h360"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <path d="M1020 630h380"/>
+    <path d="M1050 590l78-94 96 54 116-172 80 70"/>
+    <path d="M1340 396l72 52 28-92"/>
+    <circle cx="1128" cy="496" r="14" fill="#f8f8f5"/>
+    <circle cx="1224" cy="550" r="14" fill="#f8f8f5"/>
+    <circle cx="1340" cy="378" r="14" fill="#f8f8f5"/>
+  </g>
+  <text x="180" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">SEO CHECKLIST</text>
+  <text x="180" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Basic SEO Audit</text>
+</svg>

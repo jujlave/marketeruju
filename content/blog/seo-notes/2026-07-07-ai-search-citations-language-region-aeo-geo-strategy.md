@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["citations", "ai 검색", "aeo", "geo", "로컬라이징 seo"]
+cover:
+  image: "/images/seo-notes/ai-search-citations-language-region-aeo-geo-strategy.svg"
+  alt: "AI 검색 Citations AEO GEO 전략 썸네일"
+  relative: false
 ---
 
   <p>AI 검색과 LLM 기반 답변 환경에서는 기존 검색 결과처럼 사용자가 여러 개의 링크를 직접 비교하기보다, AI가 먼저 답변을 생성하고 그 근거가 되는 출처를 함께 제시하는 방식이 점점 더 중요해지고 있습니다.</p>

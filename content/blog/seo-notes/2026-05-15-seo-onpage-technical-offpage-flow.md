@@ -8,6 +8,10 @@ type: "blog"
 categories: ["seo-notes"]
 tags: ["seo", "seo 종류", "온페이지 seo", "기술 seo", "오프페이지 seo"]
 keywords: ["SEO 종류", "온페이지 SEO", "기술 SEO", "오프페이지 SEO", "SEO 흐름"]
+cover:
+  image: "/images/seo-notes/seo-onpage-technical-offpage-flow.svg"
+  alt: "온페이지 기술 오프페이지 SEO 흐름 썸네일"
+  relative: false
 ---
 
 <h1>SEO는 하나가 아니다: 온페이지·기술·오프페이지 SEO 흐름 정리</h1>

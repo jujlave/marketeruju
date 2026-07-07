@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["seo 콘텐츠", "검색 의도", "콘텐츠 seo", "seo 글쓰기"]
+cover:
+  image: "/images/seo-notes/seo-content-writing-search-intent-guide.svg"
+  alt: "검색 의도 기반 SEO 콘텐츠 작성 가이드 썸네일"
+  relative: false
 ---
 
 <p>SEO 콘텐츠를 작성한다고 하면 여전히 많은 사람이 “키워드를 얼마나 넣어야 할까?”를 먼저 떠올립니다. 하지만 현재의 검색 환경에서 SEO 콘텐츠의 성패를 가르는 기준은 키워드의 개수가 아니라, <strong>검색 의도(Search Intent)를 얼마나 정확히 충족시키는가</strong>입니다.</p>

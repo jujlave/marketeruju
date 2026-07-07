@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="SEO types thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="170" y="160" width="360" height="360" rx="28"/>
+    <rect x="620" y="160" width="360" height="360" rx="28"/>
+    <rect x="1070" y="160" width="360" height="360" rx="28"/>
+    <path d="M230 300h240M230 370h180M230 440h220"/>
+    <path d="M710 270h180M710 350h180M710 430h180M800 240v220"/>
+    <path d="M1160 380l80-90 110 120"/>
+    <circle cx="1240" cy="290" r="26"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <path d="M530 340h90M980 340h90"/>
+    <path d="M585 308l32 32-32 32M1035 308l32 32-32 32"/>
+  </g>
+  <text x="170" y="690" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">ONPAGE / TECH / OFFPAGE</text>
+  <text x="170" y="760" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">SEO System Map</text>
+</svg>

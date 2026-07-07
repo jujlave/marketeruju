@@ -8,7 +8,7 @@ type: "blog"
 categories: ["seo-notes"]
 tags: ["seo", "검색엔진최적화", "seo란?", "seo 종류"]
 cover:
-  image: "/images/seo-notes/seo-why-search-engine-optimization-matters.png"
+  image: "/images/seo-notes/seo-why-search-engine-optimization-matters.svg"
   alt: "SEO, 검색엔진 최적화가 필요한 이유는 무엇일까? 썸네일"
   relative: false
 ---

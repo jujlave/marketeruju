@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["seo", "seo 체크리스트", "온페이지 seo", "기술 seo"]
+cover:
+  image: "/images/seo-notes/seo-basic-checklist-core-items.svg"
+  alt: "SEO 기본 체크리스트 핵심 항목 썸네일"
+  relative: false
 ---
 
 <h1>SEO 기본 체크리스트: 지금 바로 점검해야 할 핵심 항목</h1>

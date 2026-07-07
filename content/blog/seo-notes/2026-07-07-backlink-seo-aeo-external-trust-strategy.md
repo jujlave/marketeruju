@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["백링크", "seo", "aeo", "외부 신뢰도", "링크빌딩"]
+cover:
+  image: "/images/seo-notes/backlink-seo-aeo-external-trust-strategy.svg"
+  alt: "백링크와 외부 신뢰도 전략 썸네일"
+  relative: false
 ---
 
 <p>SEO를 이야기할 때 백링크는 여전히 중요한 요소로 언급됩니다. 하지만 백링크를 단순히 “외부 사이트에서 내 사이트로 연결되는 링크” 정도로만 이해하면, 실제 SEO 전략에서 활용할 수 있는 범위가 제한됩니다.</p>

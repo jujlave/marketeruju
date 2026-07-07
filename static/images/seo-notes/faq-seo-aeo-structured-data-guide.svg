@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="FAQ structured data thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="190" y="150" width="700" height="510" rx="34"/>
+    <path d="M190 250h700"/>
+    <circle cx="245" cy="200" r="13"/><circle cx="295" cy="200" r="13"/><circle cx="345" cy="200" r="13"/>
+    <path d="M300 350h470M300 455h360M300 560h420"/>
+    <path d="M250 340q25-32 50 0t50 0M250 445q25-32 50 0t50 0M250 550q25-32 50 0t50 0"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <rect x="1050" y="220" width="310" height="310" rx="44"/>
+    <path d="M1118 335c0-56 42-96 96-96 52 0 90 34 90 82 0 38-22 61-59 82-26 15-36 29-36 62"/>
+    <circle cx="1208" cy="488" r="10" fill="#f8f8f5"/>
+    <path d="M1010 650h430"/>
+  </g>
+  <text x="190" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">FAQ / SCHEMA</text>
+  <text x="190" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Question Strategy</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Why SEO matters thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="175" y="150" width="720" height="500" rx="34"/>
+    <path d="M175 250h720"/>
+    <circle cx="230" cy="200" r="13"/><circle cx="280" cy="200" r="13"/><circle cx="330" cy="200" r="13"/>
+    <rect x="265" y="335" width="520" height="80" rx="40"/>
+    <circle cx="315" cy="375" r="18"/><path d="M332 392l28 28M405 375h300"/>
+    <path d="M280 525h480M280 590h360"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <circle cx="1200" cy="375" r="170"/>
+    <path d="M1120 390l54 54 116-150"/>
+    <path d="M980 665h440"/>
+  </g>
+  <text x="175" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">WHY SEO</text>
+  <text x="175" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Organic Growth</text>
+</svg>

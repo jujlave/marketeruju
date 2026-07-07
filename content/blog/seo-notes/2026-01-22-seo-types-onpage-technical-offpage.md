@@ -7,6 +7,10 @@ draft: false
 type: "blog"
 categories: ["seo-notes"]
 tags: ["seo", "온페이지 seo", "기술 seo", "오프페이지 seo", "seo 종류"]
+cover:
+  image: "/images/seo-notes/seo-types-onpage-technical-offpage.svg"
+  alt: "온페이지 기술 오프페이지 SEO 종류 썸네일"
+  relative: false
 ---
 
 <p>SEO(Search Engine Optimization)는 하나의 작업이 아니라, 여러 영역이 유기적으로 맞물려 작동하는 구조적인 전략입니다. 흔히 SEO라고 하면 콘텐츠 작성이나 키워드 배치를 떠올리지만, 실제로는 <strong>온페이지 SEO, 기술 SEO, 오프페이지 SEO</strong>라는 세 가지 축으로 나뉘며, 각 영역은 서로 다른 역할을 수행합니다. 이 구조를 이해하지 못하면 “글은 열심히 썼는데 왜 노출이 안 될까?”라는 질문에 답하기 어렵습니다.</p>
