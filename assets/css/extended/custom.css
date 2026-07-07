@@ -985,19 +985,37 @@ h4,
 }
 
 .home-visual path,
-.home-visual circle{
+.home-visual circle,
+.home-visual rect{
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
   vector-effect: non-scaling-stroke;
 }
 
-.home-visual .cube path:nth-child(2){
-  fill: var(--home-blue);
+.home-visual .seo-window rect,
+.home-visual .search-bar rect{
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.home-visual .guide{
+.home-visual .search-bar,
+.home-visual .keyword-lines{
   stroke: var(--home-blue-soft);
+}
+
+.home-visual .chart path:nth-child(2),
+.home-visual .chart path:nth-child(3),
+.home-visual .rank-badge path{
+  stroke-width: 4;
+}
+
+.home-visual .chart circle,
+.home-visual .rank-badge circle{
+  fill: var(--home-paper);
+}
+
+.home-visual .rank-badge{
+  color: var(--home-blue);
 }
 
 .hero-spotlight{

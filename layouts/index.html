@@ -46,27 +46,44 @@
       </div>
 
       <div class="home-hero-side">
-        <div class="home-visual" aria-hidden="true">
-          <svg viewBox="0 0 420 360" role="img">
-            <g class="cube cube-lg">
-              <path d="M58 76h86v132H58z" />
-              <path d="M144 76l42-42v132l-42 42z" />
-              <path d="M58 76l42-42h86l-42 42z" />
-              <path d="M82 40v132" />
-              <path d="M58 154h86" />
+        <div class="home-visual">
+          <svg viewBox="0 0 420 360" role="img" aria-label="SEO performance illustration">
+            <g class="seo-window">
+              <rect x="56" y="54" width="308" height="220" rx="18"></rect>
+              <path d="M56 104h308"></path>
+              <circle cx="84" cy="80" r="6"></circle>
+              <circle cx="108" cy="80" r="6"></circle>
+              <circle cx="132" cy="80" r="6"></circle>
             </g>
-            <g class="cube cube-sm">
-              <path d="M240 68h74v74h-74z" />
-              <path d="M314 68l34-34v74l-34 34z" />
-              <path d="M240 68l34-34h74l-34 34z" />
+
+            <g class="search-bar">
+              <rect x="92" y="128" width="236" height="38" rx="19"></rect>
+              <circle cx="116" cy="147" r="9"></circle>
+              <path d="M123 154l10 10"></path>
+              <path d="M154 147h126"></path>
             </g>
-            <g class="cube cube-md">
-              <path d="M214 208h82v82h-82z" />
-              <path d="M296 208l38-38v82l-38 38z" />
-              <path d="M214 208l38-38h82l-38 38z" />
+
+            <g class="chart">
+              <path d="M98 238h224"></path>
+              <path d="M112 220l42-38 46 24 54-62 54 28"></path>
+              <path d="M286 150l22 22 10-34"></path>
+              <circle cx="154" cy="182" r="6"></circle>
+              <circle cx="200" cy="206" r="6"></circle>
+              <circle cx="254" cy="144" r="6"></circle>
+              <circle cx="308" cy="172" r="6"></circle>
             </g>
-            <circle cx="304" cy="188" r="28" />
-            <path class="guide" d="M28 252h126M28 278h212M348 38v114M348 222v96M180 312h190" />
+
+            <g class="keyword-lines">
+              <path d="M96 292h86"></path>
+              <path d="M204 292h120"></path>
+              <path d="M96 318h150"></path>
+              <path d="M270 318h54"></path>
+            </g>
+
+            <g class="rank-badge">
+              <circle cx="324" cy="78" r="30"></circle>
+              <path d="M312 82l10 10 18-26"></path>
+            </g>
           </svg>
         </div>
         {{- if gt (len $latestPost) 0 -}}
