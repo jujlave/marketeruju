@@ -73,6 +73,29 @@
     {{- end }}
   </footer>
 
+  {{- if $isSeoNote }}
+  {{- $otherPosts := where (where site.RegularPages "File.Dir" "blog/seo-notes/") "Permalink" "!=" .Permalink -}}
+  {{- $otherPosts = first 4 (sort $otherPosts "Date" "desc") -}}
+  {{- if gt (len $otherPosts) 0 }}
+  <section class="seo-note-related" aria-labelledby="seo-note-related-title">
+    <div class="seo-note-related-head">
+      <p>SEO Notes</p>
+      <h2 id="seo-note-related-title">다른 글 보기</h2>
+    </div>
+    <div class="seo-note-related-grid">
+      {{- range $otherPosts }}
+      <a class="seo-note-related-card" href="{{ .RelPermalink }}">
+        {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+        {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+        <span class="seo-note-related-title">{{ .Title }}</span>
+        <span class="seo-note-related-meta">{{ .Date.Format "2006-01-02" }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+  {{- end }}
+
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}

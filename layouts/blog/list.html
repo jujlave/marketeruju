@@ -51,6 +51,10 @@
 {{- $paginator := .Paginate $pages }}
 
 {{- $term := .Data.Term }}
+{{- $isSeoNotesList := eq .RelPermalink "/blog/seo-notes/" }}
+{{- if $isSeoNotesList }}
+<div class="seo-note-list-grid">
+{{- end }}
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
@@ -87,6 +91,9 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
+{{- if $isSeoNotesList }}
+</div>
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

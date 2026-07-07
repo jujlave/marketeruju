@@ -1,7 +1,7 @@
 {{- define "main" -}}
 
 {{- $posts := sort (where site.RegularPages "File.Dir" "blog/seo-notes/") "Date" "desc" -}}
-{{- $seoNotePosts := first 6 $posts -}}
+{{- $seoNotePosts := $posts -}}
 {{- $postCount := len $posts -}}
 {{- $spotlightPosts := first 3 $posts -}}
 {{- $tagCount := len site.Taxonomies.tags -}}
@@ -112,7 +112,7 @@
     <section class="home-block">
       <div class="home-block-head">
         <div>
-          <h2>최근 SEO 콘텐츠</h2>
+          <h2>전체 SEO 콘텐츠</h2>
         </div>
         <a class="home-more" href="/blog/seo-notes/">전체 글 보기</a>
       </div>
@@ -124,7 +124,7 @@
             <a href="/blog/seo-notes/">더 보기</a>
           </div>
 
-          <div class="home-post-list">
+          <div class="home-post-list home-post-list-all">
             {{- range $page := $seoNotePosts -}}
             <a class="home-post-card home-post-row" href="{{ $page.RelPermalink }}">
               <div class="home-post-thumb">
