@@ -2,7 +2,7 @@
 title: "AEO/GEO 성과는 어떻게 측정할까? AI 검색 시대의 SEO 리포트 지표 정리"
 description: "AI 검색 시대에 SEO 리포트에서 함께 봐야 할 AEO/GEO 성과 지표와 Citations, 브랜드 언급, Search Console, GA4, 외부 신뢰도 점검 기준을 정리합니다."
 slug: "aeo-geo-performance-measurement-seo-report-metrics"
-date: "2026-07-15T09:00:00+09:00"
+date: "2026-07-13T09:00:00+09:00"
 draft: false
 type: "blog"
 categories: ["seo-notes"]
