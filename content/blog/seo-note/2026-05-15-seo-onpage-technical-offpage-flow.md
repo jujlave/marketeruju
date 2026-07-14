@@ -2,10 +2,14 @@
 title: "SEO는 하나가 아니다: 온페이지·기술·오프페이지 SEO 흐름 정리"
 description: "온페이지 SEO, 기술 SEO, 오프페이지 SEO의 역할과 점검 순서를 검색 노출 흐름 관점에서 정리합니다."
 slug: "seo-onpage-technical-offpage-flow"
+url: "/blog/seo-onpage-technical-offpage-flow/"
+aliases:
+  - "/blog/seo-note/seo-onpage-technical-offpage-flow/"
+  - "/blog/seo-notes/seo-onpage-technical-offpage-flow/"
 date: "2026-05-15"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["seo-note"]
 tags: ["seo", "seo 종류", "온페이지 seo", "기술 seo", "오프페이지 seo"]
 keywords: ["SEO 종류", "온페이지 SEO", "기술 SEO", "오프페이지 SEO", "SEO 흐름"]
 cover:

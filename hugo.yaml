@@ -28,10 +28,14 @@ cascade:
 
 menu:
   main:
-    - name: "SEO Notes"
-      identifier: "blog/seo-notes"
-      pageRef: "blog/seo-notes"
+    - name: "SEO Note"
+      identifier: "blog/seo-note"
+      pageRef: "blog/seo-note"
       weight: 40
+    - name: "AEO-GEO Note"
+      identifier: "blog/aeo-geo-note"
+      pageRef: "blog/aeo-geo-note"
+      weight: 50
 
 
 params:
@@ -61,8 +65,8 @@ params:
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: "SEO Notes"
-        url: "/blog/seo-notes/"
+      - name: "SEO Note"
+        url: "/blog/seo-note/"
 
   # Optional: social icons (원하는 것만)
   socialIcons:

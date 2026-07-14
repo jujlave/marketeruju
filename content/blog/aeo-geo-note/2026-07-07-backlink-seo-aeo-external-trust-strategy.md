@@ -2,10 +2,14 @@
 title: "백링크는 왜 중요할까? SEO와 AEO를 연결하는 외부 신뢰도 전략"
 description: "백링크가 SEO와 AEO에서 왜 중요한지, 좋은 백링크의 기준과 외부 신뢰도 관리 방법을 정리합니다."
 slug: "backlink-seo-aeo-external-trust-strategy"
+url: "/blog/backlink-seo-aeo-external-trust-strategy/"
+aliases:
+  - "/blog/aeo-geo-note/backlink-seo-aeo-external-trust-strategy/"
+  - "/blog/seo-notes/backlink-seo-aeo-external-trust-strategy/"
 date: "2026-07-07"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["aeo-geo-note"]
 tags: ["백링크", "seo", "aeo", "외부 신뢰도", "링크빌딩"]
 cover:
   image: "/images/seo-notes/backlink-seo-aeo-external-trust-strategy.svg"

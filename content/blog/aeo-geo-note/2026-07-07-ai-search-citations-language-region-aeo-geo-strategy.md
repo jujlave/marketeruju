@@ -2,10 +2,14 @@
 title: "AI 검색에서 Citations는 왜 중요할까? 언어와 지역 기반 AEO/GEO 전략"
 description: "AI 검색에서 Citations가 왜 중요한지, 언어와 지역 기반 AEO/GEO 전략과 점검 기준을 정리합니다."
 slug: "ai-search-citations-language-region-aeo-geo-strategy"
+url: "/blog/ai-search-citations-language-region-aeo-geo-strategy/"
+aliases:
+  - "/blog/aeo-geo-note/ai-search-citations-language-region-aeo-geo-strategy/"
+  - "/blog/seo-notes/ai-search-citations-language-region-aeo-geo-strategy/"
 date: "2026-07-07"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["aeo-geo-note"]
 tags: ["citations", "ai 검색", "aeo", "geo", "로컬라이징 seo"]
 cover:
   image: "/images/seo-notes/ai-search-citations-language-region-aeo-geo-strategy.svg"

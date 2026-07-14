@@ -1,10 +1,12 @@
 {{- define "main" }}
 
 {{- $categories := .Params.categories | default (slice) -}}
-{{- $isSeoNote := in $categories "seo-notes" -}}
+{{- $isSeoNote := or (in $categories "seo-note") (in $categories "aeo-geo-note") -}}
+{{- $noteDir := .File.Dir -}}
+{{- $noteLabel := .CurrentSection.Title | default "Related Notes" -}}
 
 {{- if $isSeoNote }}
-<nav class="seo-note-side-nav" aria-label="SEO Notes 콘텐츠 내비게이션">
+<nav class="seo-note-side-nav" aria-label="{{ $noteLabel }} 콘텐츠 내비게이션">
   <div class="seo-note-side-nav-list" data-seo-note-nav></div>
   <a class="seo-note-nav-top" href="#top" aria-label="맨 위로" title="맨 위로">
     <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
@@ -74,12 +76,12 @@
   </footer>
 
   {{- if $isSeoNote }}
-  {{- $otherPosts := where (where site.RegularPages "File.Dir" "blog/seo-notes/") "Permalink" "!=" .Permalink -}}
+  {{- $otherPosts := where (where site.RegularPages "File.Dir" $noteDir) "Permalink" "!=" .Permalink -}}
   {{- $otherPosts = first 4 (sort $otherPosts "Date" "desc") -}}
   {{- if gt (len $otherPosts) 0 }}
   <section class="seo-note-related" aria-labelledby="seo-note-related-title">
     <div class="seo-note-related-head">
-      <p>SEO Notes</p>
+      <p>{{ $noteLabel }}</p>
       <h2 id="seo-note-related-title">다른 글 보기</h2>
     </div>
     <div class="seo-note-related-grid">

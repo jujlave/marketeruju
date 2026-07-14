@@ -1,7 +1,8 @@
 {{- define "main" -}}
 
-{{- $posts := sort (where site.RegularPages "File.Dir" "blog/seo-notes/") "Date" "desc" -}}
-{{- $seoNotePosts := $posts -}}
+{{- $seoNotePosts := sort (where site.RegularPages "File.Dir" "blog/seo-note/") "Date" "desc" -}}
+{{- $aeoGeoNotePosts := sort (where site.RegularPages "File.Dir" "blog/aeo-geo-note/") "Date" "desc" -}}
+{{- $posts := sort (union $seoNotePosts $aeoGeoNotePosts) "Date" "desc" -}}
 {{- $postCount := len $posts -}}
 {{- $spotlightPosts := first 3 $posts -}}
 {{- $tagCount := len site.Taxonomies.tags -}}
@@ -18,8 +19,8 @@
         </p>
 
         <div class="home-hero-actions">
-          <a class="home-hero-btn" href="/blog/seo-notes/">SEO 콘텐츠 보기</a>
-          <a class="home-hero-btn ghost" href="/blog/seo-notes/">SEO Notes</a>
+          <a class="home-hero-btn" href="/blog/seo-note/">SEO Note</a>
+          <a class="home-hero-btn ghost" href="/blog/aeo-geo-note/">AEO-GEO Note</a>
         </div>
 
         <div class="home-event-lines" aria-label="홈 요약 정보">
@@ -97,7 +98,7 @@
           {{- end -}}
         {{- else -}}
           <div class="hero-spotlight empty">
-            <span class="hero-spotlight-label">SEO Notes</span>
+            <span class="hero-spotlight-label">SEO Note</span>
             <h2>SEO 콘텐츠를 준비 중입니다.</h2>
             <p>SEO 노트가 추가되면 이 영역에 가장 최근 콘텐츠가 노출됩니다.</p>
           </div>
@@ -114,14 +115,14 @@
         <div>
           <h2>전체 SEO 콘텐츠</h2>
         </div>
-        <a class="home-more" href="/blog/seo-notes/">전체 글 보기</a>
+        <a class="home-more" href="/blog/seo-note/">SEO Note 보기</a>
       </div>
 
       <div class="home-latest-groups">
         <div class="home-post-group">
           <div class="home-post-group-head">
-            <h3>SEO Notes</h3>
-            <a href="/blog/seo-notes/">더 보기</a>
+            <h3>SEO Note</h3>
+            <a href="/blog/seo-note/">더 보기</a>
           </div>
 
           <div class="home-post-list home-post-list-all">
@@ -150,7 +151,44 @@
             {{- end -}}
 
             {{- if eq (len $seoNotePosts) 0 -}}
-            <div class="home-empty">SEO Notes 글이 없습니다.</div>
+            <div class="home-empty">SEO Note 글이 없습니다.</div>
+            {{- end -}}
+          </div>
+        </div>
+
+        <div class="home-post-group">
+          <div class="home-post-group-head">
+            <h3>AEO-GEO Note</h3>
+            <a href="/blog/aeo-geo-note/">더 보기</a>
+          </div>
+
+          <div class="home-post-list home-post-list-all">
+            {{- range $page := $aeoGeoNotePosts -}}
+            <a class="home-post-card home-post-row" href="{{ $page.RelPermalink }}">
+              <div class="home-post-thumb">
+                {{- $hasCover := $page.Param "cover.image" -}}
+                {{- if $hasCover -}}
+                  {{- $isHidden := ($page.Param "cover.hiddenInList") | default ($page.Param "cover.hidden") | default false -}}
+                  {{- partial "cover.html" (dict "cxt" $page "IsSingle" false "isHidden" $isHidden) -}}
+                {{- else -}}
+                  <div class="home-post-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                      <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2.5-1A1 1 0 0 0 5.5 6.5v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1h-11Zm2.75 10.25 2.75-3.25 2 2.5 2.75-3.25 3.25 4.25H7.5l1.75-2.25Z" />
+                    </svg>
+                    <span>POST</span>
+                  </div>
+                {{- end -}}
+              </div>
+              <div class="home-post-content">
+                <div class="home-post-title">{{ $page.Title }}</div>
+                <div class="home-post-excerpt">{{ $page.Summary | plainify | truncate 84 }}</div>
+                <div class="home-post-meta">{{ $page.Date.Format "2006-01-02" }}</div>
+              </div>
+            </a>
+            {{- end -}}
+
+            {{- if eq (len $aeoGeoNotePosts) 0 -}}
+            <div class="home-empty">AEO-GEO Note 글이 없습니다.</div>
             {{- end -}}
           </div>
         </div>

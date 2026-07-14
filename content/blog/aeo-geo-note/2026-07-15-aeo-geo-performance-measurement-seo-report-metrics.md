@@ -2,10 +2,14 @@
 title: "AEO/GEO 성과는 어떻게 측정할까? AI 검색 시대의 SEO 리포트 지표 정리"
 description: "AI 검색 시대에 SEO 리포트에서 함께 봐야 할 AEO/GEO 성과 지표와 Citations, 브랜드 언급, Search Console, GA4, 외부 신뢰도 점검 기준을 정리합니다."
 slug: "aeo-geo-performance-measurement-seo-report-metrics"
+url: "/blog/aeo-geo-performance-measurement-seo-report-metrics/"
+aliases:
+  - "/blog/aeo-geo-note/aeo-geo-performance-measurement-seo-report-metrics/"
+  - "/blog/seo-notes/aeo-geo-performance-measurement-seo-report-metrics/"
 date: "2026-07-13T09:00:00+09:00"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["aeo-geo-note"]
 tags: ["AEO", "GEO", "SEO 리포트", "AI 검색", "citations", "성과 측정"]
 cover:
   image: "/images/seo-notes/aeo-geo-performance-measurement-seo-report-metrics.svg"
@@ -17,7 +21,7 @@ cover:
 
 <p>하지만 AI 검색과 답변형 검색 환경이 확대되면서 SEO 성과를 기존 지표만으로 판단하기는 점점 어려워지고 있습니다. 사용자가 검색 결과를 직접 클릭하지 않아도 AI 답변 안에서 브랜드를 접할 수 있고, 반대로 검색 결과 상위에 노출되더라도 AI 답변의 근거로 인용되지 않을 수 있습니다.</p>
 
-<p>따라서 앞으로의 SEO 리포트는 기존 검색 성과와 함께 <strong>AEO/GEO 관점의 인용, 언급, 출처성, 정보 일관성</strong>을 함께 확인하는 방식으로 확장되어야 합니다. 이전 글에서 정리한 <a href="/blog/seo-notes/ai-search-citations-language-region-aeo-geo-strategy/">AI 검색 Citations</a>, <a href="/blog/seo-notes/backlink-seo-aeo-external-trust-strategy/">백링크와 외부 신뢰도</a>, <a href="/blog/seo-notes/faq-seo-aeo-structured-data-guide/">FAQ 질문형 콘텐츠 전략</a>은 모두 이 성과 측정 흐름과 연결됩니다.</p>
+<p>따라서 앞으로의 SEO 리포트는 기존 검색 성과와 함께 <strong>AEO/GEO 관점의 인용, 언급, 출처성, 정보 일관성</strong>을 함께 확인하는 방식으로 확장되어야 합니다. 이전 글에서 정리한 <a href="/blog/ai-search-citations-language-region-aeo-geo-strategy/">AI 검색 Citations</a>, <a href="/blog/backlink-seo-aeo-external-trust-strategy/">백링크와 외부 신뢰도</a>, <a href="/blog/faq-seo-aeo-structured-data-guide/">FAQ 질문형 콘텐츠 전략</a>은 모두 이 성과 측정 흐름과 연결됩니다.</p>
 
 <h2>AEO/GEO 성과 측정이 어려운 이유</h2>
 
@@ -188,7 +192,7 @@ cover:
   </tbody>
 </table>
 
-<p>이렇게 기록하면 단순히 “AI에 나왔다”가 아니라, 어떤 질문과 어떤 시장에서 어떤 페이지가 인용되는지 볼 수 있습니다. 자세한 Citations 개념은 <a href="/blog/seo-notes/ai-search-citations-language-region-aeo-geo-strategy/">AI 검색에서 Citations는 왜 중요할까?</a> 글에서 함께 확인할 수 있습니다.</p>
+<p>이렇게 기록하면 단순히 “AI에 나왔다”가 아니라, 어떤 질문과 어떤 시장에서 어떤 페이지가 인용되는지 볼 수 있습니다. 자세한 Citations 개념은 <a href="/blog/ai-search-citations-language-region-aeo-geo-strategy/">AI 검색에서 Citations는 왜 중요할까?</a> 글에서 함께 확인할 수 있습니다.</p>
 
 <h2>Search Console 데이터는 어떻게 연결해야 할까?</h2>
 
@@ -264,7 +268,7 @@ cover:
   <li>한국, 일본 등 로컬 시장에서 영향력 있는 플랫폼에 정보가 존재하는가</li>
 </ul>
 
-<p>이 부분은 <a href="/blog/seo-notes/backlink-seo-aeo-external-trust-strategy/">백링크는 왜 중요할까?</a> 글에서 다룬 외부 신뢰도 전략과 직접 연결됩니다. AEO/GEO 리포트에서는 백링크를 순위 신호로만 보지 말고, AI가 참고할 수 있는 외부 근거의 품질로 함께 봐야 합니다.</p>
+<p>이 부분은 <a href="/blog/backlink-seo-aeo-external-trust-strategy/">백링크는 왜 중요할까?</a> 글에서 다룬 외부 신뢰도 전략과 직접 연결됩니다. AEO/GEO 리포트에서는 백링크를 순위 신호로만 보지 말고, AI가 참고할 수 있는 외부 근거의 품질로 함께 봐야 합니다.</p>
 
 <h2>월간 SEO 리포트에 넣을 수 있는 구성 예시</h2>
 
@@ -312,7 +316,7 @@ cover:
   </tbody>
 </table>
 
-<p>기존 리포트 템플릿을 운영하고 있다면, AEO/GEO 항목은 별도의 큰 리포트로 만들기보다 월간 SEO 리포트의 보조 섹션으로 시작하는 것이 좋습니다. 기본 SEO 성과와 함께 봐야 실제 개선 액션을 정하기 쉽기 때문입니다. 기본 리포트 구조는 <a href="/blog/seo-notes/seo-report-template/">SEO Report Template</a> 글과 함께 연결해 활용할 수 있습니다.</p>
+<p>기존 리포트 템플릿을 운영하고 있다면, AEO/GEO 항목은 별도의 큰 리포트로 만들기보다 월간 SEO 리포트의 보조 섹션으로 시작하는 것이 좋습니다. 기본 SEO 성과와 함께 봐야 실제 개선 액션을 정하기 쉽기 때문입니다. 기본 리포트 구조는 <a href="/blog/seo-report-template/">SEO Report Template</a> 글과 함께 연결해 활용할 수 있습니다.</p>
 
 <h2>AEO/GEO 성과 해석 시 주의할 점</h2>
 

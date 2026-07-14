@@ -2,10 +2,14 @@
 title: "FAQ는 왜 중요할까? SEO와 AEO를 연결하는 질문형 콘텐츠 전략"
 description: "SEO에서 FAQ 콘텐츠가 중요한 이유와 FAQ 질문 수집 방법, Microdata 적용 방식, Search Console과 Schema 검증 방법, AEO 관점의 활용 전략을 정리합니다."
 slug: "faq-seo-aeo-structured-data-guide"
+url: "/blog/faq-seo-aeo-structured-data-guide/"
+aliases:
+  - "/blog/aeo-geo-note/faq-seo-aeo-structured-data-guide/"
+  - "/blog/seo-notes/faq-seo-aeo-structured-data-guide/"
 date: "2026-07-14T09:00:00+09:00"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["aeo-geo-note"]
 tags: ["FAQ", "FAQPage", "SEO", "AEO", "GEO", "structured data", "microdata", "schema"]
 cover:
   image: "/images/seo-notes/faq-seo-aeo-structured-data-guide.svg"

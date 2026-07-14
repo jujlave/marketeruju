@@ -29,9 +29,9 @@ collections:
       - { name: "tags", label: "Tags", widget: "list", default: [] }
       - { name: "body", label: "Body", widget: "markdown" }
 
-  - name: "seo-notes"
-    label: "SEO Notes"
-    folder: "content/blog/seo-notes"
+  - name: "seo-note"
+    label: "SEO Note"
+    folder: "content/blog/seo-note"
     create: true
     slug: "{{slug}}"
     fields:
@@ -40,6 +40,21 @@ collections:
       - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
       - { name: "draft", label: "Draft", widget: "boolean", default: true }
       - { name: "type", label: "Type", widget: "hidden", default: "blog" }
-      - { name: "categories", label: "Categories", widget: "hidden", default: ["seo-notes"] }
+      - { name: "categories", label: "Categories", widget: "hidden", default: ["seo-note"] }
+      - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "body", label: "Body", widget: "markdown" }
+
+  - name: "aeo-geo-note"
+    label: "AEO-GEO Note"
+    folder: "content/blog/aeo-geo-note"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "type", label: "Type", widget: "hidden", default: "blog" }
+      - { name: "categories", label: "Categories", widget: "hidden", default: ["aeo-geo-note"] }
       - { name: "tags", label: "Tags", widget: "list", default: [] }
       - { name: "body", label: "Body", widget: "markdown" }

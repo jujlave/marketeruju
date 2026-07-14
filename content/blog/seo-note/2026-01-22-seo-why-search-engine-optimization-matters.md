@@ -2,10 +2,14 @@
 title: "SEO, 검색엔진 최적화가 필요한 이유는 무엇일까?"
 description: "SEO가 왜 필요한지와 오가닉 트래픽, 전환, AI 시대 대응 관점에서 핵심 이유를 정리합니다."
 slug: "seo-why-search-engine-optimization-matters"
+url: "/blog/seo-why-search-engine-optimization-matters/"
+aliases:
+  - "/blog/seo-note/seo-why-search-engine-optimization-matters/"
+  - "/blog/seo-notes/seo-why-search-engine-optimization-matters/"
 date: "2026-01-22"
 draft: false
 type: "blog"
-categories: ["seo-notes"]
+categories: ["seo-note"]
 tags: ["seo", "검색엔진최적화", "seo란?", "seo 종류"]
 cover:
   image: "/images/seo-notes/seo-why-search-engine-optimization-matters.svg"

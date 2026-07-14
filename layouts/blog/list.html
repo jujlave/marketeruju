@@ -28,7 +28,8 @@
 <div class="post-content">
   <ul class="terms-tags">
     <li><a href="/blog/work-log/">Work Log</a></li>
-    <li><a href="/blog/seo-notes/">SEO Notes</a></li>
+    <li><a href="/blog/seo-note/">SEO Note</a></li>
+    <li><a href="/blog/aeo-geo-note/">AEO-GEO Note</a></li>
   </ul>
 </div>
 
@@ -43,15 +44,17 @@
 {{- $pages := where site.RegularPages "Section" "blog" }}
 {{- if eq .RelPermalink "/blog/work-log/" }}
 {{- $pages = where $pages "File.Dir" "blog/work-log/" }}
-{{- else if eq .RelPermalink "/blog/seo-notes/" }}
-{{- $pages = where $pages "File.Dir" "blog/seo-notes/" }}
+{{- else if eq .RelPermalink "/blog/seo-note/" }}
+{{- $pages = where $pages "File.Dir" "blog/seo-note/" }}
+{{- else if eq .RelPermalink "/blog/aeo-geo-note/" }}
+{{- $pages = where $pages "File.Dir" "blog/aeo-geo-note/" }}
 {{- end }}
 {{- $pages = sort $pages "Date" "desc" }}
 
 {{- $paginator := .Paginate $pages }}
 
 {{- $term := .Data.Term }}
-{{- $isSeoNotesList := eq .RelPermalink "/blog/seo-notes/" }}
+{{- $isSeoNotesList := or (eq .RelPermalink "/blog/seo-note/") (eq .RelPermalink "/blog/aeo-geo-note/") }}
 {{- if $isSeoNotesList }}
 <div class="seo-note-list-grid">
 {{- end }}
