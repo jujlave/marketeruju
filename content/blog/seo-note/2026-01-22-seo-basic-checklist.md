@@ -4,8 +4,11 @@ description: "콘텐츠, 메타, 기술 요소까지 빠르게 점검할 수 있
 slug: "seo-basic-checklist"
 url: "/blog/seo-basic-checklist/"
 aliases:
+  - "/blog/seo-basic-checklist-core-items/"
   - "/blog/seo-note/seo-basic-checklist/"
+  - "/blog/seo-note/seo-basic-checklist-core-items/"
   - "/blog/seo-notes/seo-basic-checklist/"
+  - "/blog/seo-notes/seo-basic-checklist-core-items/"
 date: "2026-01-22"
 draft: false
 type: "blog"
