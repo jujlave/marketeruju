@@ -58,22 +58,75 @@ export default {
     }
 
     const token = tokenData.access_token;
+    const escapedProvider = JSON.stringify(provider);
+    const escapedToken = JSON.stringify(token);
+    const escapedTarget = JSON.stringify(callbackUrl);
     const html = `
 <!doctype html>
 <html>
-  <head><meta charset="utf-8" /></head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Authorization complete</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #111827;
+        background: #f8fafc;
+      }
+      main {
+        max-width: 520px;
+        padding: 28px;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 20px;
+      }
+      p {
+        margin: 8px 0 0;
+        line-height: 1.6;
+      }
+      a {
+        color: #2563eb;
+      }
+    </style>
+  </head>
   <body>
+    <main>
+      <h1>Authorization complete</h1>
+      <p>Returning to the content manager. If this window does not close, go back to the admin tab and try again.</p>
+      <p><a href="${callbackUrl}/admin/">Open admin</a></p>
+    </main>
     <script>
       (function () {
-        var message = 'authorization:${provider}:success:${token}';
-        var target = '${callbackUrl}';
+        var provider = ${escapedProvider};
+        var token = ${escapedToken};
+        var target = ${escapedTarget};
+        var stringMessage = 'authorization:' + provider + ':success:' + token;
+        var objectMessage = {
+          type: 'authorization',
+          provider: provider,
+          status: 'success',
+          token: token
+        };
         var attempts = 0;
-        var maxAttempts = 4;
-        var interval = 600;
+        var maxAttempts = 12;
+        var interval = 500;
 
         function sendMessage() {
-          if (window.opener) {
-            window.opener.postMessage(message, target);
+          var receiver = window.opener || window.parent;
+          if (receiver && receiver !== window) {
+            receiver.postMessage(stringMessage, target);
+            receiver.postMessage(objectMessage, target);
+            receiver.postMessage(stringMessage, '*');
+            receiver.postMessage(objectMessage, '*');
           }
           attempts += 1;
           if (attempts >= maxAttempts) {
