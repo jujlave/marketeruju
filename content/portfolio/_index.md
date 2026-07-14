@@ -340,6 +340,17 @@ sitemap:
     letter-spacing: -0.5px;
   }
 
+  .main {
+    width: 100%;
+    max-width: min(1180px, calc(100vw - 220px));
+  }
+
+  @media (min-width: 1440px) {
+    .main {
+      max-width: 1240px;
+    }
+  }
+
   .top-link {
     display: none;
   }
@@ -837,6 +848,10 @@ sitemap:
   }
 
   @media (max-width: 960px) {
+    .main {
+      max-width: calc(100vw - 32px);
+    }
+
     .project-card,
     .about-grid {
       grid-template-columns: 1fr;
