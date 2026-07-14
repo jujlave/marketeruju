@@ -34,8 +34,45 @@ export default {
     }
 
     if (!code) {
-      const redirect = `https://github.com/login/oauth/authorize?client_id=${encodeURIComponent(clientId)}&scope=repo&redirect_uri=${encodeURIComponent(url.origin + "/auth")}`;
-      return Response.redirect(redirect, 302);
+      const scope = url.searchParams.get("scope") || "repo";
+      const redirect = `https://github.com/login/oauth/authorize?client_id=${encodeURIComponent(clientId)}&scope=${encodeURIComponent(scope)}&redirect_uri=${encodeURIComponent(url.origin + "/auth")}`;
+      const escapedProvider = JSON.stringify(provider);
+      const escapedTarget = JSON.stringify(callbackUrl);
+      const escapedRedirect = JSON.stringify(redirect);
+      const html = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Authorizing</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        var provider = ${escapedProvider};
+        var target = ${escapedTarget};
+        var redirect = ${escapedRedirect};
+        var message = 'authorizing:' + provider;
+
+        function start() {
+          window.location.href = redirect;
+        }
+
+        if (window.opener && window.opener !== window) {
+          window.opener.postMessage(message, target);
+          window.opener.postMessage(message, '*');
+          setTimeout(start, 400);
+        } else {
+          start();
+        }
+      })();
+    </script>
+  </body>
+</html>`;
+
+      return new Response(html, {
+        headers: { "Content-Type": "text/html; charset=utf-8" },
+      });
     }
 
     const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
@@ -59,7 +96,7 @@ export default {
 
     const token = tokenData.access_token;
     const escapedProvider = JSON.stringify(provider);
-    const escapedToken = JSON.stringify(token);
+    const escapedPayload = JSON.stringify(JSON.stringify(token));
     const escapedTarget = JSON.stringify(callbackUrl);
     const html = `
 <!doctype html>
@@ -107,15 +144,9 @@ export default {
     <script>
       (function () {
         var provider = ${escapedProvider};
-        var token = ${escapedToken};
+        var payload = ${escapedPayload};
         var target = ${escapedTarget};
-        var stringMessage = 'authorization:' + provider + ':success:' + token;
-        var objectMessage = {
-          type: 'authorization',
-          provider: provider,
-          status: 'success',
-          token: token
-        };
+        var stringMessage = 'authorization:' + provider + ':success:' + payload;
         var attempts = 0;
         var maxAttempts = 12;
         var interval = 500;
@@ -124,9 +155,7 @@ export default {
           var receiver = window.opener || window.parent;
           if (receiver && receiver !== window) {
             receiver.postMessage(stringMessage, target);
-            receiver.postMessage(objectMessage, target);
             receiver.postMessage(stringMessage, '*');
-            receiver.postMessage(objectMessage, '*');
           }
           attempts += 1;
           if (attempts >= maxAttempts) {
