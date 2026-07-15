@@ -17,6 +17,8 @@ display_url: "https://marketeruju.com"
 collections:
   - name: "portfolio"
     label: "Portfolio"
+    editor:
+      preview: false
     files:
       - name: "portfolio-page"
         label: "Portfolio Page"
@@ -34,21 +36,42 @@ collections:
             collapsed: true
             fields:
               - { name: "disable", label: "Disable", widget: "boolean", default: true }
-          - { name: "body", label: "Body", widget: "markdown" }
+          - { name: "body", label: "Portfolio HTML Body", widget: "markdown", hint: "이 페이지는 섹션, 스타일, 스크립트가 함께 들어간 포트폴리오 본문입니다. 큰 구조 변경 전에는 일부 문장만 먼저 수정해 저장 테스트를 권장합니다." }
 
   - name: "work-log"
     label: "Work Log"
     folder: "content/blog/work-log"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}} · {{date}} · {{draft}}"
     fields:
       - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "SEO Description", widget: "text", required: false, hint: "검색 결과와 SNS 미리보기에 쓰일 수 있는 80-160자 요약입니다." }
       - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "url", label: "Custom URL", widget: "string", required: false }
+      - { name: "aliases", label: "Redirect Aliases", widget: "list", required: false }
       - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "lastmod", label: "Last Modified", widget: "datetime", format: "YYYY-MM-DD", required: false }
       - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "canonicalURL", label: "Canonical URL", widget: "string", required: false }
+      - { name: "robotsNoIndex", label: "No Index", widget: "boolean", default: false, required: false }
       - { name: "type", label: "Type", widget: "hidden", default: "blog" }
       - { name: "categories", label: "Categories", widget: "hidden", default: ["work-log"] }
       - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "project", label: "Project", widget: "string", required: false }
+      - { name: "workType", label: "Work Type", widget: "select", required: false, options: ["SEO", "Content", "Report", "Analytics", "Automation", "Meeting", "Operation"] }
+      - name: "cover"
+        label: "Cover Image"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "image", label: "Image", widget: "image", required: false }
+          - { name: "alt", label: "Alt Text", widget: "string", required: false }
+          - { name: "relative", label: "Relative", widget: "boolean", default: false, required: false }
+          - { name: "hidden", label: "Hide Cover", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInSingle", label: "Hide In Post", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInList", label: "Hide In List", widget: "boolean", default: false, required: false }
       - { name: "body", label: "Body", widget: "markdown" }
 
   - name: "seo-note"
@@ -56,14 +79,35 @@ collections:
     folder: "content/blog/seo-note"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}} · {{date}} · {{draft}}"
     fields:
       - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "SEO Description", widget: "text", required: false, hint: "검색 의도와 핵심 답변이 드러나는 80-160자 요약입니다." }
       - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "url", label: "Custom URL", widget: "string", required: false }
+      - { name: "aliases", label: "Redirect Aliases", widget: "list", required: false }
       - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "lastmod", label: "Last Modified", widget: "datetime", format: "YYYY-MM-DD", required: false }
       - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "canonicalURL", label: "Canonical URL", widget: "string", required: false }
+      - { name: "robotsNoIndex", label: "No Index", widget: "boolean", default: false, required: false }
       - { name: "type", label: "Type", widget: "hidden", default: "blog" }
       - { name: "categories", label: "Categories", widget: "hidden", default: ["seo-note"] }
       - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "searchIntent", label: "Search Intent", widget: "select", required: false, options: ["Informational", "Commercial", "Transactional", "Navigational"] }
+      - { name: "targetKeyword", label: "Target Keyword", widget: "string", required: false }
+      - name: "cover"
+        label: "Cover Image"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "image", label: "Image", widget: "image", required: false }
+          - { name: "alt", label: "Alt Text", widget: "string", required: false }
+          - { name: "relative", label: "Relative", widget: "boolean", default: false, required: false }
+          - { name: "hidden", label: "Hide Cover", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInSingle", label: "Hide In Post", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInList", label: "Hide In List", widget: "boolean", default: false, required: false }
       - { name: "body", label: "Body", widget: "markdown" }
 
   - name: "aeo-geo-note"
@@ -71,12 +115,33 @@ collections:
     folder: "content/blog/aeo-geo-note"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}} · {{date}} · {{draft}}"
     fields:
       - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "SEO Description", widget: "text", required: false, hint: "AI 검색, Citation, FAQ, 구조화 데이터 관점의 핵심 요약입니다." }
       - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "url", label: "Custom URL", widget: "string", required: false }
+      - { name: "aliases", label: "Redirect Aliases", widget: "list", required: false }
       - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { name: "lastmod", label: "Last Modified", widget: "datetime", format: "YYYY-MM-DD", required: false }
       - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "canonicalURL", label: "Canonical URL", widget: "string", required: false }
+      - { name: "robotsNoIndex", label: "No Index", widget: "boolean", default: false, required: false }
       - { name: "type", label: "Type", widget: "hidden", default: "blog" }
       - { name: "categories", label: "Categories", widget: "hidden", default: ["aeo-geo-note"] }
       - { name: "tags", label: "Tags", widget: "list", default: [] }
+      - { name: "answerTarget", label: "Answer Target", widget: "string", required: false, hint: "이 글이 답하려는 대표 질문입니다." }
+      - { name: "citationFocus", label: "Citation Focus", widget: "select", required: false, options: ["FAQ", "Structured Data", "Brand Mention", "External Trust", "AI Search", "Reporting"] }
+      - name: "cover"
+        label: "Cover Image"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { name: "image", label: "Image", widget: "image", required: false }
+          - { name: "alt", label: "Alt Text", widget: "string", required: false }
+          - { name: "relative", label: "Relative", widget: "boolean", default: false, required: false }
+          - { name: "hidden", label: "Hide Cover", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInSingle", label: "Hide In Post", widget: "boolean", default: false, required: false }
+          - { name: "hiddenInList", label: "Hide In List", widget: "boolean", default: false, required: false }
       - { name: "body", label: "Body", widget: "markdown" }
