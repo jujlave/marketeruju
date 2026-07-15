@@ -96,7 +96,7 @@ export default {
 
     const token = tokenData.access_token;
     const escapedProvider = JSON.stringify(provider);
-    const escapedPayload = JSON.stringify(JSON.stringify(token));
+    const escapedPayload = JSON.stringify(JSON.stringify({ token }));
     const escapedTarget = JSON.stringify(callbackUrl);
     const html = `
 <!doctype html>
