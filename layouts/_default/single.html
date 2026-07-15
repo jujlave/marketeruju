@@ -2,6 +2,7 @@
 
 {{- $categories := .Params.categories | default (slice) -}}
 {{- $isSeoNote := or (in $categories "seo-note") (in $categories "aeo-geo-note") -}}
+{{- $isWorkLog := in $categories "work-log" -}}
 {{- $noteDir := .File.Dir -}}
 {{- $noteLabel := .CurrentSection.Title | default "Related Notes" -}}
 
@@ -16,11 +17,19 @@
 </nav>
 {{- end }}
 
-<article class="post-single{{ if $isSeoNote }} seo-note-single{{ end }}">
+<article class="post-single{{ if $isSeoNote }} seo-note-single{{ end }}{{ if $isWorkLog }} work-log-single{{ end }}">
   <header class="post-header">
+    {{- if not $isWorkLog }}
     {{ partial "breadcrumbs.html" . }}
+    {{- end }}
+    {{- if $isWorkLog }}
+    <div class="work-log-kicker">
+      <span>Work Log</span>
+      <span>{{ .Date.Format "2006.01" }}</span>
+    </div>
+    {{- end }}
     <h1 class="post-title entry-hint-parent">
-      {{ .Title }}
+      {{ .Params.displayTitle | default .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
@@ -37,24 +46,52 @@
     {{- end }}
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
+      {{- if $isWorkLog }}
+      {{ .Date.Format "2006.01.02" }} · {{ .ReadingTime }} min read
+      {{- else }}
       {{- partial "post_meta.html" . -}}
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
+      {{- end }}
     </div>
+    {{- end }}
+    {{- if $isWorkLog }}
+    <dl class="work-log-info-row">
+      {{- with .Params.role }}
+      <div>
+        <dt>역할</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{- end }}
+      {{- with .Params.scope }}
+      <div>
+        <dt>주요 업무</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{- end }}
+      {{- with .Params.period }}
+      <div>
+        <dt>기간</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{- end }}
+    </dl>
     {{- end }}
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
+  {{- if and (.Param "ShowToc") (not $isWorkLog) }}
   {{- partial "toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
   <div class="post-content md-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- if or (.Param "disableAnchoredHeadings") $isWorkLog }}
+    {{ .Content }}
+    {{- else }}
     {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
+    {{- end }}
   </div>
   {{- end }}
 
@@ -70,7 +107,7 @@
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true) (not $isWorkLog)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>

@@ -2515,3 +2515,371 @@ h4,
     display: grid;
   }
 }
+
+/* ===== Work log article system ===== */
+.work-log-single{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px clamp(18px, 4vw, 48px) 52px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.work-log-single .post-header{
+  max-width: 760px;
+  margin: 0 auto 34px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.work-log-kicker{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-log-kicker span + span::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 12px 2px 0;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.work-log-single .post-title{
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(32px, 4.5vw, 36px) !important;
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.work-log-single .post-description{
+  max-width: 720px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
+.work-log-single .post-meta{
+  margin-top: 14px;
+  color: color-mix(in srgb, var(--muted) 82%, var(--text));
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.work-log-info-row{
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr 1fr;
+  gap: 0;
+  margin: 24px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.work-log-info-row div{
+  padding: 14px 16px;
+  border-right: 1px solid var(--line);
+}
+
+.work-log-info-row div:last-child{
+  border-right: 0;
+}
+
+.work-log-info-row dt{
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.work-log-info-row dd{
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.work-log-single .post-content{
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--text);
+  font-size: 16.5px;
+  line-height: 1.85;
+  letter-spacing: 0;
+}
+
+.work-log-single .post-content h2{
+  margin: 46px 0 16px;
+  color: var(--text);
+  font-size: clamp(23px, 3vw, 25px) !important;
+  font-weight: 800;
+  line-height: 1.32;
+  letter-spacing: 0;
+}
+
+.work-log-single .post-content h3{
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 17px !important;
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.work-log-single .post-content p{
+  margin: 0 0 16px;
+}
+
+.work-log-wide{
+  width: min(900px, calc(100vw - 36px));
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.work-log-chart{
+  margin-top: 30px;
+  margin-bottom: 38px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+
+.work-log-chart figcaption{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 18px;
+}
+
+.work-log-chart figcaption strong{
+  color: var(--text);
+  font-size: 16px;
+}
+
+.work-log-chart figcaption span,
+.work-log-chart p{
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.chart-bars{
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chart-bar{
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 44px;
+  gap: 12px;
+  align-items: center;
+}
+
+.chart-bar::before{
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  width: var(--bar);
+  height: 22px;
+  border-radius: 4px;
+  background: #2f6fe0;
+}
+
+.chart-bar.is-down::before{
+  background: #d65a46;
+}
+
+.chart-bar.is-muted::before{
+  background: #8a95a6;
+}
+
+.chart-bar span,
+.chart-bar strong{
+  font-size: 13px;
+  line-height: 1;
+}
+
+.chart-bar span{
+  color: var(--muted);
+}
+
+.chart-bar strong{
+  color: var(--text);
+  text-align: right;
+}
+
+.work-log-task-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 12px;
+}
+
+.work-log-task-grid section,
+.work-log-case{
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.work-log-task-grid section{
+  padding: 18px;
+}
+
+.work-log-task-grid p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.work-log-case{
+  margin: 16px 0;
+  padding: 20px;
+}
+
+.work-log-case dl{
+  display: grid;
+  gap: 14px;
+  margin: 14px 0 0;
+}
+
+.work-log-case dl div{
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.work-log-case dt{
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.work-log-case dd{
+  margin: 0;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.work-log-insight-table{
+  margin-top: 26px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.work-log-insight-table th,
+.work-log-insight-table td{
+  padding: 12px 14px;
+  vertical-align: top;
+}
+
+.work-log-single .post-content ol{
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding-left: 24px;
+}
+
+.work-log-single .post-footer{
+  max-width: 760px;
+  margin: 42px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.work-log-single .post-tags{
+  gap: 8px;
+}
+
+.work-log-single .post-tags a{
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.work-log-single .paginav{
+  gap: 16px;
+  margin-top: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.work-log-single .paginav a{
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+}
+
+.work-log-single .paginav .title{
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.work-log-single .paginav .prev::before,
+.work-log-single .paginav .next::after{
+  color: var(--accent-2);
+}
+
+@media (max-width: 760px){
+  .work-log-single{
+    padding-inline: 18px;
+  }
+
+  .work-log-info-row,
+  .work-log-task-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .work-log-info-row div{
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .work-log-info-row div:last-child{
+    border-bottom: 0;
+  }
+
+  .work-log-wide{
+    width: 100%;
+  }
+
+  .work-log-chart{
+    padding: 18px;
+  }
+
+  .chart-bar{
+    grid-template-columns: 74px minmax(0, 1fr) 38px;
+  }
+
+  .work-log-case dl div{
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
