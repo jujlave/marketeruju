@@ -6,6 +6,7 @@ backend:
   base_url: https://cms-auth.marketeruju.com
   auth_endpoint: auth
   site_id: marketeruju.com
+  auth_scope: repo
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
