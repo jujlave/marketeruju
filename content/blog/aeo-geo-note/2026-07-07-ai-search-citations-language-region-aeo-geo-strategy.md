@@ -1,19 +1,27 @@
 ---
-title: "AI 검색에서 Citations는 왜 중요할까? 언어와 지역 기반 AEO/GEO 전략"
-description: "AI 검색에서 Citations가 왜 중요한지, 언어와 지역 기반 AEO/GEO 전략과 점검 기준을 정리합니다."
-slug: "ai-search-citations-language-region-aeo-geo-strategy"
-url: "/blog/ai-search-citations-language-region-aeo-geo-strategy/"
+title: AI 검색에서 Citations는 왜 중요할까? 언어와 지역 기반 AEO/GEO 전략
+description: AI 검색의 Citations는 생성형 AI가 답변의 근거로 제시하는 인용 출처를 의미합니다. 브랜드 신뢰도와 검색
+  노출을 높이는 핵심 요소인 Citations의 인용 빈도를 개선하는 방법을 언어·지역별 AEO/GEO 전략 및 점검 기준과 함께
+  정리했습니다.
+slug: ai-search-citations-language-region-aeo-geo-strategy
+url: /blog/ai-search-citations-language-region-aeo-geo-strategy/
 aliases:
-  - "/blog/aeo-geo-note/ai-search-citations-language-region-aeo-geo-strategy/"
-  - "/blog/seo-notes/ai-search-citations-language-region-aeo-geo-strategy/"
-date: "2026-07-07"
+  - /blog/aeo-geo-note/ai-search-citations-language-region-aeo-geo-strategy/
+  - /blog/seo-notes/ai-search-citations-language-region-aeo-geo-strategy/
+date: 2026-07-07
 draft: false
-type: "blog"
-categories: ["aeo-geo-note"]
-tags: ["citations", "ai 검색", "aeo", "geo", "로컬라이징 seo"]
+type: blog
+categories:
+  - aeo-geo-note
+tags:
+  - citations
+  - ai 검색
+  - aeo
+  - geo
+  - 로컬라이징 seo
 cover:
-  image: "/images/seo-notes/ai-search-citations-language-region-aeo-geo-strategy.svg"
-  alt: "AI 검색 Citations AEO GEO 전략 썸네일"
+  image: /images/seo-notes/ai-search-citations-language-region-aeo-geo-strategy.svg
+  alt: AI 검색 Citations AEO GEO 전략 썸네일
   relative: false
 ---
 
