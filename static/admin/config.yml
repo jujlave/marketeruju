@@ -15,6 +15,84 @@ site_url: "https://marketeruju.com"
 display_url: "https://marketeruju.com"
 
 collections:
+  - name: "home"
+    label: "Home Page"
+    editor:
+      preview: false
+    files:
+      - name: "main-home"
+        label: "Main Page Layout"
+        file: "content/_index.md"
+        fields:
+          - { name: "title", label: "SEO Title", widget: "string" }
+          - { name: "description", label: "SEO Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { name: "kicker", label: "Small Label", widget: "string", required: false }
+              - { name: "title", label: "Hero Title", widget: "string", hint: "줄바꿈이 필요하면 <br>을 사용할 수 있습니다." }
+              - { name: "subtitle", label: "Subtitle", widget: "text", required: false }
+              - name: "primaryButton"
+                label: "Primary Button"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { name: "label", label: "Label", widget: "string" }
+                  - { name: "url", label: "URL", widget: "string" }
+              - name: "secondaryButton"
+                label: "Secondary Button"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { name: "label", label: "Label", widget: "string" }
+                  - { name: "url", label: "URL", widget: "string" }
+              - name: "highlights"
+                label: "Hero Highlights"
+                widget: "list"
+                summary: "{{fields.number}} · {{fields.label}}"
+                min: 1
+                max: 4
+                fields:
+                  - { name: "number", label: "Number", widget: "string", default: "01" }
+                  - { name: "label", label: "Label", widget: "string" }
+          - name: "latest"
+            label: "Latest Post Card"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "label", label: "Label", widget: "string", required: false }
+              - { name: "cta", label: "CTA Text", widget: "string", required: false }
+              - { name: "emptyLabel", label: "Empty Label", widget: "string", required: false }
+              - { name: "emptyTitle", label: "Empty Title", widget: "string", required: false }
+              - { name: "emptyText", label: "Empty Text", widget: "text", required: false }
+          - name: "sections"
+            label: "Content Sections"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "contentTitle", label: "Main Content Title", widget: "string" }
+              - { name: "seoNoteTitle", label: "SEO Note Group Title", widget: "string" }
+              - { name: "seoNoteMoreLabel", label: "SEO Note More Label", widget: "string" }
+              - { name: "aeoGeoTitle", label: "AEO-GEO Group Title", widget: "string" }
+              - { name: "aeoGeoMoreLabel", label: "AEO-GEO More Label", widget: "string" }
+              - { name: "emptySeoNote", label: "SEO Note Empty Text", widget: "string", required: false }
+              - { name: "emptyAeoGeoNote", label: "AEO-GEO Empty Text", widget: "string", required: false }
+          - name: "quickAccess"
+            label: "Quick Access Section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Small Label", widget: "string", required: false }
+              - { name: "title", label: "Section Title", widget: "string" }
+              - { name: "recentTitle", label: "Recent Posts Title", widget: "string" }
+              - { name: "tagsTitle", label: "Tags Title", widget: "string" }
+              - { name: "searchTitle", label: "Search Title", widget: "string" }
+              - { name: "searchPlaceholder", label: "Search Placeholder", widget: "string" }
+              - { name: "searchButton", label: "Search Button", widget: "string" }
+          - { name: "body", label: "Fallback Body", widget: "markdown", required: false }
+
   - name: "portfolio"
     label: "Portfolio"
     editor:

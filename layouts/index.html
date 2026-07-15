@@ -7,31 +7,36 @@
 {{- $spotlightPosts := first 3 $posts -}}
 {{- $tagCount := len site.Taxonomies.tags -}}
 {{- $latestPost := first 1 $posts -}}
+{{- $hero := .Params.hero | default dict -}}
+{{- $latest := .Params.latest | default dict -}}
+{{- $sections := .Params.sections | default dict -}}
+{{- $quickAccess := .Params.quickAccess | default dict -}}
+{{- $heroPrimary := $hero.primaryButton | default dict -}}
+{{- $heroSecondary := $hero.secondaryButton | default dict -}}
+{{- $heroHighlights := $hero.highlights | default (slice (dict "number" "01" "label" "Content SEO") (dict "number" "02" "label" "AEO / GEO Notes")) -}}
 
 <section class="home-hero">
   <div class="home-shell-wide">
     <div class="home-hero-inner">
       <div class="home-hero-copy">
-        <p class="home-kicker">SEO OPERATOR / MARKETER UJU</p>
-        <h1>SEO Note<br>Research Archive</h1>
+        <p class="home-kicker">{{ $hero.kicker | default "SEO OPERATOR / MARKETER UJU" }}</p>
+        <h1>{{ $hero.title | default "SEO Note<br>Research Archive" | safeHTML }}</h1>
         <p class="home-hero-sub">
-          검색 의도, AEO, GEO, 콘텐츠 구조를 실무 언어로 정리하는 SEO 기록실입니다.
+          {{ $hero.subtitle | default "검색 의도, AEO, GEO, 콘텐츠 구조를 실무 언어로 정리하는 SEO 기록실입니다." }}
         </p>
 
         <div class="home-hero-actions">
-          <a class="home-hero-btn" href="/blog/seo-note/">SEO Note</a>
-          <a class="home-hero-btn ghost" href="/blog/aeo-geo-note/">AEO-GEO Note</a>
+          <a class="home-hero-btn" href="{{ $heroPrimary.url | default "/blog/seo-note/" }}">{{ $heroPrimary.label | default "SEO Note" }}</a>
+          <a class="home-hero-btn ghost" href="{{ $heroSecondary.url | default "/blog/aeo-geo-note/" }}">{{ $heroSecondary.label | default "AEO-GEO Note" }}</a>
         </div>
 
         <div class="home-event-lines" aria-label="홈 요약 정보">
+          {{- range $heroHighlights }}
           <div>
-            <span>01</span>
-            <strong>Content SEO</strong>
+            <span>{{ .number }}</span>
+            <strong>{{ .label }}</strong>
           </div>
-          <div>
-            <span>02</span>
-            <strong>AEO / GEO Notes</strong>
-          </div>
+          {{- end }}
         </div>
 
         <div class="home-metric-row" aria-label="사이트 요약 지표">
@@ -90,17 +95,17 @@
         {{- if gt (len $latestPost) 0 -}}
           {{- range $latestPost -}}
           <a class="hero-spotlight" href="{{ .RelPermalink }}">
-            <span class="hero-spotlight-label">Latest Update</span>
+            <span class="hero-spotlight-label">{{ $latest.label | default "Latest Update" }}</span>
             <h2>{{ .Title }}</h2>
             <p>{{ .Summary | plainify | truncate 150 }}</p>
-            <span class="hero-spotlight-cta">글 읽기</span>
+            <span class="hero-spotlight-cta">{{ $latest.cta | default "글 읽기" }}</span>
           </a>
           {{- end -}}
         {{- else -}}
           <div class="hero-spotlight empty">
-            <span class="hero-spotlight-label">SEO Note</span>
-            <h2>SEO 콘텐츠를 준비 중입니다.</h2>
-            <p>SEO 노트가 추가되면 이 영역에 가장 최근 콘텐츠가 노출됩니다.</p>
+            <span class="hero-spotlight-label">{{ $latest.emptyLabel | default "SEO Note" }}</span>
+            <h2>{{ $latest.emptyTitle | default "SEO 콘텐츠를 준비 중입니다." }}</h2>
+            <p>{{ $latest.emptyText | default "SEO 노트가 추가되면 이 영역에 가장 최근 콘텐츠가 노출됩니다." }}</p>
           </div>
         {{- end -}}
       </div>
@@ -113,16 +118,16 @@
     <section class="home-block">
       <div class="home-block-head">
         <div>
-          <h2>전체 SEO 콘텐츠</h2>
+          <h2>{{ $sections.contentTitle | default "전체 SEO 콘텐츠" }}</h2>
         </div>
-        <a class="home-more" href="/blog/seo-note/">SEO Note 보기</a>
+        <a class="home-more" href="/blog/seo-note/">{{ $sections.seoNoteMoreLabel | default "SEO Note 보기" }}</a>
       </div>
 
       <div class="home-latest-groups">
         <div class="home-post-group">
           <div class="home-post-group-head">
-            <h3>SEO Note</h3>
-            <a href="/blog/seo-note/">더 보기</a>
+            <h3>{{ $sections.seoNoteTitle | default "SEO Note" }}</h3>
+            <a href="/blog/seo-note/">{{ $sections.seoNoteMoreLabel | default "더 보기" }}</a>
           </div>
 
           <div class="home-post-list home-post-list-all">
@@ -151,15 +156,15 @@
             {{- end -}}
 
             {{- if eq (len $seoNotePosts) 0 -}}
-            <div class="home-empty">SEO Note 글이 없습니다.</div>
+            <div class="home-empty">{{ $sections.emptySeoNote | default "SEO Note 글이 없습니다." }}</div>
             {{- end -}}
           </div>
         </div>
 
         <div class="home-post-group">
           <div class="home-post-group-head">
-            <h3>AEO-GEO Note</h3>
-            <a href="/blog/aeo-geo-note/">더 보기</a>
+            <h3>{{ $sections.aeoGeoTitle | default "AEO-GEO Note" }}</h3>
+            <a href="/blog/aeo-geo-note/">{{ $sections.aeoGeoMoreLabel | default "더 보기" }}</a>
           </div>
 
           <div class="home-post-list home-post-list-all">
@@ -188,7 +193,7 @@
             {{- end -}}
 
             {{- if eq (len $aeoGeoNotePosts) 0 -}}
-            <div class="home-empty">AEO-GEO Note 글이 없습니다.</div>
+            <div class="home-empty">{{ $sections.emptyAeoGeoNote | default "AEO-GEO Note 글이 없습니다." }}</div>
             {{- end -}}
           </div>
         </div>
@@ -198,14 +203,14 @@
     <section class="home-block">
       <div class="home-block-head">
         <div>
-          <p class="home-panel-kicker">Quick Access</p>
-          <h2>탐색 도구</h2>
+          <p class="home-panel-kicker">{{ $quickAccess.kicker | default "Quick Access" }}</p>
+          <h2>{{ $quickAccess.title | default "탐색 도구" }}</h2>
         </div>
       </div>
 
       <div class="home-utility-stack">
         <div class="home-widget">
-          <h3>최근 주제</h3>
+          <h3>{{ $quickAccess.recentTitle | default "최근 주제" }}</h3>
           <div class="home-mini-list">
             {{- range $spotlightPosts -}}
             <a href="{{ .RelPermalink }}">
@@ -217,7 +222,7 @@
         </div>
 
         <div class="home-widget compact">
-          <h3>Tags</h3>
+          <h3>{{ $quickAccess.tagsTitle | default "Tags" }}</h3>
           <div class="home-tags">
             {{- range first 10 site.Taxonomies.tags.ByCount -}}
             <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
@@ -226,10 +231,10 @@
         </div>
 
         <div class="home-widget compact">
-          <h3>Search</h3>
+          <h3>{{ $quickAccess.searchTitle | default "Search" }}</h3>
           <form class="home-search" action="/search/">
-            <input type="text" name="q" placeholder="검색어 입력" aria-label="검색어 입력">
-            <button type="submit">검색</button>
+            <input type="text" name="q" placeholder="{{ $quickAccess.searchPlaceholder | default "검색어 입력" }}" aria-label="{{ $quickAccess.searchPlaceholder | default "검색어 입력" }}">
+            <button type="submit">{{ $quickAccess.searchButton | default "검색" }}</button>
           </form>
         </div>
       </div>
