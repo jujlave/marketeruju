@@ -16,7 +16,7 @@ sitemap:
 
   <nav class="portfolio-side-nav" aria-label="포트폴리오 섹션 내비게이션">
 
-\    <a href="#about-uju">About</a><a href="#career">Career</a><a href="#projects">Projects</a><a href="#how-i-work">Process</a><a href="#skills">Skills</a>
+    <a href="#about-uju">About</a><a href="#career">Career</a><a href="#projects">Projects</a><a href="#how-i-work">Process</a><a href="#skills">Skills</a>
 
   </nav>
 
@@ -24,29 +24,29 @@ sitemap:
 
   <header class="portfolio-hero">
 
-\    <div class="hero-copy">
+    <div class="hero-copy">
 
-\    <p class="eyebrow">SEO · CONTENT · DATA · AI WORKFLOW</p>
+    <p class="eyebrow">SEO · CONTENT · DATA · AI WORKFLOW</p>
 
-\    <h1>검색 데이터를 읽고,<br><em>비즈니스 성과로 연결합니다.</em></h1>
+    <h1>검색 데이터를 읽고,<br><em>비즈니스 성과로 연결합니다.</em></h1>
 
-\    <p class="hero-description">콘텐츠 기획부터 글로벌 SEO 운영, 데이터 분석, AI 자동화까지. 사용자의 검색 의도와 브랜드의 목표가 만나는 지점을 설계하는 SEO·콘텐츠 마케터 전우주입니다.</p>
+    <p class="hero-description">콘텐츠 기획부터 글로벌 SEO 운영, 데이터 분석, AI 자동화까지. 사용자의 검색 의도와 브랜드의 목표가 만나는 지점을 설계하는 SEO·콘텐츠 마케터 전우주입니다.</p>
 
-\    <div class="hero-tags"><span>SEO Strategy</span><span>Content Marketing</span><span>Data Analytics</span><span>Global PM</span><span>AI Automation</span></div>
+    <div class="hero-tags"><span>SEO Strategy</span><span>Content Marketing</span><span>Data Analytics</span><span>Global PM</span><span>AI Automation</span></div>
 
-\    </div>
+    </div>
 
-\    <div class="hero-metrics" aria-label="주요 경력 요약">
+    <div class="hero-metrics" aria-label="주요 경력 요약">
 
-\    <div><strong>7+</strong><span>Years<br>Experience</span></div>
+    <div><strong>7+</strong><span>Years<br>Experience</span></div>
 
-\    <div><strong>KR·JP</strong><span>Global SEO<br>Markets</span></div>
+    <div><strong>KR·JP</strong><span>Global SEO<br>Markets</span></div>
 
-\    <div><strong>7</strong><span>Languages<br>SEO</span></div>
+    <div><strong>7</strong><span>Languages<br>SEO</span></div>
 
-\    <div><strong>End-to-End</strong><span>Strategy to<br>Reporting</span></div>
+    <div><strong>End-to-End</strong><span>Strategy to<br>Reporting</span></div>
 
-\    </div>
+    </div>
 
   </header>
 
@@ -54,107 +54,107 @@ sitemap:
 
   <main>
 
-\    <section id="about-uju" class="portfolio-section about-section">
+    <section id="about-uju" class="portfolio-section about-section">
 
-\    <div class="section-head"><p class="section-no">01</p><div><p class="section-label">ABOUT UJU</p><h2>콘텐츠와 데이터를 연결해<br>실행 가능한 답을 만듭니다.</h2></div></div>
+    <div class="section-head"><p class="section-no">01</p><div><p class="section-label">ABOUT UJU</p><h2>콘텐츠와 데이터를 연결해<br>실행 가능한 답을 만듭니다.</h2></div></div>
 
-\    <div class="about-panel">
+    <div class="about-panel">
 
-\    <p class="about-lead">콘텐츠 마케팅에서 시작해 브랜드 운영과 글로벌 SEO 프로젝트까지 경험했습니다. 단순히 검색 노출을 높이는 데 그치지 않고, 유입 이후의 사용자 경험과 비즈니스 성과까지 함께 봅니다.</p>
+    <p class="about-lead">콘텐츠 마케팅에서 시작해 브랜드 운영과 글로벌 SEO 프로젝트까지 경험했습니다. 단순히 검색 노출을 높이는 데 그치지 않고, 유입 이후의 사용자 경험과 비즈니스 성과까지 함께 봅니다.</p>
 
-\    <div class="principles"><div><strong>01</strong><span>Search Intent</span><p>고객이 실제로 찾는 언어에서 출발합니다.</p></div><div><strong>02</strong><span>Business Impact</span><p>트래픽보다 성과에 가까운 지표를 봅니다.</p></div><div><strong>03</strong><span>Scalable System</span><p>반복 업무는 구조화하고 자동화합니다.</p></div></div>
+    <div class="principles"><div><strong>01</strong><span>Search Intent</span><p>고객이 실제로 찾는 언어에서 출발합니다.</p></div><div><strong>02</strong><span>Business Impact</span><p>트래픽보다 성과에 가까운 지표를 봅니다.</p></div><div><strong>03</strong><span>Scalable System</span><p>반복 업무는 구조화하고 자동화합니다.</p></div></div>
 
-\    </div>
+    </div>
 
-\    </section>
-
-
-
-\    <section id="career" class="portfolio-section">
-
-\    <div class="section-head"><p class="section-no">02</p><div><p class="section-label">CAREER</p><h2>경험의 범위를 넓히며<br>SEO 전문성을 쌓았습니다.</h2></div></div>
-
-\    <div class="timeline">
-
-\    <article><div class="period">2024.03 – Present</div><div class="career-body"><span class="current-badge">CURRENT</span><h3>위볼린 <small>콘텐츠 · SEO 마케터 / PM</small></h3><p>글로벌 브랜드와 다국어 사이트의 SEO 전략 수립, 콘텐츠 운영, 성과 분석 및 프로젝트 매니징</p><ul><li>adidas Korea / Japan SEO 프로젝트 운영</li><li>AB성형외과 7개 언어 글로벌 SEO 운영</li><li>Adobe Analytics·GA4·GSC 기반 성과 분석 및 리포팅</li><li>AI 기반 콘텐츠·데이터 자동화 워크플로우 구축</li></ul></div></article>
-
-\    <article><div class="period">2022.04 – 2024.02</div><div class="career-body"><h3>꿀이유 <small>브랜드 운영 · 창업</small></h3><p>지역 생산 꿀 브랜드의 기획부터 판매까지 전 과정을 직접 운영</p><ul><li>브랜드 아이덴티티 및 제품 전략 수립</li><li>스마트스토어 운영, 상세페이지·콘텐츠 제작</li><li>제품 촬영, 고객 응대 및 판매 데이터 관리</li></ul></div></article>
-
-\    <article><div class="period">2019.03 – 2022.03</div><div class="career-body"><h3>씨티애드 <small>콘텐츠 마케터</small></h3><p>브랜드 및 병·의원 대상 SEO 콘텐츠 프로젝트 운영</p><ul><li>키워드 리서치 및 검색 의도 기반 콘텐츠 기획</li><li>블로그·SNS 운영 및 콘텐츠 성과 분석</li></ul></div></article>
-
-\    </div>
-
-\    </section>
+    </section>
 
 
 
-\    <section id="projects" class="portfolio-section">
+    <section id="career" class="portfolio-section">
 
-\    <div class="section-head"><p class="section-no">03</p><div><p class="section-label">SELECTED PROJECTS</p><h2>문제를 정의하고,<br>성과가 나는 구조를 만들었습니다.</h2></div></div>
+    <div class="section-head"><p class="section-no">02</p><div><p class="section-label">CAREER</p><h2>경험의 범위를 넓히며<br>SEO 전문성을 쌓았습니다.</h2></div></div>
 
-\    <div class="project-list">
+    <div class="timeline">
 
-\    <article class="project-card featured">
+    <article><div class="period">2024.03 – Present</div><div class="career-body"><span class="current-badge">CURRENT</span><h3>위볼린 <small>콘텐츠 · SEO 마케터 / PM</small></h3><p>글로벌 브랜드와 다국어 사이트의 SEO 전략 수립, 콘텐츠 운영, 성과 분석 및 프로젝트 매니징</p><ul><li>adidas Korea / Japan SEO 프로젝트 운영</li><li>AB성형외과 7개 언어 글로벌 SEO 운영</li><li>Adobe Analytics·GA4·GSC 기반 성과 분석 및 리포팅</li><li>AI 기반 콘텐츠·데이터 자동화 워크플로우 구축</li></ul></div></article>
 
-\    <div class="project-top"><div><p class="project-index">PROJECT 01 · ENTERPRISE SEO</p><h3>adidas Korea / Japan SEO</h3><p class="project-summary">글로벌 가이드라인과 각 시장의 검색 특성을 연결해 이커머스 SEO 운영 체계를 고도화했습니다.</p></div><div class="result-box"><strong>+89.9%</strong><span>GSC Clicks<br>Y.o.Y 성장</span><small>2026년 5월 기준</small></div></div>
+    <article><div class="period">2022.04 – 2024.02</div><div class="career-body"><h3>꿀이유 <small>브랜드 운영 · 창업</small></h3><p>지역 생산 꿀 브랜드의 기획부터 판매까지 전 과정을 직접 운영</p><ul><li>브랜드 아이덴티티 및 제품 전략 수립</li><li>스마트스토어 운영, 상세페이지·콘텐츠 제작</li><li>제품 촬영, 고객 응대 및 판매 데이터 관리</li></ul></div></article>
 
-\    <div class="project-grid"><div><h4>MY ROLE</h4><p>프로젝트 운영 · 데이터 분석 · 콘텐츠 최적화 · 글로벌 커뮤니케이션</p></div><div><h4>KEY ACTIONS</h4><ul><li>PLP/PDP 메타데이터 및 콘텐츠 구조 개선</li><li>NLG·FAQ 콘텐츠 로컬라이징 및 품질 관리</li><li>Adobe Analytics·GSC 기반 월간 성과 분석</li><li>Global 팀과 SEO 테스트 및 기술 이슈 협업</li></ul></div></div>
+    <article><div class="period">2019.03 – 2022.03</div><div class="career-body"><h3>씨티애드 <small>콘텐츠 마케터</small></h3><p>브랜드 및 병·의원 대상 SEO 콘텐츠 프로젝트 운영</p><ul><li>키워드 리서치 및 검색 의도 기반 콘텐츠 기획</li><li>블로그·SNS 운영 및 콘텐츠 성과 분석</li></ul></div></article>
 
-\    <div class="project-tags"><span>Enterprise SEO</span><span>E-commerce</span><span>Adobe Analytics</span><span>GSC</span><span>Global PM</span></div>
+    </div>
 
-\    </article>
-
-
-
-\    <article class="project-card">
-
-\    <div class="project-top"><div><p class="project-index">PROJECT 02 · GLOBAL SEO</p><h3>AB성형외과 Global SEO</h3><p class="project-summary">7개 언어권의 검색 수요와 문화적 차이를 반영해 의료 콘텐츠 전략과 로컬라이징 체계를 운영했습니다.</p></div><div class="result-box"><strong>+35.2%</strong><span>영문 사이트 Clicks<br>M.o.M 성장</span><small>2026년 5월 기준</small></div></div>
-
-\    <div class="project-grid"><div><h4>MY ROLE</h4><p>다국어 콘텐츠 전략 · 키워드 분석 · 성과 모니터링 · 콘텐츠 QA</p></div><div><h4>KEY ACTIONS</h4><ul><li>국가별 키워드와 SERP 기반 콘텐츠 주제 발굴</li><li>검색 의도를 반영한 시술·정보성 콘텐츠 기획</li><li>FAQ 및 구조화 콘텐츠 운영</li><li>언어권별 GSC 성과 분석과 개선안 도출</li></ul></div></div>
-
-\    <div class="project-tags"><span>7 Languages</span><span>Localization</span><span>Medical SEO</span><span>Content Strategy</span></div>
-
-\    </article>
+    </section>
 
 
 
-\    <article class="project-card featured">
+    <section id="projects" class="portfolio-section">
 
-\    <div class="project-top"><div><p class="project-index">PROJECT 03 · AI AUTOMATION</p><h3>SEO Reporting & Monitoring Workflow</h3><p class="project-summary">반복적인 데이터 수집과 리포트 초안 작성을 자동화해 분석과 의사결정에 집중할 수 있는 환경을 구축했습니다.</p></div><div class="result-box system"><strong>4 STEP</strong><span>Data → Insight<br>자동화 파이프라인</span></div></div>
+    <div class="section-head"><p class="section-no">03</p><div><p class="section-label">SELECTED PROJECTS</p><h2>문제를 정의하고,<br>성과가 나는 구조를 만들었습니다.</h2></div></div>
 
-\    <div class="automation-flow"><span>GSC / GA4</span><b>→</b><span>GAS Processing</span><b>→</b><span>GPT Analysis</span><b>→</b><span>Report & Action</span></div>
+    <div class="project-list">
 
-\    <div class="project-grid"><div><h4>MY ROLE</h4><p>업무 설계 · 스크립트 구축 · 프롬프트 설계 · 결과 검수</p></div><div><h4>KEY ACTIONS</h4><ul><li>Google Apps Script 기반 데이터 취합 자동화</li><li>GSC·GA4·SEMrush 모니터링 구조 설계</li><li>GPT 기반 인사이트 요약 및 리포트 초안 생성</li></ul></div></div>
+    <article class="project-card featured">
 
-\    <div class="project-tags"><span>Google Apps Script</span><span>GPT Workflow</span><span>Automation</span><span>Reporting</span></div>
+    <div class="project-top"><div><p class="project-index">PROJECT 01 · ENTERPRISE SEO</p><h3>adidas Korea / Japan SEO</h3><p class="project-summary">글로벌 가이드라인과 각 시장의 검색 특성을 연결해 이커머스 SEO 운영 체계를 고도화했습니다.</p></div><div class="result-box"><strong>+89.9%</strong><span>GSC Clicks<br>Y.o.Y 성장</span><small>2026년 5월 기준</small></div></div>
 
-\    </article>
+    <div class="project-grid"><div><h4>MY ROLE</h4><p>프로젝트 운영 · 데이터 분석 · 콘텐츠 최적화 · 글로벌 커뮤니케이션</p></div><div><h4>KEY ACTIONS</h4><ul><li>PLP/PDP 메타데이터 및 콘텐츠 구조 개선</li><li>NLG·FAQ 콘텐츠 로컬라이징 및 품질 관리</li><li>Adobe Analytics·GSC 기반 월간 성과 분석</li><li>Global 팀과 SEO 테스트 및 기술 이슈 협업</li></ul></div></div>
 
-\    </div>
+    <div class="project-tags"><span>Enterprise SEO</span><span>E-commerce</span><span>Adobe Analytics</span><span>GSC</span><span>Global PM</span></div>
 
-\    </section>
-
-
-
-\    <section id="how-i-work" class="portfolio-section">
-
-\    <div class="section-head"><p class="section-no">04</p><div><p class="section-label">HOW I WORK</p><h2>데이터를 액션으로 바꾸는<br>일관된 프로세스</h2></div></div>
-
-\    <div class="work-grid"><article><span>01</span><h3>Discover</h3><p>비즈니스 목표, 검색 수요, 경쟁 환경을 함께 파악합니다.</p></article><article><span>02</span><h3>Prioritize</h3><p>영향도와 실행 난도를 기준으로 개선 과제를 정렬합니다.</p></article><article><span>03</span><h3>Execute</h3><p>콘텐츠·기술·협업 과제를 명확한 액션으로 실행합니다.</p></article><article><span>04</span><h3>Measure</h3><p>성과를 검증하고 다음 실행을 위한 인사이트를 남깁니다.</p></article></div>
-
-\    </section>
+    </article>
 
 
 
-\    <section id="skills" class="portfolio-section">
+    <article class="project-card">
 
-\    <div class="section-head"><p class="section-no">05</p><div><p class="section-label">SKILLS & TOOLS</p><h2>전략부터 제작과 분석까지,<br>직접 실행할 수 있습니다.</h2></div></div>
+    <div class="project-top"><div><p class="project-index">PROJECT 02 · GLOBAL SEO</p><h3>AB성형외과 Global SEO</h3><p class="project-summary">7개 언어권의 검색 수요와 문화적 차이를 반영해 의료 콘텐츠 전략과 로컬라이징 체계를 운영했습니다.</p></div><div class="result-box"><strong>+35.2%</strong><span>영문 사이트 Clicks<br>M.o.M 성장</span><small>2026년 5월 기준</small></div></div>
 
-\    <div class="skills-grid"><div><h3>SEO & Analytics</h3><p>SEO Strategy · Keyword Research · GA4 · GSC · Adobe Analytics · SEMrush · Profound</p></div><div><h3>Content & Global</h3><p>Content Strategy · Localization · Medical Content · E-commerce · KR/JP SEO</p></div><div><h3>AI & Automation</h3><p>GPT Workflow · Google Apps Script · Google Cloud API · Automated Reporting</p></div><div><h3>Creative & PM</h3><p>Project Management · Figma · Photoshop · Illustrator · Premiere Pro · After Effects</p></div></div>
+    <div class="project-grid"><div><h4>MY ROLE</h4><p>다국어 콘텐츠 전략 · 키워드 분석 · 성과 모니터링 · 콘텐츠 QA</p></div><div><h4>KEY ACTIONS</h4><ul><li>국가별 키워드와 SERP 기반 콘텐츠 주제 발굴</li><li>검색 의도를 반영한 시술·정보성 콘텐츠 기획</li><li>FAQ 및 구조화 콘텐츠 운영</li><li>언어권별 GSC 성과 분석과 개선안 도출</li></ul></div></div>
 
-\    <footer class="closing-panel"><p>검색되는 콘텐츠를 넘어,<br><strong>성과로 기억되는 경험을 만듭니다.</strong></p><a href="#top">BACK TO TOP ↑</a></footer>
+    <div class="project-tags"><span>7 Languages</span><span>Localization</span><span>Medical SEO</span><span>Content Strategy</span></div>
 
-\    </section>
+    </article>
+
+
+
+    <article class="project-card featured">
+
+    <div class="project-top"><div><p class="project-index">PROJECT 03 · AI AUTOMATION</p><h3>SEO Reporting & Monitoring Workflow</h3><p class="project-summary">반복적인 데이터 수집과 리포트 초안 작성을 자동화해 분석과 의사결정에 집중할 수 있는 환경을 구축했습니다.</p></div><div class="result-box system"><strong>4 STEP</strong><span>Data → Insight<br>자동화 파이프라인</span></div></div>
+
+    <div class="automation-flow"><span>GSC / GA4</span><b>→</b><span>GAS Processing</span><b>→</b><span>GPT Analysis</span><b>→</b><span>Report & Action</span></div>
+
+    <div class="project-grid"><div><h4>MY ROLE</h4><p>업무 설계 · 스크립트 구축 · 프롬프트 설계 · 결과 검수</p></div><div><h4>KEY ACTIONS</h4><ul><li>Google Apps Script 기반 데이터 취합 자동화</li><li>GSC·GA4·SEMrush 모니터링 구조 설계</li><li>GPT 기반 인사이트 요약 및 리포트 초안 생성</li></ul></div></div>
+
+    <div class="project-tags"><span>Google Apps Script</span><span>GPT Workflow</span><span>Automation</span><span>Reporting</span></div>
+
+    </article>
+
+    </div>
+
+    </section>
+
+
+
+    <section id="how-i-work" class="portfolio-section">
+
+    <div class="section-head"><p class="section-no">04</p><div><p class="section-label">HOW I WORK</p><h2>데이터를 액션으로 바꾸는<br>일관된 프로세스</h2></div></div>
+
+    <div class="work-grid"><article><span>01</span><h3>Discover</h3><p>비즈니스 목표, 검색 수요, 경쟁 환경을 함께 파악합니다.</p></article><article><span>02</span><h3>Prioritize</h3><p>영향도와 실행 난도를 기준으로 개선 과제를 정렬합니다.</p></article><article><span>03</span><h3>Execute</h3><p>콘텐츠·기술·협업 과제를 명확한 액션으로 실행합니다.</p></article><article><span>04</span><h3>Measure</h3><p>성과를 검증하고 다음 실행을 위한 인사이트를 남깁니다.</p></article></div>
+
+    </section>
+
+
+
+    <section id="skills" class="portfolio-section">
+
+    <div class="section-head"><p class="section-no">05</p><div><p class="section-label">SKILLS & TOOLS</p><h2>전략부터 제작과 분석까지,<br>직접 실행할 수 있습니다.</h2></div></div>
+
+    <div class="skills-grid"><div><h3>SEO & Analytics</h3><p>SEO Strategy · Keyword Research · GA4 · GSC · Adobe Analytics · SEMrush · Profound</p></div><div><h3>Content & Global</h3><p>Content Strategy · Localization · Medical Content · E-commerce · KR/JP SEO</p></div><div><h3>AI & Automation</h3><p>GPT Workflow · Google Apps Script · Google Cloud API · Automated Reporting</p></div><div><h3>Creative & PM</h3><p>Project Management · Figma · Photoshop · Illustrator · Premiere Pro · After Effects</p></div></div>
+
+    <footer class="closing-panel"><p>검색되는 콘텐츠를 넘어,<br><strong>성과로 기억되는 경험을 만듭니다.</strong></p><a href="#top">BACK TO TOP ↑</a></footer>
+
+    </section>
 
   </main>
 
@@ -188,7 +188,7 @@ sitemap:
 
 <script>
 
-  document.addEventListener("DOMContentLoaded",function(){const links=\[...document.querySelectorAll(".portfolio-side-nav a")],sections=links.map(a=>document.querySelector(a.getAttribute("href"))).filter(Boolean);function active(){let current=sections\[0];sections.forEach(s=>{if(s.getBoundingClientRect().top<180)current=s});links.forEach(a=>a.classList.toggle("is-active",a.getAttribute("href")==="#"+current.id))}active();window.addEventListener("scroll",active,{passive:true})});
+  document.addEventListener("DOMContentLoaded",function(){const links=[...document.querySelectorAll(".portfolio-side-nav a")],sections=links.map(a=>document.querySelector(a.getAttribute("href"))).filter(Boolean);function active(){let current=sections[0];sections.forEach(s=>{if(s.getBoundingClientRect().top<180)current=s});links.forEach(a=>a.classList.toggle("is-active",a.getAttribute("href")==="#"+current.id))}active();window.addEventListener("scroll",active,{passive:true})});
 
 </script>
 
