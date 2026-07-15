@@ -14,6 +14,27 @@ site_url: "https://marketeruju.com"
 display_url: "https://marketeruju.com"
 
 collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    files:
+      - name: "portfolio-page"
+        label: "Portfolio Page"
+        file: "content/portfolio/_index.md"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+          - { name: "type", label: "Type", widget: "hidden", default: "portfolio" }
+          - { name: "draft", label: "Draft", widget: "boolean", default: false }
+          - { name: "robotsNoIndex", label: "No Index", widget: "boolean", default: true }
+          - { name: "outputs", label: "Outputs", widget: "hidden", default: ["HTML"] }
+          - name: "sitemap"
+            label: "Sitemap"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "disable", label: "Disable", widget: "boolean", default: true }
+          - { name: "body", label: "Body", widget: "markdown" }
+
   - name: "work-log"
     label: "Work Log"
     folder: "content/blog/work-log"
