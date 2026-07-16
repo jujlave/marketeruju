@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Canonical tag SEO guide thumbnail">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4">
+    <rect x="180" y="150" width="1240" height="470" rx="34"/>
+    <path d="M180 255h1240"/>
+    <circle cx="235" cy="202" r="13"/><circle cx="285" cy="202" r="13"/><circle cx="335" cy="202" r="13"/>
+    <path d="M315 385h335"/>
+    <path d="M315 455h235"/>
+    <path d="M315 525h300"/>
+    <path d="M970 385h315"/>
+    <path d="M1035 455h250"/>
+    <path d="M990 525h295"/>
+    <path d="M650 455h300"/>
+    <path d="M910 420l52 35-52 35"/>
+    <path d="M690 420l-52 35 52 35"/>
+  </g>
+  <g fill="none" stroke="#7678ee" stroke-width="5">
+    <rect x="675" y="337" width="250" height="235" rx="28"/>
+    <path d="M720 410h160"/>
+    <path d="M720 465h115"/>
+    <path d="M720 520h145"/>
+    <circle cx="800" cy="455" r="82"/>
+    <path d="M765 455l25 25 52-68"/>
+  </g>
+  <text x="180" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">CANONICAL TAG</text>
+  <text x="180" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Duplicate URL Signals</text>
+</svg>
