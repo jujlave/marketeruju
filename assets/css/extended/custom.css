@@ -2787,6 +2787,8 @@ h4,
 }
 
 .work-log-insight-table{
+  display: table;
+  table-layout: fixed;
   margin-top: 26px;
   margin-bottom: 8px;
   border-radius: 10px;
@@ -2868,6 +2870,12 @@ h4,
 
   .work-log-wide{
     width: 100%;
+  }
+
+  .work-log-insight-table{
+    display: block;
+    table-layout: auto;
+    overflow-x: auto;
   }
 
   .work-log-chart{
