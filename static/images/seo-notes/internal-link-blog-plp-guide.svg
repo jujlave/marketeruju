@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="내부 링크는 어떻게 설계할까? 블로그와 PLP를 연결하는 실무 가이드">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="240" y="280" width="300" height="260" rx="22"/><rect x="1060" y="280" width="300" height="260" rx="22"/><path d="M580 380h430m-50-40 50 40-50 40M1020 470H590m50-40-50 40 50 40"/><path d="M300 350h180m-180 60h130m630-60h180m-180 60h130"/></g>
+  <path d="M180 160h1240" fill="none" stroke="#7678ee" stroke-width="5"/>
+  <text x="180" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">INTERNAL LINKS</text>
+  <text x="180" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Connect Content &amp; PLP</text>
+</svg>

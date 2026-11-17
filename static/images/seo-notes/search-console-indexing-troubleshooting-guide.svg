@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="구글에 글이 검색되지 않는 이유: Search Console 색인 문제 점검 순서">
+  <rect width="1600" height="900" fill="#f8f8f5"/>
+  <g fill="none" stroke="#343595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="380" y="230" width="560" height="350" rx="22"/><path d="M450 310h260m-260 70h200m-200 70h130"/><circle cx="1010" cy="410" r="125"/><path d="m1100 505 120 120m-275-210 45 45 85-110"/></g>
+  <path d="M180 160h1240" fill="none" stroke="#7678ee" stroke-width="5"/>
+  <text x="180" y="750" fill="#343595" font-family="Menlo, Consolas, monospace" font-size="34" letter-spacing="10">INDEXING CHECK</text>
+  <text x="180" y="815" fill="#07070a" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Diagnose Search Visibility</text>
+</svg>
